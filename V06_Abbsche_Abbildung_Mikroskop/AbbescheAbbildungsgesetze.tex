@@ -126,7 +126,7 @@ von Objektiv und Projektionslinse.
 \end{equation}
 Sei $g_O$ der Abstand vom Objekt zum Objektiv, $b_O$ der Abstand vom
 Objektiv zur Brennebene, $g_P$ der Abstand von der Brennebene zur
-Projektionslinse und $b_O$ der Abstand von der Projektionslinse zum
+Projektionslinse und $b_P$ der Abstand von der Projektionslinse zum
 Schirm. Die Größen $b_O$ und $g_P$ sind nur schwer zu messen, da die
 exakte Position der Brennebene nicht hinreichend genau bestimmt werden
 kann. Es empfiehlt sich daher diese Größen zu eliminieren. Mit den
@@ -140,14 +140,14 @@ $\frac{B}{G} = \frac{b}{g}$ ist dies leicht möglich.
 
 \begin{equation}
   \label{eq:4}
-  V_P = \frac{b_P - f_P}{f_P}
+  V_P = \frac{b_P - f_P}{f_P} = \frac{b_P}{f_P} - 1
 \end{equation}
 Durch Einsetzen in Gleichung \eqref{eq:2} erhält man die
 Gesamtvergrößerung.
 
 \begin{equation}
   \label{eq:5}
-  V_G =   \frac{f_{O}}{g_{O}-f_{O}} \cdot \frac{b_P - f_P}{f_P}
+  V_2 =   \frac{f_{O}}{g_{O}-f_{O}} \cdot \frac{b_P - f_P}{f_P}
 \end{equation}
 
 Die noch zu messenden Größen sind also die Gegenstandsweite $g_O$ des
@@ -183,18 +183,193 @@ Eine graphische Veranschaulichung findet sich in Abb. \ref{fig:
 \clearpage
 
 \section{Mikroskop aus zwei Linsen}
+\label{sec:MikroskopAusZweiLinsen}
 
-Der Aufbaue entspricht Abb. \ref{fig: Aufbau} ohne die gestrichelt
-dargestellten Komponenten.
+Der Aufbau entspricht Abb. \ref{fig: Aufbau} ohne die gestrichelt
+dargestellten Komponenten. Wir versuchen die Komponenten alle auf Höhe
+der optischen Achse zu justieren, um einen möglichst geraden
+Strahlengang zu erreichen. Als Objekt dient hier ein Stück eines
+Plexiglaslineals. Wir montieren dieses so, dass die Skala des Lineals
+als Bild auf dem Schirm zu sehen ist. Wir messen einen möglichst
+großen Abstand, um den Fehler so gering wie möglich zu halten. Da die
+Markierungen des Lineals im Bild nach außen zunehmend unschärfer
+werden, messen wir mit einem Lineal über vier Markierungen hinweg eine
+Strecke von $B = 131 mm$. Wir schätzen den Messfehler aufgrund der
+dennoch etwas unscharfen Kannten im Bild auf ca. $\Delta B = \pm 2mm$.
+Die Gegenstandsgröße von $4 mm$ auf dem Lineal nehmen wir als fehlerfrei
+an.
+Der Größtfehler ergibt sich damit aus Gl. \eqref{eq:1}zu:
+
+\begin{equation}
+  \Delta V_1 = \frac{1}{G} \Delta B
+\end{equation}
+Nun bestimmen wir die Vergrößerung nochmals mit Gl. \eqref{eq:5}. Da
+alle Komponenten auf der optischen Bank justiert sind, können wir deren
+Position direkt ablesen und die Abstände durch Bildung entsprechender
+Differenzen errechnen. Problematisch an dieser Methode ist nur, dass
+man zwar die Position des Reiters ablesen kann, die exakte Position
+der Linsenmitte aber nicht direkt zu bestimmen ist. Man kann aber
+annehmen, dass diese ungefähr bei der schrägen Kannte des Reiters
+liegt. Da zunächst die Differenzen der Reiterpositionen gebildet
+werden müssen und dann schließlich noch eine weitere Differenz nötig
+ist, um die Mittelstellung zu berücksichtigen veranschlagen wir hier
+jeweils $\pm 2mm$. Für das Ablesen der absoluten Positionen der Reiter
+nehmen wir einen Fehler in der Größenordnung der Skala an der
+optischen Bank von $\pm 1mm$ an. Wir schätzen hier also insgesamt
+einen Fehler von $\Delta g_O = \Delta b_P = \pm 5mm$ ab.
+Aus Gl. \eqref{eq:5} ergibt sich damit der Größtfehler zu:
+
+\begin{equation}
+  \Delta V_2 = \frac{f_O}{(g_O - f_O)^2} \cdot \frac{b_P - f_P}{f_P} \cdot
+  \Delta g_O + \frac{f_O}{g_O - f_O} \cdot \frac{1}{f_P} \cdot \Delta b_P
+\end{equation}
+
+Damit erhalten wir als Endergebnis des Versuchs:
+
+
+  \[V_1 = 32.75 \pm 0.5\]
+  \[V_2 = 29.7 \pm 5\]
+
+Für folgende Rechnungen verwenden wir den ersten Wert, da dieser
+deutlich genauer ist.
+
+% Für folgende Rechnungen bilden wir den gewichteten Mittelwert,
+% gewichtet mit dem Kehrwert der jeweiligen Abweichung der Messung:
+
+% \[ V = \frac{V_1 \cdot \frac{1}{\Delta V_1} + V_2 \cdot \frac{1}{\Delta
+%     V_2}}{\frac{1}{\Delta V_1} + \frac{1}{\Delta
+%     V_2}} = 32.5\]
+
+% Auf diese Weise gehen keine Informationen verloren, aber der
+% Genauigkeit der Messungen wird hinreichend Rechnung getragen.
+
 
 \section{Untersuchung der Diffraktionsplatte}
+
+Der Versuchsaufbau ist in Abb. \ref{fig: AufbauLaser} dargestellt. Der
+Laser sendet Licht der Wellenlänge $\lambda = 532 nm$ aus. Zur
+Aufweitung des parallelen Laserlichts wird dieses zunächst mit der
+Linse \textit{L1} fokussiert und dann mit der Linse \textit{L2} wieder
+parallelisiert. Dazu ist es nötig, dass die Brennpunkte beider Linsen
+sich am selben Ort befinden, sie müssen also im Abstand $f_{L1} +
+f_{L2} = 122 mm$ auf der optischen Bank montiert werden. Hier ist nun
+ein paralleler Strahlengang noch wichtiger, als beim ersten Versuch.
+Um die Parallelität zu verifizieren halten wir ein Blatt Papier in den
+Strahlengang und prüfen ob die Größe und Höhe des Bildes konstant
+bleiben. Die Gitterkonstante $g1$ des breiten Gitters ist doppelt so
+groß wie die Gitterkonstante $g2$ des schmalen Gitters ( Siehe Abb.
+\ref{fig: Abbe'sche}).
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=15cm]{pics/Gitterkonstante}
+\caption{Aufbau zur Bestimmung der Gitterkonstanten}%
+\label{fig: AufbauLaser}%
+\end{figure}
+
+Die zum scharf stellen zu verschiebende Komponente ist das Gitter
+selbst. Da der Strahlengang parallel ist ändert dies das
+Beugungsverhalten nicht. Würden wir hingegen das Objektiv oder die
+Projektionslinse verschieben, so hätte die im Vorversuch gemessene
+Vergrößerung keine Gültigkeit mehr.
+
+
+\begin{figure}%[htb!]
+\centering
+\includegraphics[width=5cm]{pics/matze-flo-002}
+\caption{Abbe'sche Diffraktionsplatte}%
+\label{fig: Abbe'sche}%
+\end{figure}
+
 \subsection{Messung der Gitterkonstante}
-\subsubsection{reales Bild}
-\subsubsection{Beugungsbild}
+\subsubsection{Direkte Messung am realen Bild}
+Wir messen auf dem Schirm den Abstand von 30 Linien des schmalen
+Gitters, das entspricht $n = 29$ Zwischenräumen. Die Messung wird mit einem
+Lineal durchgeführt und es wird von Linienkante zu Linienkante
+gemessen um nicht die Mitte einer Linie schätzen zu müssen. Wir
+erhalten $B = 94mm$. Wir schätzen den Messfehler beim Messen am Schirm
+auf $\Delta B = 2mm$. Da die Vergrößerung $V$ aus dem Vorversuch
+bekannt ist, kann man die Gitterkonstante $g$ wie folgt errechnen:
+
+\[ g = \frac{B}{n \cdot V} \]
+
+Der Größtfehler ergibt sich hier zu:
+
+\[ \Delta g = \frac{1}{n \cdot V_1} \cdot \Delta B + \frac{B}{n \cdot
+  V_1^2} \cdot \Delta V_1 \]
+
+Wir erhalten für das schmale Gitter:
+
+\[ g_s = 0.099 mm \pm 0.004mm\]
+
+Und für das grobe Gitter:
+
+\[ g_g = 0.199 mm \pm 0.008mm\]
+
+\subsubsection{Messung über das Beugungsbild}
+
+Wir verschieben die Projektionslinse um nun die Beugungsfigur auf dem
+Schirm abzubilden.  Jedes zweite Maximum auf dem Schirm ist heller als
+seine Nachbarn. Dies kommt durch die Überlagerung der beiden
+Beugungsbilder zu Stande. Alle Punkte auf dem Schirm werden vom groben
+Gitter beleuchtet, jedoch nur jeder zweite auch vom schmalen, da nach
+Gl. \eqref{eq:6} der Abstand zweier Maxima für kleinere
+Gitterkonstanten g größer wird, in diesem Fall genau doppelt so groß,
+wie beim anderen Gitter.
+
+Zur Berechnung der Gitterkonstanten mit Gl. \eqref{eq:6} ist Kenntnis
+des Abstandes $\xi$ der Maxima in der Beugungsfigur nötig, zu dessen
+Berechnung wiederum die Vergrößerung $V$ der Projektionslinse gebraucht
+wird.
+
+Wir messen die Bildweite $b_P = 988mm$ der Projektionslinse analog zu
+\ref{sec:MikroskopAusZweiLinsen} und bestimmen die Vergrößerung mit
+Gl. \eqref{eq:4}. Die Genauigkeit schätzen wir wieder auf $\Delta b_p
+= 5mm$. Damit beträgt der Größtfehler:
+
+\[ \Delta V = \frac{1}{f_P} \cdot \Delta b_P \]
+
+Wir erhalten als Ergebnis:
+
+\[ V = 18.7 \pm 0.1 \]
+
+Um die Bildgröße zu bestimmen messen wir vom linken Maximum 2. Ordnung
+zum rechten Maximum 2. Ordnung ( bezogen auf die Maxima des groben
+Gitters ) den Wert $B = 18mm$. Wir nehmen hier aufgrund der
+schwierigen Messverhältnisse mit Lineal eine Genauigkeit von $\Delta B
+= 1mm$ an. Wir haben also $n = 4$ Abstände gemessen. Damit lässt sich
+schließlich $\xi$ ermitteln:
+
+\[ \xi = \frac{B}{n \cdot V} \]
+
+Der Größtfehler beträgt:
+
+\[ \Delta \xi = \frac{1}{n \cdot V} \cdot \Delta B + \frac{B}{n \cdot
+  V^2} \cdot \Delta V \]
+
+Als Ergebnis für das grobe Gitter erhalten wir:
+
+\[ \xi_g = 0.24mm \pm 0.03 \]
+
+Der Wert des schmalen Gitters ist doppelt so groß:
+
+\[ \xi_s = 0.48mm \pm 0.03 \]
+
+Mit Gl. \eqref{eq:6} lässt sich nun die Gitterkonstante berechnen:
+
+\[ g = \frac{f_O \cdot \lambda}{\xi} \]
+
+Mit dem Größtfehler:
+
+\[ \Delta g = \frac{f_O \cdot \lambda}{\xi^2} \cdot \Delta \xi \]
+
+Wir nehmen an, dass die Angaben für die Wellenlänge des Lasers und die
+Brennweite der Objektivlinse fehlerfrei sind.
+
 \subsubsection{Ergebnis}
 
 \subsection{Veränderungen am Beugungsmuster}
-Im Folgenden soll das Bild  durch Manipulation des Beugungsmusters das
+Im Folgenden soll das Bild  durch Manipulation des Beugungsmusters das0.006\
 verändert werden.  Zunächst stellen wir die Spaltblende in die
 Brennebene der Objektivlinse.  Den Spalt stellen wir erst einmal auf maximale
 Größe um den Aufbau entsprechend zu justieren, sodass die
