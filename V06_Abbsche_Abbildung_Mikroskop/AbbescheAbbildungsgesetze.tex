@@ -91,6 +91,64 @@ Theorie der Bildentstehung durch Beugung zu Grunde:
   \label{fig: Grundgedanke}%
 \end{figure}
 
+\newpage
+
+In den nun folgenden Versuchen wird der in Abb. \ref{fig: Aufbau}
+dargestellte Aufbau verwendet.  Das Linsensystem funktioniert im
+Prinzip wie ein Mikroskop. Ein Unterschied besteht in der Tatsache,
+dass direkt ein reales Bild auf den Schirm abgebildet wird, und kein
+virtuelles Bild entsteht. Um alle Versuche durchführen zu können muss
+zunächst die Vergrößerung des Linsensystems gemessen werden. Dazu
+werden die in Abb. \ref{fig: Aufbau} gestrichelt dargestellten
+Komponenten Laser, L1 und L2 zunächst weggelassen.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=75mm]{pics/Aufbau}
+  \caption{Schematische Darstellung des Versuchsaufbaus.}%
+  \label{fig: Aufbau}%
+\end{figure}
+
+Die einfachste Methode ist das direkte Messen der \textit{Bildgröße B} und
+der \textit{Gegenstandsgröße G}.
+
+\begin{equation}
+  \label{eq:1}
+  V_1 = \frac{B}{G}
+\end{equation}
+
+Die Gesamtvergrößerung ergibt sich aus dem Produkt der Vergrößerungen
+von Objektiv und Projektionslinse.
+
+\begin{equation}
+  \label{eq:2}
+  V_2 = V_O \cdot V_P
+\end{equation}
+Sei $g_O$ der Abstand vom Objekt zum Objektiv, $b_O$ der Abstand vom
+Objektiv zur Brennebene, $g_P$ der Abstand von der Brennebene zur
+Projektionslinse und $b_O$ der Abstand von der Projektionslinse zum
+Schirm. Die Größen $b_O$ und $g_P$ sind nur schwer zu messen, da die
+exakte Position der Brennebene nicht hinreichend genau bestimmt werden
+kann. Es empfiehlt sich daher diese Größen zu eliminieren. Mit den
+Linsenformeln $\frac{1}{f} = \frac{1}{b} + \frac{1}{g}$ und
+$\frac{B}{G} = \frac{b}{g}$ ist dies leicht möglich.
+
+\begin{equation}
+  \label{eq:3}
+  V_{O}= \frac{f_{O}}{g_{O}-f_{O}}
+\end{equation}
+
+\begin{equation}
+  \label{eq:4}
+  V_P = \frac{b_P - f_P}{f_P}
+\end{equation}
+Durch Einsetzen in Gleichung \eqref{eq:2} erhält man die
+Gesamtvergrößerung.
+
+\begin{equation}
+  \label{eq:5}
+  V_G =   \frac{f_{O}}{g_{O}-f_{O}} \cdot \frac{b_P - f_P}{f_P}
+\end{equation}
 
 
 \section{Mikroskop aus zwei Linsen}
@@ -113,7 +171,6 @@ dem Schirm sehen zu können.  Im oberen Bildbereich ist das breite
 Gitter zu sehen, im unteren das schmale Gitter.
 
 \subsubsection{Verwendung der 0. Ordnung allein}
-% TODO: Bilder einfügen.
 
 Das reale Bild zeigt einen gleichmäßig ausgeleuchteten Schirm.  Nach
 Abbes verhalten sich die Beugungsmaxima wie Punktlichtquellen, aus
