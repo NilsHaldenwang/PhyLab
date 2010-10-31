@@ -11,6 +11,7 @@
 %\usepackage{babel}
 \usepackage{blindtext}
 %\usepackage{showframe}
+\usepackage{calc}
 \usepackage{wrapfig}
 \def\BILD{\rule{0.4\textwidth}{4cm}}
 
@@ -91,7 +92,6 @@ Theorie der Bildentstehung durch Beugung zu Grunde:
   \label{fig: Grundgedanke}%
 \end{figure}
 
-\newpage
 
 In den nun folgenden Versuchen wird der in Abb. \ref{fig: Aufbau}
 dargestellte Aufbau verwendet.  Das Linsensystem funktioniert im
@@ -150,8 +150,42 @@ Gesamtvergrößerung.
   V_G =   \frac{f_{O}}{g_{O}-f_{O}} \cdot \frac{b_P - f_P}{f_P}
 \end{equation}
 
+Die noch zu messenden Größen sind also die Gegenstandsweite $g_O$ des
+Objektives und die Bildweite $b_P$ der Projektionslinse.
+
+\begin{wrapfigure}{R}{5cm}
+  \noindent\begin{centering}
+    \includegraphics[width=4cm]{pics/2-002}
+  \par\end{centering}
+  \caption{Beugung und Abbildung eines Gitters}
+  \label{fig: AufbauBeugung}
+\end{wrapfigure}%
+
+Für die Untersuchung der Beugungseffekte mittels des Lasers und eines
+Gitters als Objekt ist es notwendig den Abstand $\xi$ von zwei
+benachbarten Maxima im Beugungsmuster innerhalb der Brennebene zu
+kennen. Das Gitter habe die Gitterkonstante $g$. Das gebeugte
+Laserlicht der Wellenlänge $\lambda$ wird durch die Linse mit der
+Brennweite $f$ in den Brennpunkten $M_n$ fokussiert. Es sei $\alpha$
+der Winkel eines Strahlenbündels zur optischen Achse und $n
+=0;\pm1;\pm2;...$ die Ordnung des jeweiligen Beugungsmaximums. Mittels
+$n \cdot \lambda = g \sin{\alpha_n}$ und der Kleinwinkelnäherung
+erhält man:
+
+\begin{equation}
+  \label{eq:6}
+  \xi = \frac{\lambda \cdot f}{g}
+\end{equation}
+
+Eine graphische Veranschaulichung findet sich in Abb. \ref{fig:
+  AufbauBeugung}.
+
+\clearpage
 
 \section{Mikroskop aus zwei Linsen}
+
+Der Aufbaue entspricht Abb. \ref{fig: Aufbau} ohne die gestrichelt
+dargestellten Komponenten.
 
 \section{Untersuchung der Diffraktionsplatte}
 \subsection{Messung der Gitterkonstante}
