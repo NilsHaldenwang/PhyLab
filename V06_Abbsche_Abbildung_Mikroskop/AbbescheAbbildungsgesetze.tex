@@ -195,7 +195,7 @@ großen Abstand, um den Fehler so gering wie möglich zu halten. Da die
 Markierungen des Lineals im Bild nach außen zunehmend unschärfer
 werden, messen wir mit einem Lineal über vier Markierungen hinweg eine
 Strecke von $B = 131 mm$. Wir schätzen den Messfehler aufgrund der
-dennoch etwas unscharfen Kannten im Bild auf ca. $\Delta B = \pm 2mm$.
+dennoch etwas unscharfen Kanten im Bild auf ca. $\Delta B = \pm 2mm$.
 Die Gegenstandsgröße von $4 mm$ auf dem Lineal nehmen wir als fehlerfrei
 an.
 Der Größtfehler ergibt sich damit aus Gl. \eqref{eq:1}zu:
@@ -204,20 +204,22 @@ Der Größtfehler ergibt sich damit aus Gl. \eqref{eq:1}zu:
   \Delta V_1 = \frac{1}{G} \Delta B
 \end{equation}
 Nun bestimmen wir die Vergrößerung nochmals mit Gl. \eqref{eq:5}. Da
-alle Komponenten auf der optischen Bank justiert sind, können wir deren
-Position direkt ablesen und die Abstände durch Bildung entsprechender
-Differenzen errechnen. Problematisch an dieser Methode ist nur, dass
-man zwar die Position des Reiters ablesen kann, die exakte Position
-der Linsenmitte aber nicht direkt zu bestimmen ist. Man kann aber
-annehmen, dass diese ungefähr bei der schrägen Kannte des Reiters
-liegt. Da zunächst die Differenzen der Reiterpositionen gebildet
-werden müssen und dann schließlich noch eine weitere Differenz nötig
-ist, um die Mittelstellung zu berücksichtigen veranschlagen wir hier
-jeweils $\pm 2mm$. Für das Ablesen der absoluten Positionen der Reiter
-nehmen wir einen Fehler in der Größenordnung der Skala an der
-optischen Bank von $\pm 1mm$ an. Wir schätzen hier also insgesamt
-einen Fehler von $\Delta g_O = \Delta b_P = \pm 5mm$ ab.
-Aus Gl. \eqref{eq:5} ergibt sich damit der Größtfehler zu:
+alle Komponenten auf der optischen Bank justiert sind, können wir
+deren Position direkt ablesen und die Abstände durch Bildung
+entsprechender Differenzen errechnen. Problematisch an dieser Methode
+ist nur, dass man zwar die Position des Reiters ablesen kann, die
+exakte Position der Linsenmitte aber nicht direkt zu bestimmen ist.
+Man kann aber annehmen, dass diese ungefähr bei der schrägen Kannte
+des Reiters liegt. Wir messen für $g_O = 148mm$ und für $b_P =763mm$.
+Da zunächst die Differenzen der Reiterpositionen gebildet werden
+müssen und dann schließlich noch eine weitere Differenz nötig ist, um
+die Mittelstellung zu berücksichtigen, veranschlagen wir hier jeweils
+$\pm 2mm$. Für das Ablesen der absoluten Positionen der Reiter nehmen
+wir einen Fehler in der Größenordnung der Skala an der optischen Bank
+von $\pm 1mm$ an. Wir schätzen hier also insgesamt einen Fehler von
+$\Delta g_O = \Delta b_P = \pm 5mm$ ab. Die Brennweiten $f_O = 100mm$
+und $f_P = 50mm$ nehmen wir als fehlerfrei an. Aus Gl. \eqref{eq:5} ergibt
+sich damit der Größtfehler zu:
 
 \begin{equation}
   \Delta V_2 = \frac{f_O}{(g_O - f_O)^2} \cdot \frac{b_P - f_P}{f_P} \cdot
@@ -317,7 +319,7 @@ Gl. \eqref{eq:6} der Abstand zweier Maxima für kleinere
 Gitterkonstanten g größer wird, in diesem Fall genau doppelt so groß,
 wie beim anderen Gitter.
 
-Zur Berechnung der Gitterkonstanten mit Gl. \eqref{eq:6} ist Kenntnis
+Zur Berechnung der Gitterkonstanten mit Gl. \eqref{eq:6} ist die Kenntnis
 des Abstandes $\xi$ der Maxima in der Beugungsfigur nötig, zu dessen
 Berechnung wiederum die Vergrößerung $V$ der Projektionslinse gebraucht
 wird.
@@ -333,7 +335,7 @@ Wir erhalten als Ergebnis:
 
 \[ V = 18.7 \pm 0.1 \]
 
-Um die Bildgröße zu bestimmen messen wir vom linken Maximum 2. Ordnung
+Um die Bildgröße zu bestimmen, messen wir vom linken Maximum 2. Ordnung
 zum rechten Maximum 2. Ordnung ( bezogen auf die Maxima des groben
 Gitters ) den Wert $B = 18mm$. Wir nehmen hier aufgrund der
 schwierigen Messverhältnisse mit Lineal eine Genauigkeit von $\Delta B
@@ -368,8 +370,24 @@ Brennweite der Objektivlinse fehlerfrei sind.
 
 \subsubsection{Ergebnis}
 
+In der nachstehenden Tabelle  sind die Ergebnisse der Messungen
+aufgeführt.
+
+\begin{table}[htb!]
+  %\centering
+  \begin{tabular}{l|c|c}
+    & Grob & Schmal \\
+    \hline
+    reales Bild & $g = 0.199mm \pm 0.008mm$ &  $g = 0.099mm \pm 0.004mm $\\
+    Beugungsbild & $g = 0.22mm \pm 0.03mm$ & $g = 0.11mm \pm 0.03mm $ \\
+  \end{tabular}
+\caption{Messergebnisse der Gitterkonstanten}
+\end{table}
+
+Erfreulicher Weise stimmen diese im Rahmen ihrer Genauigkeit überein.
+
 \subsection{Veränderungen am Beugungsmuster}
-Im Folgenden soll das Bild  durch Manipulation des Beugungsmusters das0.006\
+Im Folgenden soll das Bild  durch Manipulation des Beugungsmusters
 verändert werden.  Zunächst stellen wir die Spaltblende in die
 Brennebene der Objektivlinse.  Den Spalt stellen wir erst einmal auf maximale
 Größe um den Aufbau entsprechend zu justieren, sodass die
@@ -415,7 +433,7 @@ Schirm.
 
 \subsection{Untersuchungen mit dem Kreuzgitter}
 
-Die Diffraktionsplatte wird durch ein kreuzgitter ersetzt und die
+Die Diffraktionsplatte wird durch ein Kreuzgitter ersetzt und die
 Dreifach-Spaltblende durch einen einstellbaren, drehbaren Spalt.
 Zunächst wird die Spaltbreite auf ihren maximalen Wert eingestellt und
 dann sukzessive verkleinert. Wir beobachten dabei das reale Bild des
@@ -424,13 +442,13 @@ entsprechende Verschiebung der Projektionslinse.
 
 \subsubsection{Vertikale Stellung des Spalts}
 
-Es ist zu beobachten, dass die  vertikalen Linien des Bildes immer
+Es ist zu beobachten, dass die vertikalen Linien des Bildes immer
 stärker verblassen bis sie schließlich nicht mehr sichtbar sind und
 man nur noch die waagerechten Linien erkennen kann. Die nicht
 ausgeblendeten verbliebenen Maxima sind vertikal in einer Reihe
-angeordnet. Es ist also kein Maximum der vertikalen Gitterlinien mehr
-beteiligt, somit kann von ihnen auch kein Bild mehr auf dem Schirm
-entstehen.
+angeordnet. Es ist also außer dem 0. Maximum kein weiteres Maximum der
+vertikalen Gitterlinien mehr beteiligt, somit kann von ihnen auch kein
+Bild mehr auf dem Schirm entstehen.
 
 \subsubsection{Horizontale Stellung des Spalts}
 
@@ -458,4 +476,8 @@ unterscheiden sich von den vertikalen oder senkrechten um den Faktor $\sqrt{2}$.
 
 \section{Fazit}
 
+Die Experimente konnten die Abbe'schen Vermutungen hinreichend
+bestätigen. Es war sehr interessant zu sehen, welche Effekte sich
+durch Ausblenden von Beugungsmaxima mit verhältnismäßig einfachen
+Mitteln erreichen lassen.
 \end{document}
