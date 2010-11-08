@@ -102,14 +102,16 @@ Alle verwendeten Symbole werden in der folgenden Tabelle \ref{tab:
 \begin{table}[htb!]
 \begin{tabular}{| l | r | l | l |}
 \hline
-Variable 				& Wert 							& Einheit 					& Beschreibung \\ \hline
-d 							        & 0,00767 					& m 								& Abstand der Kondensatorplatten \\
-$\rho_{"Ol}$ 		                                        & $886$ 						& $\frac{kg}{m^3}$	& Dichte vom Öl \\
-$\eta$	                                                        & 			$1.8360\cdot 10^{-5}$& $\frac{Ns}{m^2}$	& Viskosität in Luft bei 23°C (siehe Anhang Skript) \\
-b								& $8,2\cdot10^{-3}$ & $Pa\;m$						& empirische Konstante \\
-p 							        & 									& Pa 								& Luftdruck\\
-$v_{\downarrow}$                                                & 									& $\frac{m}{s}$			& Sinkgeschwindigkeit ohne Feld\\
-$v_{\uparrow}$	                                                & 									& $\frac{m}{s}$			& Steiggeschwindigkeit mit Feld\\
+Variable 		& Wert 					& Einheit 			& Beschreibung \\ \hline
+d 	   & 0,00767 		& m 				& Abstand der Kondensatorplatten \\
+$\rho_{"Ol}$ 		& $886$ 		& $\frac{kg}{m^3}$	& Dichte vom Öl \\
+$\Omega$ &2,183&$M\Omega$& Widerstand am Thermisator \\
+		T & $\approx 22$&°C & Temperatur in der Messkammer		\\
+$\eta$	 & 			$1.8360\cdot 10^{-5}$& $\frac{Ns}{m^2}$	& Viskosität in Luft bei 23°C (siehe Anhang Skript) \\
+b	& $8,2\cdot10^{-3}$ & $Pa\;m$					& empirische Konstante \\
+p & 	$\approx101.325		$				& Pa 								& Luftdruck\\
+$v_{\downarrow}$  & 		& $\frac{m}{s}$			& Sinkgeschwindigkeit ohne Feld\\
+$v_{\uparrow}$	   & 					& $\frac{m}{s}$			& Steiggeschwindigkeit mit Feld\\
 U								&$\approx 350$ 			& $V$ 							& Kondensatorspannung\\
 g								& $9,81$ 						& $ \frac{m}{s^2}$	& Erdbeschleunigung \\
 \hline
@@ -185,7 +187,45 @@ Geschwindigkeiten der Öltröpfchen, da der Abstand von zwei dicken
 waagerechten Linien auf dem Bildschirm genau 0.5mm beträgt. Das Bild
 wird damit um mehr als 10.000 mal vergrößert. Zuletzt werden durch
 einen Zerstäuber Öltröpfchen zwischen die Kondensatorplatte gesprüht.
+\section{Messungen und Auswertung}
+Bei diesem Versuch werden drei verschiedene Zeiten für ein Öltröpfchen gemessen. Erstens wird die Fallzeit ohne dem elektrischen Feld gemessen. Dann werden die Steigzeit und die Fallzeit mit dem elektrischem Feld gemessen. Das heißt, dass das elektrische Feld für die letzten beiden Messungen der Zeiten umgepolt wird. Die Messung einer dieser drei Zeiten für ein Öltropfen sollte mindestens 5 mal wiederholt werden,da man durch Mittelung ein wahrscheinlich besseres Ergebnis erhält. Die Zeiten werden mit einer Stoppuhr gemessen.Bei den Messungen ergaben sich uns einige Probleme. Es sollten Öltröpfchen mit einer Fallgeschwindigkeit von ca. $(16\pm2)\frac{m}{s}$ gefunden werden. Diese sollten zudem geladen sein bzw. durch das Thoriumpräparat ionisiert werden. Dies stellte sich als äußerst schwierig heraus,da u.a. das Thoriumpräparat die Öltröpfchen ohne Ladung nicht ionisiert und auf der anderen Seite unsere wenigen gefundenen Öltröpfchen auch noch entlud. Die gefundenen Öltröpfchen, die die Voraussetzungen erfüllten, sind leider irgendwann aus dem Bild verschwunden. Auch eine Korrektur bei der Ausrichtung der Messplattform half bei diesem Problem nicht, sodass wir nur für wenige Öltröpfchen die drei verschiedenen Zeiten messen, wobei jedoch nicht für alle Zeiten auch 5 mal gemessen werden konnte. So konnte das Ziel, viele Ladungsstufen zu finden nicht erreicht werden. Bei der Messung der Zeiten nehmen wir einen Fehler von 0,5 s an. Die Messergebnisse sind in Tabelle \ref{tab:Messergebnisse} dargestellt.
+\vspace{\baselineskip}
 
-
+\begin{table}[htb!]%
+	\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l}
+		\multicolumn{3}{l|}{Öltröpfchen Nr. 1} & \multicolumn{3}{l|}{2}& \multicolumn{3}{l|}{3}& \multicolumn{3}{l}{4}\\
+		\hline
+		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ &$t_{\downarrow o}$ & 			  
+		$t_{\uparrow m}$& $t_{\downarrow m}$ &
+ 		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ &
+		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ \\
+		\hline
+		17,7 &2,5&1,9&15,6&3,6&3,0&12,9&13,3&4,7&15,4&12,1&4,1\\
+		17,6&2,7&1,9&12,9&3,5&2,4&12,9&12,1&4,5&12,8&12,3&4,4\\
+		17,6&2,7&1,9&14,4&&2,5&13,4&12,1&4,4&13,2&12,6&4,1\\
+		16,5&2,8&&16,3&&&14,3&12,4&4,3&14,0&12,7&4,4\\
+		15,5&2,4&&14,3&&&13,5&12,1&4,4&12,5&&4,4\\
+		\hline
+		$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$\\
+		\hline
+		17,0&2,6&1,9&14,7&3,6&2,6&13,4&12,4&4,5&13,6&12,4&4,3
+		
+	\end{tabular}
+	\caption{Messergebnisse (t in s)}
+	\label{tab:Messergebnisse}
+\end{table} 
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+Unsere Ergebnisse sind in Bild \ref{fig:Histo} dargestellt.
+\vspace{\baselineskip}
+\begin{figure}[htb!]%
+\includegraphics[width=12cm]{pics/Histo}%
+\caption{Messergebnisse dargestellt in einem Histogramm}%
+\label{fig:Histo}%
+\end{figure} 
+\vspace{\baselineskip}
+Da nur 4 Ergebnisse vorliegen, wobei eine Ladung 2 Mal vorkommt, ist es schwer das Histogramm sinnvoll auszuwerten. Bei dieser kleinen Anzahl kann man ohne das Wissen, dass $\emph{e}_{Literatur}\approx1,602\cdot10^\left(-19\right)$ ist, nicht behaupten, wo genau die Elementarladungen vorzufinden sein sollten. Bei der Bildung von Differenzen erhalten wir auch nur einmal ungefähr ein Vielfaches von $\emph{e}$, nämlich ca. 2$\emph{e}$. Durch die Größtfehlerrechnung ist uns aufgefallen, dass die Berechnung der Ladung nach Gleichung \ref{eq:1} schon bei der ersten Stelle hinter dem Komma ungenau ist. Zudem wird der Fehler größer, wenn die Ladung größer wird. Daher sollte man wahrscheinlich auch die Öltröpfchen verwerfen, die eine Ladung von mehr als 5$\emph{e}$ haben. Hätten wir viele Messungen machen können, hätte man wahrscheinlich eine Verteilung der Ladungen gefunden und man sähe an bestimmten Stellen Maxima, die genau ein Vielfaches von $\emph{e}$ gewesen wären.
 \end{document}
+
+
 
