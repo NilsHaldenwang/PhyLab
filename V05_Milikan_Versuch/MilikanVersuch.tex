@@ -78,29 +78,64 @@ die Kräfte sind schematisch in Abb. \ref{fig: Kraefte} dargestellt.
 
 \begin{figure}%[htb!]
 \centering
-\includegraphics[width=12cm]{pics/SchemaAufbau}%
+\includegraphics[width=8cm]{pics/SchemaAufbau}%
 \caption{Schematischer Aufbau des Versuchs mit den wirkenden Kräften.}%
 \label{fig: Kraefte}%
 \end{figure}
 
-\section{Dimensionsanalyse}
-Wir wollen vor dem Versuch überprüfen, ob Gleichung 11 aus der
-Versuchsanleitung tatsächlich die korrekte Dimension aufweist. Auf der
-linken Seite der Gleichung steht lediglich eine Ladung, deren Einheit
-bekanntlich Coulomb ist. Auf der rechten Seite gelingt es hingegen nicht
-mit einem Blick auf selbige Einheit zu schließen. Daher wird
-dieser Term im Folgenden einer detaillierteren Analyse unterzogen.
+Mit Hilfe einer Korrektur des Stoke'schen Reibungsgesetzes erhält man
+die in der Anleitung angegebene Formel für ein die Ladung $q$
+tragendes Öltröpfchen mit der Fallgeschwindigkeit $v_{\downarrow}$ ohne
+Feld und der Steiggeschwindigkeit $v_{\uparrow}$ bei eingestellter
+Spannung U.
+
 \begin{equation}
 q=\frac{4\pi g\rho_{\text{Ö}l}}{3}\left(\sqrt{\left(\frac{b}{2p}\right)^{2}+\frac{9\eta v_{\downarrow}}{2\rho_{\text{Ö}l}g}}-\frac{b}{2p}\right)^{3}\frac{\left(v_{\downarrow}+v_{\uparrow}\right)}{v_{\downarrow}}\frac{d}{U}
 \label{eq:1}
 \end{equation}
+
+Alle verwendeten Symbole werden in der folgenden Tabelle \ref{tab:
+  Konstanten}  kurz erläutert.
+
+\vspace{5mm}
+
+\begin{table}[htb!]
+\begin{tabular}{| l | r | l | l |}
+\hline
+Variable 				& Wert 							& Einheit 					& Beschreibung \\ \hline
+d 							        & 0,00767 					& m 								& Abstand der Kondensatorplatten \\
+$\rho_{"Ol}$ 		                                        & $886$ 						& $\frac{kg}{m^3}$	& Dichte vom Öl \\
+$\eta$	                                                        & 			$1.8360\cdot 10^{-5}$& $\frac{Ns}{m^2}$	& Viskosität in Luft bei 23°C (siehe Anhang Skript) \\
+b								& $8,2\cdot10^{-3}$ & $Pa\;m$						& empirische Konstante \\
+p 							        & 									& Pa 								& Luftdruck\\
+$v_{\downarrow}$                                                & 									& $\frac{m}{s}$			& Sinkgeschwindigkeit ohne Feld\\
+$v_{\uparrow}$	                                                & 									& $\frac{m}{s}$			& Steiggeschwindigkeit mit Feld\\
+U								&$\approx 350$ 			& $V$ 							& Kondensatorspannung\\
+g								& $9,81$ 						& $ \frac{m}{s^2}$	& Erdbeschleunigung \\
+\hline
+\end{tabular}
+\caption{In Gleichung \eqref{eq:1} verwendete Symbole.}
+\label{tab: Konstanten}
+\end{table}
+
+
+
+\section{Dimensionsanalyse}
+Wir wollen vor dem Versuch überprüfen, ob Gleichung \eqref{eq:1}
+tatsächlich die korrekte Dimension aufweist. Auf der linken Seite der
+Gleichung steht lediglich eine Ladung, deren Einheit bekanntlich
+Coulomb ist. Auf der rechten Seite gelingt es hingegen nicht mit einem
+Blick auf selbige Einheit zu schließen. Daher wird dieser Term im
+Folgenden einer detaillierteren Analyse unterzogen.
+
 \[\left[\frac{4\pi g\rho_{\text{Ö}l}}{3}\right]\left(\sqrt{\left[\left(\frac{b}{2p}\right)^{2}\right]+\left[\frac{9\eta v_{\downarrow}}{2\rho_{\text{Ö}l}g}\right]}-\left[\frac{b}{2p}\right]\right)^{3}\left[\frac{\left(v_{\downarrow}+v_{\uparrow}\right)}{v_{\downarrow}}\right]\left[\frac{d}{U}\right]\]
 \[=\frac{kg \cdot m}{s^2 \cdot m^3}
 \left(\sqrt{\frac{Pa^2 \cdot m^2}{Pa^2}+\frac{kg \cdot m^4 \cdot
       s^2}{kg \cdot m^2 \cdot
       s^2}}+\frac{Pa \cdot m}{Pa}\right)^3 \frac{m}{s}\frac{s}{m}
 \frac{m}{V}=\frac{kg \cdot m}{s^2 \cdot m^3}m^3\frac{As^3m}{kg \cdot m^2}=As=C\]
-Die Einheiten stimmen ,wie erwartet, überein.
+
+Wie erwartet stimmen die Einheiten überein.
 
 \section{Einrichten der Messanordnung}
 Der Versuch geschieht auf einer Messplattform, die in der Höher und
