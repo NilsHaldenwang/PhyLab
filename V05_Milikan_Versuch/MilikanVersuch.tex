@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \documentclass{scrartcl}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
@@ -289,3 +290,248 @@ sein, die uns leider nicht gegeben war.
 
 
 
+=======
+\documentclass{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{icomma}
+%\usepackage[dvips]{graphicx}
+%\usepackage{floatflt}
+%\usepackage{enumitem}
+%\usepackage{babel}
+\usepackage{blindtext}
+%\usepackage{showframe}
+\usepackage{calc}
+\usepackage{wrapfig}
+\def\BILD{\rule{0.4\textwidth}{4cm}}
+
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{url}
+
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+\setlength{\intextsep}{0cm plus1cm minus1cm}
+\pdfminorversion = 5
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document}
+\title{Versuch 5: Millikan-Versuch}
+
+
+\date{01.11.2010}
+
+
+\author{Gruppe 5a: Gia-Danh Lam, Nils Haldenwang}
+
+\maketitle
+\tableofcontents
+
+\section{Einleitung}
+Elektrische Ladungen treten nur in gequantelten Werten als Vielfache
+$n \cdot e$ der Elementarladung $e$ auf mit $ n \in \mathbb{Z}$. Im
+Jahr 1910 gelang es Robert Andrews Millikan die Elementarladung $e$
+relativ genau zu bestimmen, er erhielt $ e = 1.592 \cdot 10^{-19}C$
+und daf�r sp�ter auch einen Nobelpreis. Nach heutigem Kenntnisstand
+betr�gt der Wert $ e = 1,602 176 487 (40) \cdot 10^{-19} C$. Millikan
+ist nicht der alleinige Erfinder des nach ihm benannten Versuches, er
+griff auf vorherige Arbeiten von Harold Albert Wilson und Joseph John
+Thomson zur�ck und verbesserte diese ma�geblich.
+
+Zum Messen der Elementarladung werden �ltr�pfchen in einen
+Kondensator, dessen Feld parallel zum Gravitationsfeld der Erde
+ausgerichtet ist gebracht. Die untersuchten Tr�pfchen tragen nur einige wenige
+Elementarladungen. Legt man keine Spannung an den Kondensator an, so
+fallen die Tropfen mit einer konstanten Geschwindigkeit nach unten. Da
+sie also offenbar nicht mehr beschleunigt werden, muss ein
+Gleichgewicht der wirkenden Kr�fte vorliegen. Die wirkenden Kr�fte
+sind in diesem Fall die Schwerkraft $F_g$, die Auftriebskraft $F_a$ und die
+Reibungskraft $F_R$.
+
+Schaltet man nun den Kondensator ein, so kommt die elektrostatische
+Kraft $F_e$ des elektrischen Feldes auf das Tr�pfchen hinzu. Die
+Richtung von $F_e$ ist je nach Polung unterschiedlich und ist somit
+leicht umkehrbar. Nat�rlich �ndert sich mit der Bewegungsrichtung des
+Tr�pfchens auch die Richtung der Reibungskraft $F_R$. Der Aufbau und
+die Kr�fte sind schematisch in Abb. \ref{fig: Kraefte} dargestellt.
+
+\begin{figure}%[htb!]
+\centering
+\includegraphics[width=8cm]{pics/SchemaAufbau}%
+\caption{Schematischer Aufbau des Versuchs mit den wirkenden Kr�ften.}%
+\label{fig: Kraefte}%
+\end{figure}
+
+Mit Hilfe einer Korrektur des Stoke'schen Reibungsgesetzes erh�lt man
+die in der Anleitung angegebene Formel f�r ein die Ladung $q$
+tragendes �ltr�pfchen mit der Fallgeschwindigkeit $v_{\downarrow}$ ohne
+Feld und der Steiggeschwindigkeit $v_{\uparrow}$ bei eingestellter
+Spannung U.
+
+\begin{equation}
+q=\frac{4\pi g\rho_{\text{�}l}}{3}\left(\sqrt{\left(\frac{b}{2p}\right)^{2}+\frac{9\eta v_{\downarrow}}{2\rho_{\text{�}l}g}}-\frac{b}{2p}\right)^{3}\frac{\left(v_{\downarrow}+v_{\uparrow}\right)}{v_{\downarrow}}\frac{d}{U}
+\label{eq:1}
+\end{equation}
+
+Alle verwendeten Symbole werden in der folgenden Tabelle \ref{tab:
+  Konstanten}  kurz erl�utert.
+F�r die Vorbereitung sollte die Geschwingidkeit $v_{\uparrow}$ f�r q=2$\emph{e}$,3$\emph{e}$,4$\emph{e}$  ,$t_{\downarrow}=16s$ und mit den in der Tabelle 1 genannten Werten berechnet werden. Man erh�lt:
+\[v_{2e}\approx 65\cdot10^{-6} \frac{m}{s}  \]
+\[v_{3e}\approx 11.4\cdot10^{-5} \frac{m}{s}  \]
+\[v_{4e}\approx 16.2\cdot10^{-5} \frac{m}{s} \] 
+
+\vspace{5mm}
+
+\begin{table}[htb!]
+\begin{tabular}{| l | r | l | l |}
+\hline
+Variable 		& Wert 					& Einheit 			& Beschreibung \\ \hline
+d 	   & 0,00767 		& m 				& Abstand der Kondensatorplatten \\
+$\rho_{"Ol}$ 		& $886$ 		& $\frac{kg}{m^3}$	& Dichte vom �l \\
+$\Omega$ &2,183&$M\Omega$& Widerstand am Thermisator \\
+		T & $\approx 22$&�C & Temperatur in der Messkammer		\\
+$\eta$	 & 			$1.8360\cdot 10^{-5}$& $\frac{Ns}{m^2}$	& Viskosit�t in Luft bei 23�C (siehe Anhang Skript) \\
+b	& $8,2\cdot10^{-3}$ & $Pa\;m$					& empirische Konstante \\
+p & 	$\approx101.325		$				& Pa 								& Luftdruck\\
+$v_{\downarrow}$  & 		& $\frac{m}{s}$			& Sinkgeschwindigkeit ohne Feld\\
+$v_{\uparrow}$	   & 					& $\frac{m}{s}$			& Steiggeschwindigkeit mit Feld\\
+U								&$\approx 350$ 			& $V$ 							& Kondensatorspannung\\
+g								& $9,81$ 						& $ \frac{m}{s^2}$	& Erdbeschleunigung \\
+\hline
+\end{tabular}
+\caption{In Gleichung \eqref{eq:1} verwendete Symbole.}
+\label{tab: Konstanten}
+\end{table}
+
+
+
+\section{Dimensionsanalyse}
+Wir wollen vor dem Versuch �berpr�fen, ob Gleichung \eqref{eq:1}
+tats�chlich die korrekte Dimension aufweist. Auf der linken Seite der
+Gleichung steht lediglich eine Ladung, deren Einheit bekanntlich
+Coulomb ist. Auf der rechten Seite gelingt es hingegen nicht mit einem
+Blick auf selbige Einheit zu schlie�en. Daher wird dieser Term im
+Folgenden einer detaillierteren Analyse unterzogen.
+
+\[\left[\frac{4\pi g\rho_{\text{�}l}}{3}\right]\left(\sqrt{\left[\left(\frac{b}{2p}\right)^{2}\right]+\left[\frac{9\eta v_{\downarrow}}{2\rho_{\text{�}l}g}\right]}-\left[\frac{b}{2p}\right]\right)^{3}\left[\frac{\left(v_{\downarrow}+v_{\uparrow}\right)}{v_{\downarrow}}\right]\left[\frac{d}{U}\right]\]
+\[=\frac{kg \cdot m}{s^2 \cdot m^3}
+\left(\sqrt{\frac{Pa^2 \cdot m^2}{Pa^2}+\frac{kg \cdot m^4 \cdot
+      s^2}{kg \cdot m^2 \cdot
+      s^2}}+\frac{Pa \cdot m}{Pa}\right)^3 \frac{m}{s}\frac{s}{m}
+\frac{m}{V}=\frac{kg \cdot m}{s^2 \cdot m^3}m^3\frac{As^3m}{kg \cdot m^2}=As=C\]
+
+Wie erwartet stimmen die Einheiten �berein.
+
+\section{Einrichten der Messanordnung}
+Der Versuch geschieht auf einer Messplattform, die in der H�her und
+Ausrichtung ver�ndert werden kann. Auf dieser befinden sich eine
+Lampe, die die Messkammer ausleuchtet, eine Libelle, um die
+Messplattform m�glichst horizontal einzustellen, Anschl�sse f�r den
+Thermisator, welcher die Temperatur in der Messkammer misst und die
+Messkammer mit einem eingebautem Mikroskop zur Beobachtung der in der
+Messkammer zu findenden �ltr�pfchen. An ihr ist ein Drehhebel
+angebracht, den man auf die Stellung "`on"' ,"`off"' und auf den
+"`spray droplet position"' drehen kann. Hierbei wird bei "`off"' der
+Raum zwischen den beiden Kondensatoren vollkommen geschlossen, bei der
+"`spray droplet position"' wird das Loch des Plastikstiftes "`droplet
+hole cover"' ge�ffnet und bei "`on"' wird die Messkammer durch ein
+Thoriumpr�parat mit $\alpha$-Strahlung bestrahlt. Beobachtet wird der
+Versuch auf einem Bildschirm, welcher mit einer Kamera verbunden ist,
+die auf das Mikroskop gerichtet ist. Der Aufbau ist in Abb.
+\ref{fig:Messplattform} zu sehen. Der genaue Aufbau der Messkammer ist
+in Abb. \ref{fig:Messkammer} dargestellt. %\vspace{\baselineskip}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=9cm]{pics/Messplattform}
+	\caption{Seiten- und Aufsicht der Messplattform}
+	\label{fig:Messplattform}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=6cm]{pics/Messkammer}
+	\caption{Aufbau der Messkammer}
+	\label{fig:Messkammer}
+\end{figure}
+
+%\vspace{\baselineskip}
+Um ein gutes Bild auf dem Bildschirm sehen zu
+k�nnen muss sowohl das Mikroskop als auch die Kamera eingestellt
+werden. Zun�chst wird das Okular des Mikroskops so verschoben, dass
+das Bild des Gitter, welches sich in der Zwischenbildebene befindet,
+scharf wird. Das Objektiv muss auch verschoben werden. Hierzu wird
+kurz ein Draht durch das Loch in der oberen Kondensatorplatte in die
+Messkammer gehalten und dann wird durch Verstellen des Objektivs das
+Bild des Drahtes scharf gestellt. Nun wird noch die Kameraeinstellung
+so ver�ndert, dass das Bild des Gitters stark vergr��ert und m�glichst
+klar auf dem Bildschirm zu sehen ist. Dies dient zur Messung der
+Geschwindigkeiten der �ltr�pfchen, da der Abstand von zwei dicken
+waagerechten Linien auf dem Bildschirm genau 0.5mm betr�gt. Das Bild
+wird damit um mehr als 10.000 mal vergr��ert. Zuletzt werden durch
+einen Zerst�uber �ltr�pfchen zwischen die Kondensatorplatte gespr�ht.
+\section{Messungen und Auswertung}
+Bei diesem Versuch werden drei verschiedene Zeiten f�r ein �ltr�pfchen mit einer Stoppuhr gemessen. Erstens wird die Fallzeit ohne dem elektrischen Feld gemessen. Dann werden die Steigzeit und die Fallzeit mit dem elektrischem Feld gemessen. Das hei�t, dass das elektrische Feld f�r die letzten beiden Messungen der Zeiten umgepolt wird. Die Messung einer dieser drei Zeiten f�r ein �ltropfen sollte mindestens 5 mal wiederholt werden,da man durch Mittelung ein wahrscheinlich besseres Ergebnis erh�lt. Um zu erfahren
+Es sollten �ltr�pfchen mit einer Fallgzeit von ca. $(16\pm2){s}$ gefunden werden. Diese sollten zudem geladen sein bzw. durch das Thoriumpr�parat ionisiert werden. Dies stellte sich als �u�erst schwierig heraus,da u.a. das Thoriumpr�parat die �ltr�pfchen ohne Ladung nicht ionisiert und auf der anderen Seite unsere wenigen gefundenen �ltr�pfchen auch noch entladen hat. Die gefundenen �ltr�pfchen, die die Voraussetzungen erf�llten, sind leider irgendwann aus dem Bild verschwunden. Auch eine Korrektur bei der Ausrichtung der Messplattform half bei diesem Problem nicht, sodass wir nur f�r wenige �ltr�pfchen die drei verschiedenen Zeiten messen konnten, wobei jedoch nicht f�r alle Zeiten auch 5 mal gemessen werden konnte. Daher ist das Experiment insofern missgl�ckt,als dass wir nicht viele Ladungsstufen fanden. Bei der Messung der Zeiten nehmen wir einen Fehler von 0,5 s an. Die Messergebnisse sind in der Tabelle \ref{tab:Messergebnisse} dargestellt.
+\vspace{\baselineskip}
+
+\begin{table}[htb!]%
+	\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l}
+		\multicolumn{3}{l|}{�ltr�pfchen Nr. 1} & \multicolumn{3}{l|}{2}& \multicolumn{3}{l|}{3}& \multicolumn{3}{l}{4}\\
+		\hline
+		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ &$t_{\downarrow o}$ &
+		$t_{\uparrow m}$& $t_{\downarrow m}$ &
+ 		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ &
+		$t_{\downarrow o}$ & $t_{\uparrow m}$& $t_{\downarrow m}$ \\
+		\hline
+		17,7 &2,5&1,9&15,6&3,6&3,0&12,9&13,3&4,7&15,4&12,1&4,1\\
+		17,6&2,7&1,9&12,9&3,5&2,4&12,9&12,1&4,5&12,8&12,3&4,4\\
+		17,6&2,7&1,9&14,4&&2,5&13,4&12,1&4,4&13,2&12,6&4,1\\
+		16,5&2,8&&16,3&&&14,3&12,4&4,3&14,0&12,7&4,4\\
+		15,5&2,4&&14,3&&&13,5&12,1&4,4&12,5&&4,4\\
+		\hline
+		$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$ &$\overline{t_{\downarrow o}}$ & $\overline{t_{\uparrow m}}$& $\overline{t_{\downarrow m}}$\\
+		\hline
+		17,0&2,6&1,9&14,7&3,6&2,6&13,4&12,4&4,5&13,6&12,4&4,3
+
+	\end{tabular}
+	\caption{Messergebnisse (t in s)}
+	\label{tab:Messergebnisse}
+\end{table}
+\vspace{\baselineskip}
+Unsere Ergebnisse sind in Bild \ref{fig:Histo} dargestellt. Da nur 4 Ladunge vorliegen, wobei eine von ihnen 2 Mal vorkommt, ist es schwer das Histogramm sinnvoll auszuwerten. Bei dieser kleinen Anzahl kann man ohne das Wissen, dass $\emph{e}_{Literatur}\approx 1,602 \cdot 10^{-19}$ ist, nicht behaupten, wo genau die Elementarladungen vorzufinden sein sollten. Bei der Bildung von Differenzen erhalten wir auch nur einmal ungef�hr ein Vielfaches von $\emph{e}$, n�mlich ca. 2$\emph{e}$. 
+\begin{figure}[htb!]%
+\includegraphics[width=12cm]{pics/Histo}%
+\caption{Messergebnisse dargestellt in einem Histogramm}%
+\label{fig:Histo}%
+\end{figure}
+H�tten wir viele Messungen machen k�nnen, h�tte man wahrscheinlich eine Verteilung der Ladungen gefunden und man s�he an bestimmten Stellen Maxima, die genau ein Vielfaches von $\emph{e}$ gewesen w�ren. Man kann $\emph{e}$ aber auch anders berechnen. balblaklsen erh�lt viele Ladungen. Geht man davon aus, dass es eine Elementarladung gibt und alle gemessenen Ladungen ein Vielfaches von $\emph{e}$ sein m�ssen, kann mit einer linearer Regression, wobei man Ladungen ganzen Zahlen zuordnen muss, auch $\emph{e}$ bestimmt. Dieses wird in Grafik \ref{fig:ausw} dargestellt. Man sieht, dass bis 4 $\emph{e}$ die Punkte dicht bei der Gerade liegen. Bei unserem Ergebnis erh�lt man 1.51(7)C als Elementarladung. Leider stimmt dieser nicht innerhalb der Fehlergrenzen mit $\emph{e}_{Literatur}$ �berein.
+\begin{figure}%
+\includegraphics[width=15cm]{pics/ausw}%
+\caption{Berechnung der Elementarladung durch lineare Regression}%
+\label{fig:ausw}%
+\end{figure}
+Durch die Gr��tfehlerrechnung ist uns aufgefallen, die nicht aufgef�hrt wird, da der Term daf�r sehr lang ist, dass die Berechnung der Ladung nach Gleichung \ref{eq:1} schon bei der ersten Stelle hinter dem Komma ungenau ist. Die Fehlerbalken sieht man auch in der Grafik \ref{fig:ausw}. Zudem wird der Fehler gr��er, wenn die Ladung gr��er wird. Daher sollte man wahrscheinlich auch die �ltr�pfchen verwerfen, die eine Ladung von mehr als 5$\emph{e}$ haben.
+
+\section{Fazit}
+Es war interessant nachzuempfinden, wie die Suche nach der Elementarladung gewesen sein muss, wobei wir nat�rlich unter besseren Bedingungen experimentieren konnten. Es ist schade, dass wir leider keinen sch�nen Erfolg erzielen konnten, jedoch war es uns fast m�glich die Elementarladung zu bestimmen.
+ 
+\end{document}
+
+
+
+>>>>>>> 4b4502009e7458995374e79ac840a7e0f66fe2e9
