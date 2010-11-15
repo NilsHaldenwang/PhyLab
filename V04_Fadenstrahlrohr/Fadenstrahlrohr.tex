@@ -94,6 +94,32 @@ $T$ die Temperatur.
 
 \subsection{Elektronen im homogenen Magnetfeld}
 \label{sec:elektr-im-homog}
+Die Magnetfelder werden bei beiden Messungen mittels eines
+Helmholtzspulenpaares erzeugt. Diese Spulenanordnung wurde vom
+deutschen Physiker Hermann von Helmholtz entwickelt. Sie besteht aus
+zwei parallel auf gleicher Achse platzierten, dünnen Spulen mit dem
+Radius $R$. Durch die Überlagerung der Felder beider Spulen ergibt
+sich in der Nähe der Achse ein nahezu homogenes Feld, welches sich
+recht gut analytisch berechnen lässt:
+
+\begin{equation}
+B= K\cdot I_S= \mu_0\cdot \left(\frac{4}{5}\right)^{\frac{2}{3}}\frac{n\cdot I_S}{R}
+\label{eq: Magnetfeld}
+\end{equation}
+
+Dabei beschreibt $n$ die Anzahl der Windungen, $R$ den Radius der
+Spulen und $I_S$ den Spulenstrom.
+
+Tatsächlich ist aber auch in dieser Anordnung das Magnetfeld nicht
+absolut homogen. Die Inhomogenitäten hängen direkt vom Abstand $r$ der
+untersuchten Kreisbahn zur Achse der Spulen ab. Sie lassen sich mit
+folgender Formel in Abhängigkeit von $r$ berechnen:
+
+\begin{equation}
+B(r)= \frac{\mu_0 \cdot n\cdot I_S}{2}R^2\left[\left(R^2+\left(r+\frac{R}{2}\right)^2\right)^{-\frac{3}{2}}+\left(R^2+\left(r-\frac{R}{2}\right)^2\right)^{-\frac{3}{2}}\right]
+\label{eq: Inhomogen}
+\end{equation}
+
 
 \subsection{Elektronen im gekreuzten homogenen elektrischen und magnetischen Feld}
 \label{sec:elektr-im-gekr}
