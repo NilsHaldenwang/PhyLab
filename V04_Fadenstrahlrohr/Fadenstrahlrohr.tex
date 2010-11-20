@@ -195,22 +195,39 @@ bzw. Gleichung \eqref{eq: Inhomogen} berechnet.
 \section{Bestimmung von $\frac{e}{m}$ aus der Kreisbahn im Magnetfeld}
 \label{sec:best-von-frac}
 
-\subsection{Versuchsaufbau}
-\label{sec:versuchsaufbau}
+\subsection{Versuchsaufbau und Durchführung}
+\label{sec:versuchsaufbau und durchfuhrung}
 
 \begin{figure}[htb!]
   \centering
   \includegraphics[width=12cm]{pics/dummypic}
-  \caption{Schaltskizze des Versuchsaufbaus.}
+  \caption{Schaltskizze des Versuchsaufbaus}
   \label{fig:Schaltskizze-1}
 \end{figure}
 
-\subsection{Durchführung}
-\label{sec:durchfuhrung}
+In diesem Versuch werden Elektronen durch Helmholtzspulen mit einem Radius von 0,15 m innerhalb einer Glaskugel auf eine Kreisbahn gelenkt. Die Glaskugel ist bis auf einen Pascal evakuiert. Die Kathode (Glühdrat) befindet sich innerhalb des Wehneltzylinders, wodurch ein dünner Strahl erzeugt wird. In unserem Versuch beträgt die Wehneltspannung 21 V und die Heizspannung ca. 9 V. Die Skala zur Messung der Länge ist in 2 cm Schritten eingeteilt. Für diesen Versuch werden die Beschleunigungsspannung $U_a$ von 200 V bis 300 V in 20 V Schritten erhöht. Dabei soll zu jeder Beschleunigungsspannung durch das Magnetfeld der Helholtzspulen, das durch Änderung des Spulenstroms $I_s$, die Radien $r_1$=5cm, $r_2$=4cm, $r_3$=3.5 cm eingestellt werden. Die zu messenden Größen sind also $U_a$, $I_s$ und $r$.
+
+\subsection{Auswertung}
+\label{sec:auswertung}
+Mit der Gleichung \ref{eq:2} lässt sich durch Umfomung eine Geradengleichung aufstellen. Somit erhält man durch lineare Regression eine Steigung, die ungefähr $\frac{e}{2m}$ betragen sollte. Die Berechnung für das Magnetfeld $B$ erfolgte mit der Gleichung \ref{eq: Magnetfeld}. In der Abbildung \ref{fig:nurb1} ist die Beschleungigungsspannung $U_a$ über $\left(B \cdot r\right)^2$ aufgetragen. Man sieht hier die Messwerte mit den Fehlerbalken, die Geraden zu den Radien $r_{\left(i,i={1,2,3}\right)}$ und die zugeörigen Steigungen betragen : $m_1=85.5\cdot10^{-9} \frac{C}{kg}$ , $m_2=84.3\cdot10^{-9} \frac{C}{kg}$ , $m_3=83.4\cdot10^{-9} \frac{C}{kg}$  
+\vspace{\baselineskip}
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=14cm]{pics/nurb1}
+  \caption{Auswertung der Messungen}
+  \label{fig:nurb1}
+\end{figure}
+\vspace{\baselineskip}
+
+Wir nehmen die Fehler $\triangle r=1mm$ und $\triangle U_a=2V$ an. Diese resultieren aus der Dicke des Fadenstahls und der Ungenauigkeit beim Ablesen der Beschleunigungsspannung. Da der Strom $I_s$ in Abhängigkeit von $r$ bestimmt wurde, betrachten wir $B$ für fehlerfrei. Mit der Größtfehlerrechnung erhält man:
+\[ \triangle \left(B \cdot r\right)^2= 2 B^2\cdot r\cdot \triangle r\]
+Wie man in der Abbildung \ref{fig:nurb1} sehen kann ist der Fehler hier relativ groß. Die Gerade mit der Steigung von $\frac{e}{2m} \approx 87.94 \cdot10^{-9} \frac{C}{kg}$ wäre innerhalb der Fehlergrenzen zu finden, jedoch haben wir sie wegen der Übersicht nicht mit eingezeichnet.
 
 \subsection{Systematische Fehlerquellen}
 \label{sec:fehlerquellen}
-
+Die erste Fehlerquelle besteht in der Berechnung des Magnetfeldes $B$. Da das Magnetfeld besonders an den Rändern inhomogen ist, müsste die Berechnung mit der Gleichung \ref{eq: Inhomogen} erfolgen. Somit erhielte man durch lineare Regression die Steigungen:
+$m_1=87.7\cdot10^{-9} \frac{C}{kg}$ , $m_2=85.2\cdot10^{-9} \frac{C}{kg}$ , $m_3=84\cdot10^{-9} \frac{C}{kg}$ 
+Diese sind näher am Literaturwert und unterscheidet sich desto größer vom vorher berechnetem Wert, je größer der Radius ist. Das zeigt, dass die Gleichung \ref{eq: Magnetfeld} erst für einen Radius $r<3,5cm$  als Annäherung 
 \subsection{Ergebnis}
 \label{sec:ergebnis}
 
