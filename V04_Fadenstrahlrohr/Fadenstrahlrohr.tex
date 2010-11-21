@@ -211,25 +211,34 @@ In diesem Versuch werden Elektronen durch Helmholtzspulen mit einem Radius von 0
 \label{sec:auswertung}
 Mit der Gleichung \ref{eq:2} lässt sich durch Umfomung eine Geradengleichung aufstellen. Somit erhält man durch lineare Regression eine Steigung, die ungefähr $\frac{e}{2m}$ betragen sollte. Die Berechnung für das Magnetfeld $B$ erfolgte mit der Gleichung \ref{eq: Magnetfeld}. In der Abbildung \ref{fig:nurb1} ist die Beschleungigungsspannung $U_a$ über $\left(B \cdot r\right)^2$ aufgetragen. Man sieht hier die Messwerte mit den Fehlerbalken, die Geraden zu den Radien $r_{\left(i,i={1,2,3}\right)}$ und die zugeörigen Steigungen : $m_1=85.5\cdot10^{9} \frac{C}{kg}$ , $m_2=84.3\cdot10^{9} \frac{C}{kg}$ , $m_3=83.4\cdot10^{9} \frac{C}{kg}$
 Die Korrelationsfaktoren betragen hier mindestens 98 Prozent, d.h., dass der Abstand der Punkte zur Geraden sehr klein ist.
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 \begin{figure}[htb!]
   \centering
   \includegraphics[width=14cm]{pics/nurB1}
   \caption{Auswertung der Messungen mit Magnetfeld}
   \label{fig:nurb1}
 \end{figure}
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 
-Wir nehmen die Fehler $\triangle r=1mm$, $\triangle I_s=0,005A$ und $\triangle U_a=2V$ an. Diese resultieren aus der Dicke des Fadenstahls und der Ungenauigkeit beim Ablesen der Beschleunigungsspannung. Mit der Größtfehlerrechnung erhält man:
-\[ \triangle \left(B \cdot r\right)^2= 2 B^2\cdot r\cdot \triangle r+ 2 \frac{B^2}{I_s}\cdot r^2\cdot \triangle I_s\]
-Wie man in der Abbildung \ref{fig:nurb1} sehen kann ist der Fehler
-hier relativ groß. Die Gerade mit der Steigung von $\frac{e}{2m}
-\approx 87.94 \cdot10^{9} \frac{C}{kg}$ ( Literaturwert ) wäre innerhalb der Fehlergrenzen zu finden, jedoch haben wir sie wegen der Übersicht nicht mit eingezeichnet.
+Wir nehmen die Fehler $\triangle r=1mm$, $\triangle I_s=0,005A$ und
+$\triangle U_a=2V$ an. Diese resultieren aus der Dicke des Fadenstahls
+und der Ungenauigkeit beim Ablesen der Beschleunigungsspannung. Mit
+der Größtfehlerrechnung erhält man:
+\[ \triangle \left(B \cdot r\right)^2= 2 B^2\cdot r\cdot \triangle r+
+2 \frac{B^2}{I_s}\cdot r^2\cdot \triangle I_s\] Wie man in der
+Abbildung \ref{fig:nurb1} sehen kann ist der Fehler hier relativ groß.
+Die Gerade mit der Steigung von $\frac{e}{2m} \approx 87.94
+\cdot10^{9} \frac{C}{kg}$ ( Literaturwert ) wäre innerhalb der
+Fehlergrenzen zu finden, jedoch haben wir sie wegen der Übersicht
+nicht mit eingezeichnet. Wir erhalten als Mittelwert der
+Einzelmessungen $\frac{e}{m} = 1.688 \cdot 10^{11} \frac{C}{Kg} $.
+Gegenüber dem Literaturwert von $\frac{e}{m} = 1.759 \cdot 10^{11}
+\frac{C}{Kg}$ liegt hier eine Abweichung von ca 4\% vor.
 
 \subsection{Systematische Fehlerquellen}
 \label{sec:fehlerquellen}
 Die erste Fehlerquelle besteht in der Berechnung des Magnetfeldes $B$. Da das Magnetfeld besonders an den Rändern inhomogen ist, müsste die Berechnung mit der Gleichung \ref{eq: Inhomogen} erfolgen. Somit erhielte man durch lineare Regression die Steigungen:
-$m_1=87.7\cdot10^{-9} \frac{C}{kg}$, $m_2=85.2\cdot10^{-9} \frac{C}{kg}$, $m_3=84\cdot10^{-9} \frac{C}{kg}$
+$m_1=87.7\cdot10^{9} \frac{C}{kg}$, $m_2=85.2\cdot10^{9} \frac{C}{kg}$, $m_3=84\cdot10^{9} \frac{C}{kg}$
 Diese sind näher am Literaturwert und unterscheiden sich desto mehr vom vorher berechnetem Wert, je größer der Radius ist. Das zeigt, dass die Gleichung \ref{eq: Magnetfeld} erst für einen Radius $r<3,5cm$  als Näherung geeignet ist. Dass trotzdem noch eine relativ große Abweichung vom Literaturwert besteht, liegt wahrscheinlich an der Messungenauigkeit.
 Eine weitere Fehlerquelle könnte die die angenommene Beschleunigungsspannung darstellen. Diese ist nach Gleichung \ref{eq:1} größer als die gemessene Spannung. Der zweite Summand beläuft sich aber insgesamt nur auf ca. 0,043V und da wir noch nicht mal auf einen Volt genau messen konnten, ist dieser Fehler vernachlässigbar.
 
