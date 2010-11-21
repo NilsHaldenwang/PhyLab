@@ -92,7 +92,7 @@ Elektronen beim Austritt aus dem Kathodenmaterial erhalten, sodass die
 effektive Beschleunigungsspannung
 \begin{equation}
   \label{eq:1}
-  U_{a effektiv} = U_{a} + \frac{k_B T}{2 e}
+  U_{a,effektiv} = U_{a} + \frac{k_B T}{2 e}
 \end{equation}
 verwendet werden sollte. Dabei ist $k_B$ die Boltzmannkonstante und
 $T$ die Temperatur.
@@ -109,7 +109,7 @@ sich in der Nähe der Achse ein nahezu homogenes Feld, welches sich
 recht gut analytisch berechnen lässt:
 
 \begin{equation}
-B= K\cdot I_S= \mu_0\cdot \left(\frac{4}{5}\right)^{\frac{2}{3}}\frac{n\cdot I_S}{R}
+B= K\cdot I_S= \mu_0\cdot \left(\frac{4}{5}\right)^{\frac{3}{2}}\frac{n\cdot I_S}{R}
 \label{eq: Magnetfeld}
 \end{equation}
 
@@ -209,26 +209,26 @@ In diesem Versuch werden Elektronen durch Helmholtzspulen mit einem Radius von 0
 
 \subsection{Auswertung}
 \label{sec:auswertung}
-Mit der Gleichung \ref{eq:2} lässt sich durch Umfomung eine Geradengleichung aufstellen. Somit erhält man durch lineare Regression eine Steigung, die ungefähr $\frac{e}{2m}$ betragen sollte. Die Berechnung für das Magnetfeld $B$ erfolgte mit der Gleichung \ref{eq: Magnetfeld}. In der Abbildung \ref{fig:nurb1} ist die Beschleungigungsspannung $U_a$ über $\left(B \cdot r\right)^2$ aufgetragen. Man sieht hier die Messwerte mit den Fehlerbalken, die Geraden zu den Radien $r_{\left(i,i={1,2,3}\right)}$ und die zugeörigen Steigungen betragen : $m_1=85.5\cdot10^{-9} \frac{C}{kg}$ , $m_2=84.3\cdot10^{-9} \frac{C}{kg}$ , $m_3=83.4\cdot10^{-9} \frac{C}{kg}$  
+Mit der Gleichung \ref{eq:2} lässt sich durch Umfomung eine Geradengleichung aufstellen. Somit erhält man durch lineare Regression eine Steigung, die ungefähr $\frac{e}{2m}$ betragen sollte. Die Berechnung für das Magnetfeld $B$ erfolgte mit der Gleichung \ref{eq: Magnetfeld}. In der Abbildung \ref{fig:nurb1} ist die Beschleungigungsspannung $U_a$ über $\left(B \cdot r\right)^2$ aufgetragen. Man sieht hier die Messwerte mit den Fehlerbalken, die Geraden zu den Radien $r_{\left(i,i={1,2,3}\right)}$ und die zugeörigen Steigungen : $m_1=85.5\cdot10^{-9} \frac{C}{kg}$ , $m_2=84.3\cdot10^{-9} \frac{C}{kg}$ , $m_3=83.4\cdot10^{-9} \frac{C}{kg}$  
 \vspace{\baselineskip}
 \begin{figure}[htb!]
   \centering
   \includegraphics[width=14cm]{pics/nurb1}
-  \caption{Auswertung der Messungen}
+  \caption{Auswertung der Messungen mit Magnetfeld}
   \label{fig:nurb1}
 \end{figure}
 \vspace{\baselineskip}
 
-Wir nehmen die Fehler $\triangle r=1mm$ und $\triangle U_a=2V$ an. Diese resultieren aus der Dicke des Fadenstahls und der Ungenauigkeit beim Ablesen der Beschleunigungsspannung. Da der Strom $I_s$ in Abhängigkeit von $r$ bestimmt wurde, betrachten wir $B$ für fehlerfrei. Mit der Größtfehlerrechnung erhält man:
-\[ \triangle \left(B \cdot r\right)^2= 2 B^2\cdot r\cdot \triangle r\]
+Wir nehmen die Fehler $\triangle r=1mm$, $\triangle I_s=0,005A$ und $\triangle U_a=2V$ an. Diese resultieren aus der Dicke des Fadenstahls und der Ungenauigkeit beim Ablesen der Beschleunigungsspannung. Mit der Größtfehlerrechnung erhält man:
+\[ \triangle \left(B \cdot r\right)^2= 2 B^2\cdot r\cdot \triangle r+ 2 \frac{B^2}{I_s}\cdot r^2\cdot \triangle I_s\]
 Wie man in der Abbildung \ref{fig:nurb1} sehen kann ist der Fehler hier relativ groß. Die Gerade mit der Steigung von $\frac{e}{2m} \approx 87.94 \cdot10^{-9} \frac{C}{kg}$ wäre innerhalb der Fehlergrenzen zu finden, jedoch haben wir sie wegen der Übersicht nicht mit eingezeichnet.
 
 \subsection{Systematische Fehlerquellen}
 \label{sec:fehlerquellen}
 Die erste Fehlerquelle besteht in der Berechnung des Magnetfeldes $B$. Da das Magnetfeld besonders an den Rändern inhomogen ist, müsste die Berechnung mit der Gleichung \ref{eq: Inhomogen} erfolgen. Somit erhielte man durch lineare Regression die Steigungen:
-$m_1=87.7\cdot10^{-9} \frac{C}{kg}$ , $m_2=85.2\cdot10^{-9} \frac{C}{kg}$ , $m_3=84\cdot10^{-9} \frac{C}{kg}$ 
+$m_1=87.7\cdot10^{-9} \frac{C}{kg}$, $m_2=85.2\cdot10^{-9} \frac{C}{kg}$, $m_3=84\cdot10^{-9} \frac{C}{kg}$ 
 Diese sind näher am Literaturwert und unterscheiden sich desto mehr vom vorher berechnetem Wert, je größer der Radius ist. Das zeigt, dass die Gleichung \ref{eq: Magnetfeld} erst für einen Radius $r<3,5cm$  als Näherung geeignet ist. Dass trotzdem noch eine relativ große Abweichung vom Literaturwert besteht, liegt wahrscheinlich an der Messungenaigkeit.
-Eine weitere Fehlerquelle könnte die die angenommene Beschleunigungsspannung darstellen. Diese ist nach Gleichung \ref{eq:1} größer als die gemessene Spannung. Der zweite Summand beläuft sich aber insgesamt nur auf ca. 0,043V und da wir noch niicht mal auf einen Volt genau messen konnten ist dieser Fehler vernachlässigbar.
+Eine weitere Fehlerquelle könnte die die angenommene Beschleunigungsspannung darstellen. Diese ist nach Gleichung \ref{eq:1} größer als die gemessene Spannung. Der zweite Summand beläuft sich aber insgesamt nur auf ca. 0,043V und da wir noch nicht mal auf einen Volt genau messen konnten, ist dieser Fehler vernachlässigbar.
 
 \section{Messungen mit elektrischem und magnetischem Feld}
 \label{sec:mess-mit-elektr}
@@ -240,16 +240,29 @@ Eine weitere Fehlerquelle könnte die die angenommene Beschleunigungsspannung dar
   \centering
   \includegraphics[width=12cm]{pics/dummypic}
   \caption{Schaltskizze des Versuchsaufbaus}
-  \label{fig:Schaltskizze-1}
+  \label{fig:Schaltskizze-2}
 \end{figure}
 
 Der Aufbau zum zweiten Versuch für die Bestimmung von $\frac{e}{m}$ besteht ähnelt dem vorherigem. Zusätzlich befindet sich hier noch ein Kondensator mit einer Skala zu Messung der Ablenkung im elektrischem Feld. Bei diesem Versuch bleiben die Beschleunigungsspannung $U_a (2.7 kV)$ und die Heizspannung $U_H (6.3 V) $ konstant. Der Abstand $d$ der Kondensatorplatten beträgt 5.4 cm. Dabei wird die Ablenkspannung $U_k$ so angelegt, dass sich in der Mitte das Nullpotential befindet. Die Helmholtzspulen haben hier den Radius 7 cm und die Windungszahl 320.
 Die Skala besteht aus Kästchen mit einer Länge von 1 cm und geht von Eins bis Neun.
-Wir stellen die Ablenkspannung so ein, dass die Ablenkung 1.5 cm, 1.25 cm, 1cm und 0,5cm erreicht werden. Ist sie auf eine Ablenkung eingestellt, so wird für spätere Zwecke der Verlauf fotografiert. Danach wird ein Magnetfeld dazugeschaltet, das das elektrische Feld gerade kompensiert. Das heißt, dass die Elekronen dann auf einer geradlinigen Bahn fliegen. Hier werden also nur die Ablenkspannung $U_k$ und der für das Magnetfeld benötigte Strom $I_s$ gemessen. 
+Wir stellen die Ablenkspannung so ein, dass die Ablenkung $D_1 = 1.5 cm$, $D_2 = 1.25 cm$, 1cm und $D_3 = 0,5cm$ erreicht werden. Ist sie auf eine Ablenkung eingestellt, so wird für spätere Zwecke der Verlauf fotografiert. Leider haben wir es bei der Ablenkung von 1cm vergessen. Danach wird ein Magnetfeld dazugeschaltet, das das elektrische Feld gerade kompensiert. Das heißt, dass die Elekronen dann auf einer geradlinigen Bahn fliegen. Hier werden also nur die Ablenkspannung $U_k$ und der für das Magnetfeld benötigte Strom $I_s$ gemessen. 
 
 \subsection{Auswertung}
-\label{sec:auswertung}
+\label{sec:auswertung-1}
 
-Zur Auswertung wird die Gleichung \ref{eq:5} benötigt, denn bei Kenntnis von $B$, $E_k$, x und y kann man $\frac{e}{m}$ bestimmen. Zunächst einmal werden mit dem Programm "`Plotdigitizer"' die x-und y-Werte ausgelesen. Trägt man dann y über $x^2$ auf sollte man mithilfe von linearer Regression ein Gerade mit der Steigung $\frac{B^2 \emph{e}}{2 E_k m}
+Zur Auswertung wird die Gleichung \ref{eq:5} benötigt, denn bei Kenntnis von $B$, $E_k$, x und y kann man $\frac{e}{m}$ bestimmen. Zunächst einmal werden mit dem Programm "`Plotdigitizer"' die x-und y-Werte ausgelesen. Trägt man dann y über $x^2$ auf, sollten wir mithilfe von linearer Regression eine Gerade mit der Steigung $\frac{B^2 \emph{e}}{2 E_k m}$ erhalten. Da der Strahl nicht sehr dünn ist, nehmen wir wegen der daraus resultierenden Ungenauigkeit bei der Bestimmung der Punkte durch das Programm Plotdigitizer einen Fehler von einem halben Millimeter an. Die Ablenkspannung $U_k$ nehmen wir als fehlerfrei an, da ein Unterschied von einem Volt bei einem Vielfachen von 100 Volt sehr klein ist. Dagegen gibt es bei den gemessenen Strömen $I_s$ einen Fehler von 2 bis zu 8 Prozent. Aus der Steigung $d_{\left(i,i=1,2,3\right)}$ erhält man durch Umformung dann $\frac{e}{m}$.
+\[d_i = \frac{B^2 \emph{e}}{2 E_k m} \Leftrightarrow \frac{e}{m} = \frac{2 E_k d_i}{B^2}\]
+mit \[E_k = \frac{U_k}{0,054m}  \textrm{ und B aus der Gleichung \ref{eq: Magnetfeld}} \]
+Der Korr
+Die durch lineare Regression erhaltene Geraden sind in Abbildung \ref{fig:befeld} zu sehen.
+
+\vspace{\baselineskip}
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=14cm]{pics/b_und_e}
+  \caption{Auswertung der Messungen mit elektrischem und magnetischem Feld}
+  \label{fig:befeld}
+\end{figure}
+\vspace{\baselineskip}
 
 \end{document}
