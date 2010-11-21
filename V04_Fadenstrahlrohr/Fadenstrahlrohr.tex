@@ -271,21 +271,24 @@ Wir stellen die Ablenkspannung so ein, dass die Ablenkungen $D_1 = 1.5 cm$, $D_2
 Zur Auswertung wird die Gleichung \ref{eq:5} benötigt, denn bei Kenntnis von $B$, $E_k$, x und y kann man $\frac{e}{m}$ bestimmen. Zunächst einmal werden mit dem Programm "`Plotdigitizer"' die x-und y-Werte ausgelesen. Trägt man dann y über $x^2$ auf, sollten wir mithilfe von linearer Regression eine Gerade mit der Steigung $\frac{B^2 \emph{e}}{2 E_k m}$ erhalten. Da der Strahl nicht sehr dünn ist, nehmen wir wegen der daraus resultierenden Ungenauigkeit bei der Bestimmung der Punkte durch das Programm Plotdigitizer einen Fehler von einem halben Millimeter an. Die Ablenkspannung $U_k$ nehmen wir als fehlerfrei an, da ein Unterschied von einem Volt bei einem Vielfachen von 100 Volt sehr klein ist. Dagegen gibt es bei den gemessenen Strömen $I_s$ einen Fehler von ungefähr 2 bis 7 Prozent. Aus der Steigung $d_{\left(i,i=1,2,3\right)}$ erhält man durch Umformung dann $\frac{e}{m}$.
 \[d_i = \frac{B^2 \emph{e}}{2 E_k m} \Leftrightarrow \frac{e}{m} = \frac{2 E_k d_i}{B^2}\]
 mit \[E_k = \frac{U_k}{0,054m}  \textrm{ und B aus der Gleichung \ref{eq: Magnetfeld}} \]
-Die durch lineare Regression erhaltene Geraden sind in Abbildung \ref{fig:befeld} zu sehen. Auch hier ist die Korrelation gut.
-\vspace{\baselineskip}
-\begin{figure}[htb!]
+Die durch lineare Regression erhaltene Geraden sind in Abbildung
+\ref{fig:befeld} zu sehen. Auch hier ist die Korrelation gut.
+
+%\vspace{\baselineskip}
+\begin{figure}%[htb!]
   \centering
   \includegraphics[width=14cm]{pics/b_und_e}
   \caption{Auswertung der Messungen mit elektrischem und magnetischem Feld}
   \label{fig:befeld}
 \end{figure}
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 
 Die Steigungen mit den dazugehörigen elektrischem und magnetischem
 Feld und dem daraus berechnetem Verhältnis von $\frac{e}{m}$ sind in
-der folgenden Tabelle zu sehen.
-\vspace{0.5cm}
-\begin{table}[htb!]%
+der Tabelle \ref{tab:Messergebnisse} zu sehen.
+
+%\vspace{0.5cm}
+\begin{table}%[htb!]%
 	\begin{tabular}{l|l|l|l|l}
 		Ablenkung in cm &Steigung in m&el.Feld in $\frac{V}{m}$&mag.Fel in $10^{-4}$T&$\frac{e}{m}$ in $10^{11} \frac{C}{kg}$\\
 		\hline
@@ -298,7 +301,9 @@ der folgenden Tabelle zu sehen.
 	\caption{Auswertung des Versuches 2.3}
 	\label{tab:Messergebnisse}
 \end{table}
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
+
+
 Der Literaturwert beträgt $\frac{e}{m} \approx 1,759\cdot10^{11}\frac{C}{kg}$.
 Der Fehler für $\frac{e}{m}$ wird nach der Formel für den Größtfehler berechnet:
 \[ \triangle\left(\frac{e}{m}\right) = \triangle d_i 2E_k/B^2 +
@@ -311,12 +316,12 @@ Fehlergrenzen mit dem Literaturwert.
 \subsection{Systematische Fehlerquellen}
 \label{sec:syst-fehl}
 
-Die Einzelmessungen (,dargestellt in Tabelle \ref{tab:Messergebnisse}
-,) hingegen zeigen abgesehen von $D_3$ selbst im Rahmen der
-Fehlergrenzen keine Übereinstimmung. Wir vermuten, dass die
-Abweichungen zum Teil dem früher einsetzenden Magnetfeld zuzuschreiben
-sind. Es wirken bereits Lorentzkräfte auf die Elektronen, bevor diese
-den Kondensator erreichen.
+Die Einzelmessungen, dargestellt in Tabelle \ref{tab:Messergebnisse},
+hingegen zeigen abgesehen von $D_3$ selbst im Rahmen der Fehlergrenzen
+keine Übereinstimmung. Wir vermuten, dass die Abweichungen zum Teil
+dem früher einsetzenden Magnetfeld zuzuschreiben sind. Es wirken
+bereits Lorentzkräfte auf die Elektronen, bevor diese den Kondensator
+erreichen.
 
 Eine weitere mögliche Quelle für Ungenauigkeiten könnte eine
 Verformung der Bahnkurven auf den Fotos sein. Nimmt man das Bild
@@ -324,5 +329,10 @@ leicht seiten- oder höhenversetzt auf, so ist die Kurve bereits
 verzerrt. Außerdem war der Strahl nicht als feine Linie auf den
 Bildern zu erkennen, sondern als recht breit mit verhältnismäßig
 unscharfen Grenzen.
+
+\section{Fazit}
+\label{sec:fazit}
+
+
 
 \end{document}
