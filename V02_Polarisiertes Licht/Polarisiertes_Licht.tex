@@ -291,8 +291,61 @@ berechn. I in lux&117&111,4&99,4&82,5&62,8&42,5&24,2&10,0&1,7&0,3\\
 \subsubsection{Polarisation der LED}
 Diesmal wird der erste Polarisator weggelassen. Was wir nun erwarten ist eine konstante Intensität, da unpolarisiertes Licht eine axialsymmetrische Verteilung von Lichtwellen hat.
 Wir messen von 0 bis 90 ° in 20-30° Schriiten eine Intensität von 157 bis 158 lux. Dies kann man als konstant ansehen.
+
 \subsubsection{Brewsterwinkel}
 
+Der Versuchsaufbau ist schematisch in Abbildung
+\ref{fig:BrewsterAufbau} dargestellt. Da durch den Polarisator nur
+noch linear polarisiertes Licht die Glasplatte erreicht, lässt sich
+durch Drehung der Platte um den Brewsterwinkel zur Einfallsrichtung
+des Lichts ein Intensitätsminimum auf dem Schirm herstellen. Da die
+Bestimmung des Nullpunktes sich schwierig gestaltet, führen wir je
+eine Messung für jede Drehrichtung durch. Wir lesen dabei jeweils die
+absolute Gradzahl an der Skala ab, um später die Differenz beider
+Positionen verwenden zu können.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Versuchsaufbau Brewsterwinkel}
+  \label{fig:BrewsterAufbau}
+\end{figure}
+
+Mit bloßem Auge ist in einem Intervall von ca. $\pm 2°$ keine
+Intensitätsänderung feststellbar gewesen. Diesen Bereich nehmen wir
+daher als Fehler für die Winkelmessung an.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Skizze zur Berechnung des Brewsterwinkels aus den
+    abgelesenen Werten}
+  \label{fig:BrewsterAuswertung}
+\end{figure}
+
+Wir messen für die Position eins ( Schirm an der Wand ) eine Winkelposition
+von $\alpha_1 = 303° \pm 2°$. Für Position zwei ( Schirm beim Experimentator
+) erhalten wir $\alpha_2 = 56° \pm 2°$. Die Differenz der Messungen
+beträgt damit also $113° \pm 2°$. Der Brewsterwinkel entspricht dabei
+genau der Hälfte dieses Differenzwertes ( vgl. Abbildung
+\ref{fig:BrewsterAuswertung} ) und beträgt:
+
+\[ \alpha_B = 56.5° \pm 2° \]
+
+Mit Gleichung \eqref{eq:2} erhält man für den Brechungsindex:
+
+\[ n = 1.51 \pm \]
+
+Der Größtfehler berechnet sich dabei wie folgt:
+
+\[ \Delta n = \frac{1}{\cos^2 \alpha_B} \Delta \alpha_B \]
+
+Der Literaturwert für gewöhnliches Quarzglas beträgt ca. 1.46. Der
+gemessene Wert ist sehr nah an diesem Wert für durchschnittliches
+Quarzglas, wir können allerdings nicht sicher sein, um was für eine
+Glassorte es sich bei der im Versuch verwendeten Platte handelte.
+Dennoch scheint die geringe Differenz ein, wenn auch schwaches, Indiz
+für eine gelungene Messung zu sein.
 
 \subsubsection{Untersuchungen mit Viertelwellenlängenplättchen}
 \begin{figure}[htb!]
@@ -334,17 +387,17 @@ In diesem Versuch soll durch die optische Aktivität von Zuckerlösungen und Quarz
 
 \[2d: 52° ,1d: 75°\]
 , wobei $d \approx 10,1 cm$ beträgt. In unserem Fall ergäbe sich für y eigentlich ein Winkel von 64°, jedoch wissen wir schon, dass die Zuckerlösungen nicht mehr identisch sind, sodass wir nun mit $\alpha_1 =\frac{180°-52°}{2} = 64°$ und $\alpha_2=75°$ weiterrechnen um die Konzentration in der Zuckerlösung mit der Länge von 2d bzw. 1d zu bestimmen. Nach der Gleichung \ref{eq:6} erhält man:
-\[c=\frac{\alpha}{\rho \cdot d}\]   
+\[c=\frac{\alpha}{\rho \cdot d}\]
 \[\text{,wobei }\rho=64°\frac{cm^3}{g\cdot dm}\]
 Somit erhalten wir die Konzentrationen $c_1=(0,99\pm0,025)\frac{g}{cm^3}$ und $c_2=(1,16\pm0,027) \frac{g}{cm^3}$. Den Größtfehler erhalten wir mit:
 \[\Delta c=\frac{\Delta\alpha}{\rho \cdot d}+\frac{\alpha}{\rho \cdot d^2}\Delta d\]
 mit \[\Delta\alpha=1° \text{ und } \Delta d=1mm\]
 Warum aber bei gleichen Zuckerlösungen sich eine oder auch beide verändert haben, wissen wir auch nicht.
 Im nächsten Versuch soll das spezifische Drehvermögen von Quarzplättchen mit einer Dicke von 1,5mm bestimmt werden. Dabei ist eines linksdrehend und das andere rechtsdrehend. Leider können wir hier nicht die Auslöschung bestimmen, sondern müssen versuchen die Stellung zu finden, bei der bläuliches Licht zu sehen ist, also $\lambda<490nm$. Da dieses Verfahren ungenauer ist als das vorherige Verfahren nehmen wir einen Fehler von $\Delta \alpha= 2°$ an.
-In diesem Fall wird die Gleichung 
+In diesem Fall wird die Gleichung
 \[\rho = \alpha/d\]
 verwendet.
-Der Fehler wird mit der Gleichung 
+Der Fehler wird mit der Gleichung
 \[\rho = \Delta \alpha/d\]
 berechnet.
 Wir haben -55° für das Linksdrehende und 58° für das Rechtsdrehende gemessen und erhalten die Ergebnisse $\rho_1=(37\pm1,3)°/mm$ und $\rho_2=(39\pm1,3)°/mm$. Der Literaturwert liegt aber zwischen 21 bis 28 Grad/mm. Wir können uns nicht erklären, warum unsere Werte so stark abweichen.
