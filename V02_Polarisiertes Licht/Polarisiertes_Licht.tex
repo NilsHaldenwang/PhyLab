@@ -48,6 +48,7 @@
 \maketitle
 \tableofcontents
 
+\newpage
 \section{Einleitung}
 
 Licht ist eine elektromagnetische Welle deren elektrischer Feldvektor
@@ -107,7 +108,7 @@ transmittierte Anteil enthält genau die Parallelkomponente von
 $\vec{E}$, der reflektierte Strahl die Orthogonalkomponente. Der
 Verlauf ist skizzenhaft in Abbildung \ref{fig:Brewster} dargestellt.
 
-\begin{figure}[htb!]
+\begin{figure}%[htb!]
   \centering
   \includegraphics[width=10cm]{pics/dummypic}
   \caption{Skizze von Reflexion und Transmission unter dem
@@ -304,7 +305,7 @@ eine Messung für jede Drehrichtung durch. Wir lesen dabei jeweils die
 absolute Gradzahl an der Skala ab, um später die Differenz beider
 Positionen verwenden zu können.
 
-\begin{figure}%[htb!]
+\begin{figure}[htb!]
   \centering
   \includegraphics[width=10cm]{pics/dummypic}
   \caption{Versuchsaufbau Brewsterwinkel}
@@ -400,7 +401,78 @@ verwendet.
 Der Fehler wird mit der Gleichung
 \[\rho = \Delta \alpha/d\]
 berechnet.
-Wir haben -55° für das Linksdrehende und 58° für das Rechtsdrehende gemessen und erhalten die Ergebnisse $\rho_1=(37\pm1,3)°/mm$ und $\rho_2=(39\pm1,3)°/mm$. Der Literaturwert liegt aber zwischen 21 bis 28 Grad/mm. Wir können uns nicht erklären, warum unsere Werte so stark abweichen. Es ist uns aufgefallen, dass das Licht nur schwach bläulich wurde. Aber in diesem Versuch hätte das Blau kräftiger sein sollen. Daher vermuten wir einen Fehler im Aufbau. Es ist möglich, dass bei der Justierung etwas nicht gestimmt hat, sodass vielleicht das Licht schräg auf die Quarzplättchen getroffen ist und dadurch noch eine Brechung entstanden ist. 
+Wir haben -55° für das Linksdrehende und 58° für das Rechtsdrehende
+gemessen und erhalten die Ergebnisse $\rho_1=(37\pm1,3)°/mm$ und
+$\rho_2=(39\pm1,3)°/mm$. Der Literaturwert liegt aber zwischen 21 bis
+28 Grad/mm. Wir können uns nicht erklären, warum unsere Werte so stark
+abweichen. Es ist uns aufgefallen, dass das Licht nur schwach bläulich
+wurde. Aber in diesem Versuch hätte das Blau kräftiger sein sollen.
+Daher vermuten wir einen Fehler im Aufbau. Es ist möglich, dass bei
+der Justierung etwas nicht gestimmt hat, sodass vielleicht das Licht
+schräg auf die Quarzplättchen getroffen ist und dadurch noch eine
+Brechung entstanden ist.
+
+\subsection{Spannungsoptische Untersuchungen}
+\label{sec:spann-unters}
+
+Der Versuchsaufbau ist in Abbildung
+\ref{fig:SpannungsOptischeUNtersuchung} dargestellt. Als Werkstücke
+verwenden wir zwei nahezu identische Plexiglaswinkel. Der einzige
+Unterschied besteht in einer Bohrung im Knick, die nur einer der
+Winkel aufweist.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Versuchsaufbau zur Spannungsoptischen Untersuchung }
+  \label{fig:SpannungsOptischeUNtersuchung}
+\end{figure}
+
+Der erste Polarisationsfilter links erzeugt linear polarisiertes
+Licht. Durch das $\frac{\lambda}{4}$-Plättchen entsteht daraus
+zirkular polarisiertes Licht. Die Hinteren beiden Filter sind in
+umgekehrter Reihenfolge und um jeweils $90°$ zu ihrem Gegenstück links
+des Werkstückes gedreht. Die Drehung des rechten
+$\frac{\lambda}{4}$-Plättchens hebt die Phasenverschiebung des ersten
+wieder auf, sodass wieder linear polarisiertes Licht entsteht. Der
+Linearpolarisator ist nun genau senkrecht dazu eingestellt, sodass
+insgesamt Auslöschung auftritt.
+
+Wir spannen nun jeweils einen der Winkel ein und belasten ihn, indem
+wir ein Gewicht der Masse $2 kg$ an den waagerechten Schenkel des
+Winkels hängen. Dadurch kommt es zu Spannungen innerhalb des
+Materials, die wiederum eine Polarisation des durchdringenden Lichtes
+zur Folge haben. Dadurch erfolgt keine Auslöschung mehr durch die
+hinteren Filter, da das Licht elliptisch polarisiert wird. Je stärker
+die Spannung, des größer ist die Änderung des Brechungsindex. Man
+erkennt also direkt an der Helligkeit der jeweiligen Stelle im Bild
+die Spannung im Material. Man kann die Helligkeitsänderung also als
+Gradient der Spannung verstehen. Je schmaler also ein wechselnder
+Bereich ist, desto Stärker ist die Kraft pro Fläche im Material.
+
+Man erkennt, dass der Winkel ohne Bohrung ( Abbildung \ref{fig:
+  Winkelohne} ) nur einen sehr schmalen, hellen Bereich vom Knick bis
+zum Beginn des Schattens aufweist. Der Helle Streifen beim Winkel mit
+Bohrung ( Abbildung \ref{fig: Winkelmit} ) zwischen der Bohrkante und
+dem dunklen Bereich ist etwas Breiter. Die Belastung für den Winkel
+ohne Bohrung ist also in diesem Bereich größer. Dies bestätigt die im
+Skript erwähnte Erfahrung, dass der Winkel ohne Bohrung häufiger bricht.
+
+
+\begin{figure}%[htb!]
+  \centering
+    \begin{minipage}[c]{7.2 cm}
+    \includegraphics[width=6cm]{pics/OhneBohrung.jpg}
+    \caption{}
+    \label{fig: Winkelohne}
+  \end{minipage}
+  \begin{minipage}[c]{7.2 cm}
+    \includegraphics[width=6cm]{pics/MitBohrung.jpg}
+    \caption{}
+    \label{fig: Winkelmit}
+  \end{minipage}
+\end{figure}
+
 \end{document}
 
 
