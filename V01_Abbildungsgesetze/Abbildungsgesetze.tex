@@ -248,23 +248,26 @@ Sammellinse}
 Es soll die Brennweite mit der Linsenformel bestimmt werden. Dazu wird ein Dia mit fast paralellem Licht angestrahlt und mit einer Lupe, dessen Brennweite zu bestimmen ist, wird das Bild auf dem Schirm vergrößert oder verkleiner dargestellt. Für die Gesamtstrecke S (s. Abbildung \ref{fig:v1}) werden neun verschiedene Werte gewählt. Zu jedem S gibt es nach der Linsenformel zwei Einstellungen, sodass ein scharfes Bild entsteht. Zu diesen Einstellungen werden Bildweite und Gegenstandsweite mit einer Genauigkeit von 1mm gemessen. S wird durch Verschiebung der Position des Obejektes, also des Dias, verändert. Unsere Werte gehen von 60,4 cm in ca. 2cm-Schritten bis 44,4 cm.
 \begin{figure}%[htb!]
   \centering
-  \includegraphics[width=15cm]{pics/v1}
+  \includegraphics[width=13cm]{pics/v1}
   \caption{Aufbau zur Brennweitenbestimmung mit der Linsenformel, gez. mit Paint}
   \label{fig:v1}
 \end{figure} 
 Um aus den Werten die Brennweite zu bestimmen, benutzen wir zwei grafische Methoden. Bei der ersten werden die Kehrwerte von Bild- und Gegenstandsweiten gebildet und dann übereinander aufgetragen. Dies sieht man in Abbildung \ref{fig:f-best1}. Hier sollten die Schnittpunkte der aus den Werten gebildeten Geraden mit den Achsen gleich weit vom Ursprung entfernt sein. In unserem Fall beträgt der Mittelwert 98,2 mm.
 \begin{figure}%[htb!]
   \centering
-  \includegraphics[width=12cm]{pics/f-best1}
+  \includegraphics[width=15cm]{pics/f-best1}
   \caption{1.Methode der grafischen Auswertung}
   \label{fig:f-best1}
 \end{figure} 
-Bei der zweiten Methode werden die Bildweiten als Punkt auf der y-Achse  mit den zugehörigen Gegenstandsweiten als Punkt auf der x-Achse verbunden. Aus den Geraden erhält man dann einen Schnittpunkt. In diesem Fall müssten die x- und y-Koordinate übereinstimmen, jedoch ergibt sich in unserem Fall als Mittelwert $99\pm6mm$. Diesen haben wir folgendermaßen bestimmt: Zunächst haben wir ein Intervall für x und ein Intervall für y bestimmt, in dem so gut wie alle Schnittpunkte liegen. Wir haben für x das Intervall $[9,3;9,6]$ und für y das Intervall $[10,0;10,5]$ gewählt. Aus dem Mittelwert der beiden Mitte erhalten wir 99mm. Der Abstand zu den äußersten Grenzen bträgt 6mm. Also erhalten wir aus den beiden Methoden $f_1=98,2mm$ und $f_2=99\pm6mm$.
+Bei der zweiten Methode werden die Bildweiten als Punkt auf der y-Achse  mit den zugehörigen Gegenstandsweiten als Punkt auf der x-Achse verbunden. Aus den Geraden erhält man dann einen Schnittpunkt. In diesem Fall müssten die x- und y-Koordinate übereinstimmen, jedoch ergibt sich in unserem Fall als Mittelwert $99\pm6mm$. Diesen haben wir folgendermaßen bestimmt: Zunächst haben wir ein Intervall für x und ein Intervall für y bestimmt, in dem so gut wie alle Schnittpunkte liegen (s.Abbildung \ref{fig:f-best21}. Wir haben für x das Intervall $[9,3;9,6]$ und für y das Intervall $[10,0;10,5]$ gewählt. Aus dem Mittelwert der beiden Mitte erhalten wir 99mm. Der Abstand zu den äußersten Grenzen bträgt 6mm. Also erhalten wir aus den beiden Methoden $f_1=98,2mm$ und $f_2=99\pm6mm$.
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=13cm]{pics/f-best21}
+  \caption{1.Methode der grafischen Auswertung}
+  \label{fig:f-best21}
+\end{figure}
 \subsection{Besselverfahren}
-Dieser Versuch ist dem Vorigem sehr ähnlich. Der einzige Unterschied beim Besselverfahren besteht darin, dass für ein S der Abstand der Positionen für die Linse gemessen werden, bei der ein scharfes Bild auf dem Schirm entsteht. Mit der Formel \ref{eq:3} lässt sich mit diesen Werten die Brenweite f bestimmen. Unsere Messwerte und Ergebnisse sind in Tabelle \ref{tab:bv1} zu sehen. Aus den Werten von f bilden wir den Mittelwert und erhalten $f=(98,0\pm0,2)mm$
-Den Mittelwertsfehler erhalten wir aus der Gleichung
-\[    \delta f = \sqrt {\frac{1}{N(N-1)} \sum_{i=1}^N{(f_i-\bar{f})^2}} \]
-%\vspace{\baselineskip}
+Dieser Versuch ist dem Vorigem sehr ähnlich. Der einzige Unterschied beim Besselverfahren besteht darin, dass für ein S der Abstand der Positionen für die Linse gemessen werden, bei der ein scharfes Bild auf dem Schirm entsteht. Mit der Formel \ref{eq:3} lässt sich mit diesen Werten die Brenweite f bestimmen. Unsere Messwerte und Ergebnisse sind in Tabelle \ref{tab:bv1} zu sehen.
 \begin{table}[htb!]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -277,8 +280,17 @@ f in mm&98,1&97,4&97,9&98,2&98,3\\
 \caption{Messwerte zum Besselverfahren}
 \label{tab:bv1}
 \end{table}
-
-
+Aus den Werten von f bilden wir den Mittelwert und erhalten $f=(98,0\pm0,2)mm$.
+Den Mittelwertsfehler erhalten wir aus der Gleichung
+\[    \Delta f = \sqrt {\frac{1}{N(N-1)} \sum_{i=1}^N{(f_i-\bar{f})^2}} \]
+%\vspace{\baselineskip}
+Damit haben wir insgesamt  $f_1=98,2mm$, $f_2=99\pm6mm$ und $f_3=(98,0\pm0,2)mm$ Außerdem wissen wir, dass die Brennweite 100mm betragen sollte. Die experimental ermittelten Werten weichen  von einander um ca. 1,6mm ab und unterscheiden sich vom richtigem Wert nur um maximal 2\%. Dies kann man dadurch begründen, dass die Scharfstellung eine persönliche Note in sich trägt und daher können unsere Werte von der tatsächlichen Position für eine Scharfstellung auch um 1mm abweichen.
+So gesehen sind die Werte sehr gut.
+\subsection{Chromatische Aberration}
+In diesem Versuch wird die chromatische Aberration überprüft, die dadurch zustande dass der Brechungsindex von der Wellenlänge des Lichtes abhängt. Daher wählen wir einmal die blaue LED, also kurzwelliges Licht, und dann die rote LED ,also langwelliges Licht. Die Brennweite f wird mit dem Besselverfahren bestimmt, wobei wir $S=57 cm$ wählen. Wir erhielten:
+$e_{rot}=32,17cm \text{ und } e_{blau}=32,48cm$
+Mit Gleichung 3 erhalten wir $\Delta f=(9,711-9,623)cm = 0,088cm = 0,88mm$. Eine weitere Möglichkeit $\Delta f$ zu bestimmen, besteht darin, dass wir zunächst mit einer LED das vergrößerte Bild scharfstellen, dann die LEDs austauschen und dann neu scharfstellen. Dabei misst man den Abstand der beiden Scharfstellungen und erhält mit der Formel \ref{eq:5} $\Delta f_{N"aherung}$. Wir haben den Abstand $\Delta g=0,05cm$ gemessen. S ist weiterhin 57cm und g wählen wir 14,48cm.
+Damit erhalten wir $\Delta f_{N"aherung} = 0,025cm = 0,25mm$. Da wir in diesem Versuch mit dunklerem Licht gearbeitet haben, war es schwieriger die genauen Stellungen für ein scharfes Bild zu erhalten. S haben wir groß gewählt, um große Werte für e zu erhalten, sodass $\Delta e$ groß ist. Dies ist jedoch damit verbunden, dass das verkleinerte Bild sogar mit Lupe schon fast zu klein gewesen ist. Auf jeden Fall führten die kleinen Schwierigkeiten zu einem Unterschied von mehr als Faktor 3. Mit Gleichung \ref{eq:4}
 \end{document}
 
 
