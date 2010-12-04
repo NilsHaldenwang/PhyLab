@@ -48,6 +48,198 @@
 
 \newpage
 \section{Einleitung}
+\label{sec:einleitung}
+
+\subsection{Lichtstrahlen}
+\label{sec:lichtstrahlen}
+
+In der geometrischen Optik betrachtet man das Licht eines leuchtenden
+Punktes als ein Büschel von Strahlen. Diese stehen senkrecht zu den
+Wellenfronten der tatsächlich von der Lichtquelle ausgehenden
+Kugelwellen und repräsentieren die Richtung, in der sich die Energie
+des Lichts ausbreitet. Soll zur Untersuchung nur ein relativ enges
+Büschel von Strahlen herangezogen werden, so muss man unerwünschte
+Teile ausblenden, da sich die Strahlen bei einer Punktlichtquelle ohne
+Blende in nahezu alle Richtungen ausbreiten. Für sehr große
+Entfernungen zur Lichtquelle kann ein untersuchtes Strahlenbündel als
+nahezu parallel angenommen werden.
+
+\subsection{Dünne Linsen}
+\label{sec:dunne-linsen}
+
+Die einfachsten und in diesem Versuch hauptsächlich verwendeten
+optischen Bauelemente sind bikonvexe, sphärische, dünne Linsen. Die
+dünne Linse ist ein Konzept zur Vernachlässigung der tatsächlichen
+Dicke einer Linse. Diese Idealisierung kann in der Praxis natürlich
+niemals erfüllt sein, liefert aber insbesondere für relativ große
+Brennweiten gute Näherungen.
+
+Die Bildkonstruktion erfolgt im Allgemeinen mittels drei spezieller
+Strahlen und der Hauptebene der dünnen Linse. Eine Skizze ist in
+Abbildung \ref{fig:bildkonstruktion} zu sehen. Parallel zur optischen
+Achse auf die Linse treffende Strahlen werden in den auf der anderen
+Seite liegenden Brennpunkt $F'$ gebrochen. Mittelpunktsstrahlen gehen
+ohne Brechung oder Parallelversatz durch die Linse hindurch.
+Brennpunktstrahlen verlaufen auf der anderen Seite parallel weiter.
+
+Zur Bildkonstruktion genügen jeweils zwei der von einem Punkt des
+Objektes ausgehende Strahlen.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Bildkonstruktion einer dünnen, konvexen Linse}
+  \label{fig:bildkonstruktion}
+\end{figure}
+
+Den Abstand von der Hauptebene zu den Brennpunkten bezeichnet man als
+\emph{Brennweite f}. Für dünne Linsen ist dieser Abstand zu beiden
+Brennpunkten $F$ und $F'$ identisch. Weitere Kenngrößen der
+Bildkonstruktion sind die \emph{Gegenstandsweite g} und die
+\emph{Bildweite b}. Mit Hilfe der Strahlensätze erhält man die sog.
+\emph{Linsenformel}:
+
+\begin{equation}
+  \label{eq:1}
+  \frac{1}{f} = \frac{1}{g} + \frac{1}{b}
+\end{equation}
+
+Durch elementare Umformungen erhält man einen expliziten Ausdruck für
+die Brennweite:
+
+\begin{equation}
+  \label{eq:2}
+  f = \frac{b \cdot g}{b + g}
+\end{equation}
+
+\subsection{Messverfahren zur Messung der Brennweite}
+\label{sec:messv-zur-mess}
+
+Es existieren unterschiedliche Vorgehensweisen zur Bestimmung der
+Brennweite einer Linse. Im folgenden werden zwei der Methoden
+vorgestellt und durchgeführt. Der Aufbau ist für beide Methoden
+identisch und in Abbildung \ref{fig:aufbau-brennweite} dargestellt.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Aufbau zur Bestimmung der Brennweite f}
+  \label{fig:aufbau-brennweite}
+\end{figure}
+
+Zunächst variiert man die Position der Linse, bis das Bild scharf auf
+dem Schirm zu sehen ist, dann misst man die relevanten Größen. Dabei
+ist zu beachten, dass ein reelles Bild nur für einen Abstand $s$
+zwischen Schirm und Objekt mit $s \geq 4f$ existiert. Für $s > 4f$
+lassen sich jeweils zwei Linsenpositionen finden, die zu einem
+scharfen Bild führen.
+
+\subsubsection{Bestimmung mit der Linsenformel}
+\label{sec:bestimmung-mit-der}
+
+Der einfachste Weg zur Bestimmung der Brennweite ist das direkte
+Messen der Bildweite $b$ und der Gegenstandsweite $g$. Mit Gleichung
+\eqref{eq:2} lässt sich die Brennweite dann direkt errechnen.
+
+\subsubsection{Besselverfahren}
+\label{sec:besselverfahren}
+
+Das nach Friedrich Wilhelm Bessel benannte Besselverfahren stellt
+gegenüber dem einfachen Verfahren der Direkten Messung insofern eine
+Verbesserung dar, als dass man nur noch eine relative Größe zu messen
+hat, nämlich den Abstand $e$ der beiden Linsenpositionen, welche zu
+einem scharfen Bild führen. Dadurch vermeidet man die sehr
+fehleranfällige Bestimmung der Linsenmitte. Weiterhin misst man nur
+noch eine Größe, statt wie vorher zwei.
+
+Aus Abbildung \ref{fig:aufbau-brennweite} wird deutlich, dass $e = b -
+g$ und $s = b + g$ gelten muss. Einsetzen in Gleichung \eqref{eq:2}
+liefert als Bestimmungsgleichung für $f$:
+
+\begin{equation}
+  \label{eq:3}
+  f = \frac{s² - e²}{4s}
+\end{equation}
+
+\subsection{Chromatische Aberration}
+\label{sec:chrom-abber}
+
+Die Chromatische Aberration ist ein aufgrund von Dispersion
+entstehender Abbildungsfehler optischer Linsen. Als Dispersion
+bezeichnet man im Allgemeinen die Abhängigkeit einer Größe von der
+Wellenlänge bzw. der Frequenz. Im Fall von Chromatischer Aberration
+ist diese Größe der Brechungsindex $n$ der Linse, welcher von der Wellenlänge
+$\lambda$ des einfallenden Lichts abhängig ist. Mittels Kombination
+von Linsen verschiedener Dispersion lässt sich diesem Verhalten
+erfolgreich entgegen wirken. Man bezeichnet eine solche Anordnung dann
+als Achromator. Da im Folgenden aber die Chromatische Aberration
+untersucht werden soll, kommt keine korrigierende Anordnung zum
+Einsatz.
+
+Für Achsennahe Strahlen die auf eine dünne, bikonvexe sphärische Linse
+mit beiderseitigem Krümmungsradius $r$ fallen, ergibt sich für die
+Brennweite:
+
+\begin{equation}
+  \label{eq:4}
+  f = \frac{r}{2(n-1)}
+\end{equation}
+
+Die Brennweite ist tatsächlich also direkt abhängig vom Brechungsindex
+$n(\lambda)$ und muss demnach für unterschiedlich farbiges Licht
+verschiedene Werte annehmen. Diese Aussage wird durch Anwendung der
+folgenden Messverfahren verifiziert.
+
+\subsubsection{Messung mit Besselverfahren}
+\label{sec:mess-mit-bess}
+
+Eine Möglichkeit zum bestimmen der Brennweitendifferenz $\Delta f$
+unterschiedlich farbigen Licht ist die Anwendung des Besselverfahrens
+nach Abschnitt \ref{sec:besselverfahren} für jede zu untersuchende
+Lichtfarbe $i$. Anschließend wird die Differenz der gemessenen $f_i$
+gebildet.
+
+\subsubsection{Messung mit Näherungsverfahren}
+\label{sec:mess-mit-naher}
+
+Unter Verwendung eines möglichst stark vergrößerten Bildes lässt sich
+$\Delta f$ auch anders bestimmen. Zunächst wird das Bild mit einer
+Lichtfarbe scharf gestellt. Dann wechselt man die Farbe des Lichts und
+justiert die Linse um $\Delta g$ nach, bis das Bild wieder scharf ist.
+Unter der Annahme, dass $s = b + g$ während des Versuches konstant
+bleibt, lässt sich die Brennweitendifferenz wie folgt errechnen:
+
+\begin{equation}
+  \label{eq:5}
+  \Delta f_{Naeherung} = \Delta g \left( 1 - \frac{2g}{s} \right)
+\end{equation}
+
+\subsection{Brennweite eines Linsensystems}
+\label{sec:brennw-eines-lins}
+
+Für ein System aus zwei dünnen Linsen $L_1$ und $L_2$, deren Hauptebenen sich im
+Abstand d befinden erhält man als Gleichung für die Brennweite des
+Gesamtsystems:
+
+\begin{equation}
+  \label{eq:6}
+  f = \frac{f_1 \cdot f_2}{f_1 + f_2 - d}
+\end{equation}
+
+Die experimentelle Bestimmung erfolgt durch Messung mit dem
+Besselverfahren nach Abschnitt \ref{sec:besselverfahren}.
+
+\subsection{Aufbau eines Fernrohrs aus zwei Sammellinsen}
+\label{sec:aufb-eines-fernr}
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Fernrohr nach Keppler}
+  \label{fig:fernrohr}
+\end{figure}
+
+
 
 
 \end{document}
