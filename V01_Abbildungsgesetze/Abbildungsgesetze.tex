@@ -245,6 +245,40 @@ Besselverfahren nach Abschnitt \ref{sec:besselverfahren}.
 \subsection{Verwendung der Linsengesetze, Bestimmung der Brennweite einer
 Sammellinse}
 \subsection{Brennweitenbestimmung mit der Linsenformel}
+Es soll die Brennweite mit der Linsenformel bestimmt werden. Dazu wird ein Dia mit fast paralellem Licht angestrahlt und mit einer Lupe, dessen Brennweite zu bestimmen ist, wird das Bild auf dem Schirm vergrößert oder verkleiner dargestellt. Für die Gesamtstrecke S (s. Abbildung \ref{fig:v1}) werden neun verschiedene Werte gewählt. Zu jedem S gibt es nach der Linsenformel zwei Einstellungen, sodass ein scharfes Bild entsteht. Zu diesen Einstellungen werden Bildweite und Gegenstandsweite mit einer Genauigkeit von 1mm gemessen. S wird durch Verschiebung der Position des Obejektes, also des Dias, verändert. Unsere Werte gehen von 60,4 cm in ca. 2cm-Schritten bis 44,4 cm.
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=15cm]{pics/v1}
+  \caption{Aufbau zur Brennweitenbestimmung mit der Linsenformel, gez. mit Paint}
+  \label{fig:v1}
+\end{figure} 
+Um aus den Werten die Brennweite zu bestimmen, benutzen wir zwei grafische Methoden. Bei der ersten werden die Kehrwerte von Bild- und Gegenstandsweiten gebildet und dann übereinander aufgetragen. Dies sieht man in Abbildung \ref{fig:f-best1}. Hier sollten die Schnittpunkte der aus den Werten gebildeten Geraden mit den Achsen gleich weit vom Ursprung entfernt sein. In unserem Fall beträgt der Mittelwert 98,2 mm.
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=12cm]{pics/f-best1}
+  \caption{1.Methode der grafischen Auswertung}
+  \label{fig:f-best1}
+\end{figure} 
+Bei der zweiten Methode werden die Bildweiten als Punkt auf der y-Achse  mit den zugehörigen Gegenstandsweiten als Punkt auf der x-Achse verbunden. Aus den Geraden erhält man dann einen Schnittpunkt. In diesem Fall müssten die x- und y-Koordinate übereinstimmen, jedoch ergibt sich in unserem Fall als Mittelwert $99\pm6mm$. Diesen haben wir folgendermaßen bestimmt: Zunächst haben wir ein Intervall für x und ein Intervall für y bestimmt, in dem so gut wie alle Schnittpunkte liegen. Wir haben für x das Intervall $[9,3;9,6]$ und für y das Intervall $[10,0;10,5]$ gewählt. Aus dem Mittelwert der beiden Mitte erhalten wir 99mm. Der Abstand zu den äußersten Grenzen bträgt 6mm. Also erhalten wir aus den beiden Methoden $f_1=98,2mm$ und $f_2=99\pm6mm$.
+\subsection{Besselverfahren}
+Dieser Versuch ist dem Vorigem sehr ähnlich. Der einzige Unterschied beim Besselverfahren besteht darin, dass für ein S der Abstand der Positionen für die Linse gemessen werden, bei der ein scharfes Bild auf dem Schirm entsteht. Mit der Formel \ref{eq:3} lässt sich mit diesen Werten die Brenweite f bestimmen. Unsere Messwerte und Ergebnisse sind in Tabelle \ref{tab:bv1} zu sehen. Aus den Werten von f bilden wir den Mittelwert und erhalten $f=(98,0\pm0,2)mm$
+Den Mittelwertsfehler erhalten wir aus der Gleichung
+\[    \delta f = \sqrt {\frac{1}{N(N-1)} \sum_{i=1}^N{(f_i-\bar{f})^2}} \]
+%\vspace{\baselineskip}
+\begin{table}[htb!]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+S in cm&51&54&57&56&42\\
+e in cm&24,5&28,2&31,9&30,6&10,6\\
+\hline
+f in mm&98,1&97,4&97,9&98,2&98,3\\
+\hline
+\end{tabular}
+\caption{Messwerte zum Besselverfahren}
+\label{tab:bv1}
+\end{table}
+
+
 \end{document}
 
 
