@@ -5,3 +5,4 @@
 auto
 _region_*
 *.toc
+*.fmt
