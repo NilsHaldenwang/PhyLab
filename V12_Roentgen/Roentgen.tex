@@ -49,8 +49,87 @@
 \newpage
 \section{Einleitung und theoretischer Hintergrund}
 \label{sec:einleitung}
+
+\subsection{Bremsspektrum}
+\label{sec:bremsspektrum}
+
 Die im Versuch verwendeten Röntgenstrahlen werden mittels einer
-Elektronenröhre erzeugt.
+Röntgenröhre erzeugt. Der Aufbau ist schematisch in Abbildung
+\ref{fig:roentgen-roehre} dargestellt. Die Glühkathode besteht aus
+Wolfram, das Anodenmaterial ist Molybdän. Beim Anlegen einer
+Heizspannung emittiert die Kathode aufgrund thermischer Bewegungen
+Elektronen. Diese werden sogleich durch die Beschleunigungsspannung
+$U_B$ in Richtung der Anode beschleunigt. Durch Coulombwechselwirkung
+der Elektronen mit den Atomkernen des Anodenmaterials werden diese
+stark abgelenkt bzw. abgebremst und emittierten dadurch
+Röntgenstrahlung. Da die Coulombwechselwirkung proportional zu
+$\frac{1}{r^2}$ ist, wobei $r$ der Abstand ist, ist das Bremsspektrum
+kontinuierlich. Im Allgemeinen ist im Vorbeiflug jeder mögliche
+Abstand zu einem Atomkern gleich wahrscheinlich.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Schematischer Aufbau einer Röntgenröhre}
+  \label{fig:roentgen-roehre}
+\end{figure}
+
+Es ist allerdings festzustellen, dass das Spektrum erst ab einer
+bestimmten Grenzwellenlänge $\lambda_{Gr}$ beginnt. Kleinere
+Wellenlängen bedeuten größere Energie der Photonen, damit ist sofort
+klar, dass bei der Grenzwellenlänge die gesamte Energie $E = U_B \cdot e$
+des Elektrons in ein Photon umgesetzt worden sein muss. Man erhält für
+die Grenzwellenlänge:
+
+\begin{equation}
+  \label{eq:1}
+  \lambda_{Gr} = \frac{c \cdot h}{e \cdot U_B}
+\end{equation}
+
+\subsection{Charakteristische Linien}
+\label{sec:char-lini}
+
+Tatsächlich ist aber auch noch eine weitere Entstehungsart von
+Röntgenstrahlung im Versuch präsent. Elektronen mit hinreichender
+Energie können Elektronen aus den Schalen des Anodenmaterials
+herausschlagen. Diese Lücken werden durch Elektronen aus höheren
+Schalen wieder gefüllt. Bei diesem Übergang in ein geringeres
+Energieniveau geben die Elektronen die überschüssige Energie als
+Photonen ab. Wie groß diese Energien sind hängt vom Anodenmaterial ab.
+Die Frequenz der emittierten Photonen kann mit dem Mosleyschen Gesetz
+berechnet werden:
+
+\begin{equation}
+  \label{eq:2}
+  \nu = R(Z-\alpha)^2(1-\frac{1}{n²})
+\end{equation}
+
+Dabei ist $R$ die Rydberg-Frequenz, $Z$ die Ordnungszahl des
+Anodenmaterials, $\alpha$ die Berücksichtigung der Abschirmung der
+Kernladung durch die übrige Elektronenhülle und $n$ die Schale von der
+aus der Übergang zur K-Schale erfolgt.
+
+Diese charakteristischen Linien sind von der Beschleunigungsspannung
+unabhängig und können daher Rückschlüsse auf das verwendete Material
+erlauben.
+
+\subsection{Bragg-Bedingung}
+\label{sec:bragg-bedingung}
+
+Da unser Zählrohr nur die Zahl der eintreffenden Ereignisse misst, ist
+es nötig dafür zu sorgen, dass zu einem Messzeitpunkt nur jeweils
+Strahlung einer Wellenlänge in den Detektor gelangt. Dies ist leicht
+unter Ausnutzung von Interferenz mit Hilfe der Bragg-Bedingung
+möglich.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Bragg-Bedingung}
+  \label{fig:bragg-bedingung}
+\end{figure}
+
+
 
 
 \section{Aufgaben}
@@ -165,7 +244,6 @@ bestimmen wir wie vorhin die Winkel und die Ordnung zu den $K_\alpha$-
 und $K_\beta$-Linien und erhalten mithilfe der Gleichung
 \[d=\frac{m\cdot \lambda}{2\cdot sin(\vartheta)} \]
 die verschiedenen Werte für die Gitterkonstante:
-
 \newline
 \begin{tabular}{|l|l|l|l|l|}
 \hline
@@ -173,7 +251,6 @@ Gitterkonstante d in pm &$205,6	\pm	11,7 $& $204,6	\pm	10,3 $&$ 205,4	\pm	8,1 $&
 \hline
 \end{tabular}
 \newline
-
 \begin{figure}%
 \includegraphics[width=14cm]{pics/liflangmit}%
 \caption{Messung des Spektrums mithilfe von Lithiumfluorid}%
