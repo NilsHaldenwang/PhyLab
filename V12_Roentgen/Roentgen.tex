@@ -49,19 +49,50 @@
 \newpage
 \section{Einleitung und theoretischer Hintergrund}
 \label{sec:einleitung}
+Die im Versuch verwendeten Röntgenstrahlen werden mittels einer
+Elektronenröhre erzeugt.
+
 
 \section{Aufgaben}
 \subsection{Messung des Emissionsspektrum von Molybdän}
 \subsubsection{Versuchsaufbau und -durchführung}
-Der Versuchsaufbau besteht aus einer Röntgenröhre und einer Kristall-Detektor-Vorrichtung, was durch einen Goniometer gekoppelt sind. In der Röntgenröhre wird zur Erzeugung von Elektronen eine Glühkathode verwendet. Diese Elektronen werden dann mit einer Beschleunigungsspannung $U_B$ von $31\pm0,3$kV (Schalterstellung 5) oder $25,3\pm0,3$kV (Schalterstellung 3) auf eine Molybdän-Anode beschleunigt. Die dadurch entstehende Bremsstrahlung wird mittels eines Kristalls (NaCl, LiF) in Richtung eines Detektors reflektiert. Das Goniometer ist so eingestellt, dass bei einer Drehung des Salzes um $\vartheta$ der Detektor um den Winkel $2\vartheta$ gedreht wird. Die Drehung erfolgt nur in Gegenuhrzeigersinn. Die Messung selbst erfolgt automatisch, indem ein Motor gleichmäßig dreht und die Messwerte in einem Programm ermittelt werden, wobei die Drehgeschwindigkeit eine wichtige Rolle spielt. Die Zahl der gemessenen Impulse werden einem Zeitintervall zugeordnet, sodass bei schnellem Drehen das charakteristische Spektrum nicht mehr zu erkennen ist (s. Abbildung \ref{fig:naclschnell}). Daher wählen wir eine langsame Geschwindigkeit für diese Versuche. Die Grafiken des Programmes sind nicht in Winkel ausgegeben sondern in Volt. Der Umrechungsfaktor in Winkel ist $\frac{5}{0,7}$.
+Der Versuchsaufbau besteht aus einer Röntgenröhre und einer
+Kristall-Detektor-Vorrichtung, was durch einen Goniometer gekoppelt
+sind. In der Röntgenröhre wird zur Erzeugung von Elektronen eine
+Glühkathode verwendet. Diese Elektronen werden dann mit einer
+Beschleunigungsspannung $U_B$ von $31\pm0,3$kV (Schalterstellung 5)
+oder $25,3\pm0,3$kV (Schalterstellung 3) auf eine Molybdän-Anode
+beschleunigt. Die dadurch entstehende Bremsstrahlung wird mittels
+eines Kristalls (NaCl, LiF) in Richtung eines Detektors reflektiert.
+Das Goniometer ist so eingestellt, dass bei einer Drehung des Salzes
+um $\vartheta$ der Detektor um den Winkel $2\vartheta$ gedreht wird.
+Die Drehung erfolgt nur in Gegenuhrzeigersinn. Die Messung selbst
+erfolgt automatisch, indem ein Motor gleichmäßig dreht und die
+Messwerte in einem Programm ermittelt werden, wobei die
+Drehgeschwindigkeit eine wichtige Rolle spielt. Die Zahl der
+gemessenen Impulse werden einem Zeitintervall zugeordnet, sodass bei
+schnellem Drehen das charakteristische Spektrum nicht mehr zu erkennen
+ist (s. Abbildung \ref{fig:naclschnell}). Daher wählen wir eine
+langsame Geschwindigkeit für diese Versuche. Die Grafiken des
+Programmes sind nicht in Winkel ausgegeben sondern in Volt. Der
+Umrechungsfaktor in Winkel ist $\frac{5}{0,7}$.
 \begin{figure}%
 \includegraphics[width=12cm]{pics/naclschnell}%
 \caption{Messung mit mittlerer Motorgeschwindigkeit}%
 \label{fig:naclschnell}%
 \end{figure}
 \subsubsection{Bestimmung der Wellenlänge zu $K_\alpha$ und $K_\beta$}
-Hier haben wir das Salz Natriumchlorid (d=283pm) benutzt und die Schalterstellung für die Spannung ist bei 5, d.h., die Spannung beträgt $31\pm0,3$kV.
-Zur Bestimmung der $K_\alpha$- und $K_\beta$-Linien werden zunächst die zugehörigen Winkel bestimmt (s. Abbildung \ref{fig:nacllang5}). Da die Verteilung eines Peaks symmetrisch sein sollte, haben wir die Breite in einer Höhe gemessen, wo die Verteilung sich vom kontinuierlichem Spektrum markant hervorhebt. Mit dem zum Mittelpunkt zugehörigen Winkel werden mit der Bragg-Bedingung, also \ref{eq:3}, die Wellenlängen bestimmt. In der Tabelle \ref{tab:1} werden die Ergebnisse dargestellt.
+Hier haben wir das Salz Natriumchlorid (d=283pm) benutzt und die
+Schalterstellung für die Spannung ist bei 5, d.h., die Spannung
+beträgt $31\pm0,3$kV. Zur Bestimmung der $K_\alpha$- und
+$K_\beta$-Linien werden zunächst die zugehörigen Winkel bestimmt (s.
+Abbildung \ref{fig:nacllang5}). Da die Verteilung eines Peaks
+symmetrisch sein sollte, haben wir die Breite in einer Höhe gemessen,
+wo die Verteilung sich vom kontinuierlichem Spektrum markant
+hervorhebt. Mit dem zum Mittelpunkt zugehörigen Winkel werden mit der
+Bragg-Bedingung, also \ref{eq:3}, die Wellenlängen bestimmt. In der
+Tabelle \ref{tab:1} werden die Ergebnisse dargestellt.
+
 \begin{table}%[htb!]
 	\begin{tabular}{|l|l|l|}
 		\hline
@@ -75,13 +106,23 @@ Zur Bestimmung der $K_\alpha$- und $K_\beta$-Linien werden zunächst die zugehöri
 \caption{Wellenlänge}
 \label{tab:1}
 \end{table}
+
 Die Fehler wurden mithilfe der Größtfehlerrechnung bestimmt:
 \[\Delta\lambda = \frac{2\cdot d \cdot cos(\vartheta)}{n}\cdot \Delta \vartheta \]
 ,wobei $\Delta\vartheta=0,0054$ ist.
 
-Nach dem Mosleyschem Gesetz (\ref{eq:2}) und unter Berücksichtigung des Abschirmungskoeffizienten ergeben sich für die Wellenlängen: 
-\[K_\alpha=72,3pm \text{ und } K_\beta=63,4pm\]
-Unsere Werte stimmen insoweit überein, dass die Literaturwerte sowohl für die erste als auch für die zweite Ordnung der $K_\alpha$- und $K_\beta$-Linien innerhalb der Fehlergrenzen liegen. Die Fehler sind aber relativ groß, d.h., die Ergebnisse hätten vielleicht genauer sein können, wenn wir die den Motor noch ein wenig langsamer eingestellt hätten. Zudem wird durch den zeitlichen Verlauf die Grafik des Programmes in x-Richtung gestaucht, sodass die Winkelbestimmung ungenauer geworden ist. Nachher zur Bestimmung der Gitterkonstante des Lithiumfluoridkristalls werden die Wellenlängen benutzt, die näher am Literaturwert liegen. 
+Nach dem Mosleyschem Gesetz (\ref{eq:2}) und unter Berücksichtigung
+des Abschirmungskoeffizienten ergeben sich für die Wellenlängen:
+\[K_\alpha=72,3pm \text{ und } K_\beta=63,4pm\] Unsere Werte stimmen
+insoweit überein, dass die Literaturwerte sowohl für die erste als
+auch für die zweite Ordnung der $K_\alpha$- und $K_\beta$-Linien
+innerhalb der Fehlergrenzen liegen. Die Fehler sind aber relativ groß,
+d.h., die Ergebnisse hätten vielleicht genauer sein können, wenn wir
+die den Motor noch ein wenig langsamer eingestellt hätten. Zudem wird
+durch den zeitlichen Verlauf die Grafik des Programmes in x-Richtung
+gestaucht, sodass die Winkelbestimmung ungenauer geworden ist. Nachher
+zur Bestimmung der Gitterkonstante des Lithiumfluoridkristalls werden
+die Wellenlängen benutzt, die näher am Literaturwert liegen.
 \begin{figure}%
 \includegraphics[width=14cm]{pics/nacllang5mit}%
 \caption{Messung mit langsamer Motorgeschwindigkeit}%
@@ -89,35 +130,64 @@ Unsere Werte stimmen insoweit überein, dass die Literaturwerte sowohl für die er
 \end{figure}
 \subsubsection{Bestimmung des Planckschen Wirkungquantums}
 Mit der Gleichung \ref{eq:1} kann man das Plancksche Wirkungsquantum berechnen, wenn man die Elementarladung, Beschleunigungsspannung $U_B$ und die Grenzfrequenz $\nu_{Gr}$ kennt. Da bei der Abbildung \ref{fig:nacllang5} eine Beschleunigungsspannung von $31\pm0,3$kV benutzt wurde bleibt nur noch die Grenzfrequenz $\nu_{Gr}$ zu bestimmen. Dies haben wir folgendermaßen gemacht. Da durch das Salzkristall nur konstruktive Interferenzerscheinungen auftreten kann, wenn die Braggbedinung erfüllt ist, und die Energie der Strahlung mit der Frequenz $\nu_{Gr}$ die Größtmögliche ist, muss $\vartheta_{Gr}$ den Punkt des ersten Anstieges der Intensität beschreiben. Dazu zeichnen wir eine Gerade, die sich am besten an den Anstieg anschmiegt. Der Schnittpunkt mit der x-Achse ist dann der gesuchte Punkt. Mit \ref{eq:3} berechnen wir zunächst $\lambda_{Gr}$. Dieser ist $(40\pm3 pm)$. Da $\nu_{Gr}=\frac{c}{\lambda_{Gr}}$ ist, erhalten wir für das Plancksche Wirkungsquantum $h=(6,62\pm0,57)Js$. Den Fehler haben wir mit der folgenden Gleichung bestimmt:
-\[ \Delta h = \frac{\emph{e} \cdot \nu_{Gr}}{c}\cdot \Delta U_B + \frac{\emph{e} \cdot U_B}{c}\cdot \Delta \nu_{Gr} \]
+\[ \Delta h = \frac{\emph{e} \cdot \nu_{Gr}}{c}\cdot \Delta U_B + \frac{\emph{e} \cdot U_B}{c}\cdot \Delta \nu_{Gr} \]
 Der Literaturwert beträgt $6,626 \cdot 10^{-34} Js$ und ist nur ein wenig größer als unser Ergebnis, jedoch sind die Fehler so groß, dass auch bei einer größeren Abweichung der Literaturwert noch innerhalb der Fehlergrenzen liegt.
 \subsubsection{Vergleich des Spektrums bei verschiedenen Beschleunigungsspannungen}
-In Abbildung \ref{fig:vergl} ist sowohl das Spektrum bei einer Beschleunigungsspannung $U_B$ von 
-$31\pm0,3$kV als auch von $25,3\pm0,3$kV eingezeichnet. Es sind drei Dinge zu bemerken. Erstens sind die Grenzwinkel $\vartheta_{Gr}$ unterschiedlich. Der Grenzwinkel bei der Spannnung  $25,3\pm0,3$kV ist größer, was man mit der Gleichung \ref{eq:1} erklären kann. Wenn die Spannung kleiner wird, muss auch die Freuqenz kleiner werden. Damit wird aber die Wellenlänge größer, sodass auch der Winkel größer sein muss. Ein weiterer Punkt ist der, dass bei einer kleineren Spannung die Intensität insgesamt auch kleiner ist. Dies ist eine direkte Folge daraus, dass in gleichen Zeitintervallen weniger Elektronen auf die Anode treffen, wenn die Spannung kleiner wird. Was man zudem hier gut erkennen kann, ist dass das charakteristische Spektrum nicht verschoben ist, was natürlich auch so sein sollte, da das charakteristische Spektrum nur vom Material der Anode abhängig ist.
+In Abbildung \ref{fig:vergl} ist sowohl das Spektrum bei einer
+Beschleunigungsspannung $U_B$ von $31\pm0,3$kV als auch von
+$25,3\pm0,3$kV eingezeichnet. Es sind drei Dinge zu bemerken. Erstens
+sind die Grenzwinkel $\vartheta_{Gr}$ unterschiedlich. Der Grenzwinkel
+bei der Spannnung $25,3\pm0,3$kV ist größer, was man mit der Gleichung
+\ref{eq:1} erklären kann. Wenn die Spannung kleiner wird, muss auch
+die Freuqenz kleiner werden. Damit wird aber die Wellenlänge größer,
+sodass auch der Winkel größer sein muss. Ein weiterer Punkt ist der,
+dass bei einer kleineren Spannung die Intensität insgesamt auch
+kleiner ist. Dies ist eine direkte Folge daraus, dass in gleichen
+Zeitintervallen weniger Elektronen auf die Anode treffen, wenn die
+Spannung kleiner wird. Was man zudem hier gut erkennen kann, ist dass
+das charakteristische Spektrum nicht verschoben ist, was natürlich
+auch so sein sollte, da das charakteristische Spektrum nur vom
+Material der Anode abhängig ist.
+
 \begin{figure}%
 \includegraphics[width=14cm]{pics/vergl}%
 \caption{Vergleich der Spektren bei verschiedenen Beschleunigungsspannungen}%
 \label{fig:vergl}%
 \end{figure}
+
 \subsubsection{Bestimmung der Gitterkonstanten eines Kristalls}
-Zur Bestimmung der Gitterkonstante brauchen wir nach Gleichung \ref{eq:3} nur die Wellenlängen zu den $K_\alpha$- und $K_\beta$-Linien mit der zugehörigen Ordnung und dem zugehörigem Winkel $\vartheta$. In Abbildung \ref{fig:liflang} sind auch noch die $K_\alpha$- und $K_\beta$-Linien zweiter Ordnung zu erkennen. Daher bestimmen wir wie vorhin die Winkel und die Ordnung zu den $K_\alpha$- und $K_\beta$-Linien und erhalten mithilfe der Gleichung
+Zur Bestimmung der Gitterkonstante brauchen wir nach Gleichung
+\ref{eq:3} nur die Wellenlängen zu den $K_\alpha$- und
+$K_\beta$-Linien mit der zugehörigen Ordnung und dem zugehörigem
+Winkel $\vartheta$. In Abbildung \ref{fig:liflang} sind auch noch die
+$K_\alpha$- und $K_\beta$-Linien zweiter Ordnung zu erkennen. Daher
+bestimmen wir wie vorhin die Winkel und die Ordnung zu den $K_\alpha$-
+und $K_\beta$-Linien und erhalten mithilfe der Gleichung
 \[d=\frac{m\cdot \lambda}{2\cdot sin(\vartheta)} \]
 die verschiedenen Werte für die Gitterkonstante:
+
 \newline
-\begin{tabular}{|l|l|l|l|l|} 
+\begin{tabular}{|l|l|l|l|l|}
 \hline
 Gitterkonstante d in pm &$205,6	\pm	11,7 $& $204,6	\pm	10,3 $&$ 205,4	\pm	8,1 $&$ 203,3	\pm	7,0 $\\
 \hline
 \end{tabular}
 \newline
+
 \begin{figure}%
 \includegraphics[width=14cm]{pics/liflangmit}%
 \caption{Messung des Spektrums mithilfe von Lithiumfluorid}%
 \label{fig:liflang}%
 \end{figure}
+
 Die Fehler wurden mit der Gleichung für den Größtfehler berechnet:
-\[ \Delta d=\frac{m}{2\cdot sin(\vartheta)} \cdot \Delta\lambda +\frac{m \cdot\lambda\cdot cos(\vartheta)}{2\cdot sin(\vartheta)^2} \cdot \Delta \vartheta\]
-Der Literaturwert beträgt 201 pm. Die Werte liegen, wie zu erwarten, sehr nah bei einander und der Literatuwert liegt innerhalb der Fehlergrenzen alles bestimmten Gitterkonstante. Auffällig ist hier aber, dass alle Werte größer sind als der Literaturwert. Wir vermuten jedoch, dass dies nur ein Zufall ist.
+\[ \Delta d=\frac{m}{2\cdot sin(\vartheta)} \cdot \Delta\lambda
++\frac{m \cdot\lambda\cdot cos(\vartheta)}{2\cdot sin(\vartheta)^2}
+\cdot \Delta \vartheta\] Der Literaturwert beträgt 201 pm. Die Werte
+liegen, wie zu erwarten, sehr nah bei einander und der Literatuwert
+liegt innerhalb der Fehlergrenzen alles bestimmten Gitterkonstante.
+Auffällig ist hier aber, dass alle Werte größer sind als der
+Literaturwert. Wir vermuten jedoch, dass dies nur ein Zufall ist.
 \end{document}
 
 
