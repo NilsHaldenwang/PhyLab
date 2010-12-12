@@ -129,16 +129,35 @@ möglich.
   \label{fig:bragg-bedingung}
 \end{figure}
 
+Der Abstand der Netzebenen im Kristall liegt etwa in der Größenordnung
+der Wellenlänge von Röntgenstrahlung. Dies hat zur folge, dass die
+elektromagnetischen Wellen am Kristall zumindest teilweise reflektiert
+werden. Durch Reflektion zweier paralleler Strahlen an
+unterschiedlichen Netzebenen ( vgl. Abbildung
+\ref{fig:bragg-bedingung} ) entsteht ein Gangunterschied $\Delta$
+zwischen diesen Strahlen, sodass sie interferieren. Konstruktive
+Interferenz tritt genau dann ein, wenn dieser Gangunterschied genau
+ein ganzzahliges Vielfaches der Wellenlänge beträgt:
 
+\begin{equation}
+  \label{eq:3}
+  m \cdot \lambda = 2 \cdot d \cdot \sin\Theta
+\end{equation}
 
+mit $ m = 1,2,3,...$
+
+Durch geeignetes drehen von Kristall und Detektor ist es also leicht
+möglich nur Strahlung mit einer bestimmten Wellenlänge zu betrachten.
 
 \section{Aufgaben}
 \subsection{Messung des Emissionsspektrum von Molybdän}
 \subsubsection{Versuchsaufbau und -durchführung}
 Der Versuchsaufbau besteht aus einer Röntgenröhre und einer
-Kristall-Detektor-Vorrichtung, was durch einen Goniometer gekoppelt
-sind. In der Röntgenröhre wird zur Erzeugung von Elektronen eine
-Glühkathode verwendet. Diese Elektronen werden dann mit einer
+Kristall-Detektor-Vorrichtung. Kristall und Detektor sind dabei derart
+mittels eines Goniometer gekoppelt, dass der Detektor sich gerade
+immer um den doppelten Winkel des Kristalles dreht. In der
+Röntgenröhre wird zur Erzeugung von Elektronen eine Glühkathode
+verwendet. Diese Elektronen werden dann mit einer
 Beschleunigungsspannung $U_B$ von $31\pm0,3$kV (Schalterstellung 5)
 oder $25,3\pm0,3$kV (Schalterstellung 3) auf eine Molybdän-Anode
 beschleunigt. Die dadurch entstehende Bremsstrahlung wird mittels
@@ -169,7 +188,7 @@ Abbildung \ref{fig:nacllang5}). Da die Verteilung eines Peaks
 symmetrisch sein sollte, haben wir die Breite in einer Höhe gemessen,
 wo die Verteilung sich vom kontinuierlichem Spektrum markant
 hervorhebt. Mit dem zum Mittelpunkt zugehörigen Winkel werden mit der
-Bragg-Bedingung, also \ref{eq:3}, die Wellenlängen bestimmt. In der
+Bragg-Bedingung ( Gleichung \ref{eq:3} ) die Wellenlängen bestimmt. In der
 Tabelle \ref{tab:1} werden die Ergebnisse dargestellt.
 
 \begin{table}%[htb!]
@@ -190,7 +209,7 @@ Die Fehler wurden mithilfe der Größtfehlerrechnung bestimmt:
 \[\Delta\lambda = \frac{2\cdot d \cdot cos(\vartheta)}{n}\cdot \Delta \vartheta \]
 ,wobei $\Delta\vartheta=0,0054$ ist.
 
-Nach dem Mosleyschem Gesetz (\ref{eq:2}) und unter Berücksichtigung
+Nach dem Mosleyschem Gesetz (Gleichung \ref{eq:2}) und unter Berücksichtigung
 des Abschirmungskoeffizienten ergeben sich für die Wellenlängen:
 \[K_\alpha=72,3pm \text{ und } K_\beta=63,4pm\] Unsere Werte stimmen
 insoweit überein, dass die Literaturwerte sowohl für die erste als
@@ -228,7 +247,7 @@ das charakteristische Spektrum nicht verschoben ist, was natürlich
 auch so sein sollte, da das charakteristische Spektrum nur vom
 Material der Anode abhängig ist.
 
-\begin{figure}%
+\begin{figure}[htb!]%
 \includegraphics[width=14cm]{pics/vergl}%
 \caption{Vergleich der Spektren bei verschiedenen Beschleunigungsspannungen}%
 \label{fig:vergl}%
@@ -251,11 +270,12 @@ Gitterkonstante d in pm &$205,6	\pm	11,7 $& $204,6	\pm	10,3 $&$ 205,4	\pm	8,1 $&
 \hline
 \end{tabular}
 \newline
-\begin{figure}%
+\begin{figure}[htb!]
 \includegraphics[width=14cm]{pics/liflangmit}%
 \caption{Messung des Spektrums mithilfe von Lithiumfluorid}%
 \label{fig:liflang}%
 \end{figure}
+
 
 Die Fehler wurden mit der Gleichung für den Größtfehler berechnet:
 \[ \Delta d=\frac{m}{2\cdot sin(\vartheta)} \cdot \Delta\lambda
@@ -265,6 +285,19 @@ liegen, wie zu erwarten, sehr nah bei einander und der Literatuwert
 liegt innerhalb der Fehlergrenzen alles bestimmten Gitterkonstante.
 Auffällig ist hier aber, dass alle Werte größer sind als der
 Literaturwert. Wir vermuten jedoch, dass dies nur ein Zufall ist.
+
+
+\section{Fazit}
+\label{sec:fazit}
+
+Der Versuch beruht auf verhältnismäßig einfachen Überlegungen und
+eignet sich dennoch zur Messung unterschiedlicher Größen mit
+beachtlicher Relevanz. Durch Analyse des charakteristischen Spektrums
+lässt sich ggf. eine Aussage über die Art des Anodenmaterials treffen.
+Aus der einfach zu messenden Grenzfrequenz lässt sich leicht das
+Plancksche Wirkunsquantum bestimmen. Mit Kenntnis der
+charakteristischen Linien kann man einfach auf die Gitterkonstante
+schließen. Wahrhaftig beeindruckend.
 \end{document}
 
 
