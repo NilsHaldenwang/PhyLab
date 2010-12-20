@@ -227,10 +227,44 @@ getrennt aufzulösen.
 \subsection{Versuchsaufbau}
 \label{sec:versuchsaufbau}
 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{Aufbau des Gitterspektrometers}
+  \label{fig:gitterspektrometer}
+\end{figure}
+
+Abbildung \ref{fig:gitterspektrometer} zeigt schematisch den Aufbau
+des verwendeten Gitterspektrometers. Die jeweilige Lampe ( Natrium,
+Kalium oder Wasserstoff ) wird direkt hinter dem Spalt aufgestellt.
+Mittels einer Kondensorlinse $K$ wird sicher gestellt, dass nur
+paralleles Licht auf das Gitter $G$ fällt. Das Fernrohr ist mit einem
+Winkelmesser gekoppelt, mit dessen Hilfe sich der Ablenkwinkel
+$\alpha$ mit einem kleinsten Skalenteil von $5'$ messen lässt. Stellt
+man nun das Fernrohr so ein, dass in dessen Nullpunkt eine Linie des
+Spektrums zu sehen ist, so kann man unter Kenntnis der Ordnung $q$ des
+Maximums und des abgelesenen Winkels $\alpha$ mit Gleichung
+\eqref{eq:4} die entsprechende Wellenlänge berechnen.
 
 \subsection{Nullpunktskorrektur}
 \label{sec:nullpunktskorrektur}
 
+Um eine möglicherweise ungenaue Justierung des Nullpunktes zu
+kompensieren, wird eine Nullpunktskorrektur durchgeführt. Dazu wird
+jeweils in jede Drehrichtung des Fernrohrs der Winkel für das Maximum
+1. Ordnung des Natrium Dublettes bestimmt. Wir erhalten für die
+Drehung nach links $\alpha_l = 21.5°$ und für die Drehung nach rechts
+$\alpha_r = 20° 20'$. Der Nullpunkt scheint also zu weit links zu
+sein. Als Korrektur für rechts gemessene Winkel ist folgende Größe zu
+verwenden:
+
+\begin{equation}
+  \label{eq:6}
+  \delta_\alpha = \alpha_l - \alpha_r \approx 0.833°
+\end{equation}
+
+Im Folgenden wird diese Korrektur nicht mehr explizit erwähnt, sie
+wird aber bei allen gemessenen Winkeln einberechnet.
 
 \subsection{Messung der Spektrallinien der Balmer-Serie des Wasserstoffatoms}
 \label{sec:mess-der-spektr}
@@ -244,13 +278,12 @@ getrennt aufzulösen.
 \subsection{Spektrales Auflösungsvermögen des Gitters}
 \label{sec:spektr-aufl-des}
 
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=10cm]{pics/dummypic}
-  \caption{Aufbau des Gitterspektrometers}
-  \label{fig:gitterspektrometer}
-\end{figure}
+\section{Fazit}
+\label{sec:fazit}
+
 \end{document}
+
+
 
 
 
