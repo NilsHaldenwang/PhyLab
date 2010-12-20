@@ -254,7 +254,7 @@ kompensieren, wird eine Nullpunktskorrektur durchgeführt. Dazu wird
 jeweils in jede Drehrichtung des Fernrohrs der Winkel für das Maximum
 1. Ordnung des Natrium Dublettes bestimmt. Wir erhalten für die
 Drehung nach links $\alpha_l = 21°$ und für die Drehung nach rechts
-$\alpha_r = 21°20'$. Der Nullpunkt scheint also zu weit links zu
+$\alpha_r = 21°20'$. Der Nullpunkt scheint also zu weit rechts zu
 sein. Als Korrektur für rechts gemessene Winkel ist folgende Größe zu
 verwenden:
 
@@ -277,6 +277,33 @@ wird aber bei allen gemessenen Winkeln einberechnet.
 
 \subsection{Spektrales Auflösungsvermögen des Gitters}
 \label{sec:spektr-aufl-des}
+
+Die Messung erfolgt mit der Natriumlampe.  Zunächst wird das
+Natrium-Dublette 1. Ordnung gesucht und das Fernrohr so eingestellt,
+dass das Dublette scharf und mittig zu sehen ist. Von beiden Seiten
+wird dann jeweils eine Pappe gleichmäßig vor das Gitter geschoben.
+Gemessen wird der Abstand der Pappen, bei dem das Doublette gerade
+nicht mehr zu sehen ist. Wir erhalten für den Abstand $d = 1mm$. Da
+die Gitterkonstante den Strichabstand angibt, erhält man die Spaltzahl
+$N$ mit:
+
+\[N = \frac{d}{g} \]
+
+Der entsprechende Größtfehler ist:
+
+\[ \Delta N = \frac{\partial N}{\partial d} \cdot \Delta d =
+\frac{1}{g} \Delta d  \]
+
+Da wir nur mit einem Stahllineal messen konnten, dessen kleinster
+Skalenteil $0.5mm$ beträgt, nehmen wir diesen auch als Fehler der
+Messung $\Delta d = 0.5mm$ an.
+
+Wir erhalten für die Spaltzahl also $N = 600 \pm 510$. Im Rahmen der
+Messgenauigkeit stimmt der Wert mit dem im Skript angegebenen $N_{min}
+= 1000$ überein. Die Fehlergrenzen sind allerdings ziemlich groß im
+Verhältnis zum gemessenen Wert, das Messverfahren scheint also nicht
+besonders gut zu sein, um das minimal nötige Auflösungsvermögen für
+das Natrium-Dublette zu bestimmen.
 
 \section{Fazit}
 \label{sec:fazit}
