@@ -6,4 +6,7 @@ auto
 _region_*
 *.toc
 *.fmt
-*region*
+*region*/V11_Atomspektren/matlab/angle_to_wavelength.m
+/V11_Atomspektren/matlab/angle_to_wavelength.m~
+/V12_Roentgen/prv__region_.ini
+/V11_Atomspektren/matlab/angle_to_wavelength.m
