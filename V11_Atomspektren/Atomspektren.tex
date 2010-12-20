@@ -32,6 +32,7 @@
 \setcounter{totalnumber}{20}
 \setcounter{dbltopnumber}{9}
 \setlength{\intextsep}{0cm plus1cm minus1cm}
+\setlength{\parindent}{0cm}
 \pdfminorversion = 5
 \usepackage{setspace}
 \onehalfspacing
@@ -65,8 +66,58 @@ Linienspektren.
 \subsection{Spektrum des Wasserstoffatoms}
 \label{sec:spektr-des-wass}
 
+Für Wasserstoff erhält man als Gleichung für die Energie der einzelnen Schalen:
 
+\begin{equation}
+  W_{n}= R \cdot\frac{1}{n^2_1}
+\label{eq:1}
+\end{equation}
 
+mit
+
+\[R = -
+\frac{e^4m}{2\hbar²}\frac{1}{(4\pi\epsilon_0)^2} =-
+\frac{e^4m}{8h^2\epsilon_0^2}  \]
+
+dabei ist $e = Elementarladung$, $m = Elektronenmasse$, $\hbar =
+\frac{h}{2\pi}$ und $n = Hauptquantenzahl$. Die sog. Rydbergkonstante
+hat den Wert $R = -13.605 eV$. Sie ist eine der am besten vermessenen
+Naturkonstanten.
+
+Damit erhält man für die Energiedifferenz Eines Übergangs von $n_2$ zu
+$n_1$:
+
+\begin{equation}
+W_{n_2\mapsto n_1}=-R\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)
+\label{eq:2}
+\end{equation}
+
+Mit Hilfe von $W=h\cdot \nu$, $\lambda= \frac{c}{\nu}$ und $R=
+R_H\cdot h\cdot c$ ergibt sich für die Wellenlänge des absorbierten/emittierten Photons:
+
+\begin{equation}
+\lambda = \frac{1}{R_H \left(\frac{1}{n_1^2}- \frac{1}{n_2^2}\right)} \text { mit } R_H=1,097\cdot 10^5 \frac{1}{cm}
+\label{eq:3}
+\end{equation}
+
+Als \emph{Serien} bezeichnet man alle Übergänge von beliebigen
+Energieniveaus auf ein bestimmtes Zielniveau, also $n_1 = const.$ und
+$n_2 \geq n_1 + 1$.
+
+\begin{figure}[htb!]
+  \centering
+    \begin{minipage}[c]{7.2 cm}
+    \includegraphics[width=8cm]{pics/dummypic}
+    \caption{Spektralserien des Wasserstoffs ( nicht alle Linien
+      dargestellt ).}
+    \label{fig:serien}
+  \end{minipage}
+  \begin{minipage}[c]{7.2 cm}
+    \includegraphics[width=8cm]{pics/dummypic}
+    \caption{Grotrian-Diagramm für Kalium}
+    \label{fig:grotrian}
+  \end{minipage}
+\end{figure}
 
 \end{document}
 
