@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{icomma}
+\usepackage{nicefrac}
 %\usepackage[dvips]{graphicx}
 %\usepackage{floatflt}
 %\usepackage{enumitem}
@@ -104,7 +105,7 @@ Als \emph{Serien} bezeichnet man alle Übergänge von beliebigen
 Energieniveaus auf ein bestimmtes Zielniveau, also $n_1 = const.$ und
 $n_2 \geq n_1 + 1$.
 
-\begin{figure}[htb!]
+\begin{figure}%[htb!]
   \centering
     \begin{minipage}[c]{7.2 cm}
     \includegraphics[width=8cm]{pics/dummypic}
@@ -118,6 +119,73 @@ $n_2 \geq n_1 + 1$.
     \label{fig:grotrian}
   \end{minipage}
 \end{figure}
+
+\section{Doubletts durch Spin-Bahn-Kopplung}
+\label{sec:doubletts-durch-spin}
+
+Alkalimetalle wie Kalium besitzen ähnlich dem Wasserstoff nur ein
+s-Valenzelektron im elektronischen Grundzustand. Dadurch ergibt sich
+eine gewisse Ähnlichkeit der Spektren. Markante Unterschiede entstehen
+durch die sog. \emph{Spin-Bahn-Kopplung}. Spindrehimpuls und
+Bahndrehimpuls des Elektrons treten dabei miteinander in
+Wechselwirkung. Die beiden Momente können entweder parallel oder
+entgegengesetzt orientiert sein, sodass sich für ein Niveau mit
+Bahndrehimpuls $l$ eine Aufspaltung des Gesamtdrehimpulses $j$ in $j =
+l + \frac{1}{2}$ und $j = l - \frac{1}{2}$ ergibt. Es existieren also
+im Linienspektrum sehr nah beieinander liegende Linien, die mit
+ausreichendem Auflösungsvermögen auch sichtbar gemacht werden können.
+Im in Abbildung \ref{fig:grotrian} dargestellten Ausschnitt aus dem
+Grotrian-Diagramm für Kalium sind zwei Doubletts erkennbar für die
+Übergänge $5^2P_{1 \pm \nicefrac{1}{2}} \mapsto 4^2S_{\nicefrac{1}{2}}$ und
+$4^2P_{1 \pm \nicefrac{1}{2}} \mapsto 4^2S_{\nicefrac{1}{2}}$.
+
+Die Notation für die Termschemata ist dabei die
+folgende, wobei die Bedeutung der Symbole in Tabelle \ref{tab:
+  Quantenzahlen} dargestellt sind:
+
+\begin{equation}
+n ^{(2s+1)} L_{j}
+\label{eq:Notation}
+\end{equation}
+
+\begin{table}%[htb!]
+  \centering
+  \begin{tabular}{| c | l |}
+    \hline
+    Symbol & Bedeutung \\
+    \hline
+    n	&	Hauptquantenzahl ( Schalen ) \\
+    L	&	Drehimpulsquantenzahl $\widehat=\: l $ ( S,P,D,F,... ) \\
+    l	&	Bahndrehimpulsquantenzahl	\\
+    s	&	Spinquantenzahl $ s = \pm \frac{1}{2}$\\
+    j	& Gesamtdrehimpulsquantenzahl $j = l + s$ \\
+    \hline
+  \end{tabular}
+  \caption{Quantenzahlen für die Notation der Termsymbole.}
+  \label{tab: Quantenzahlen}
+\end{table}
+
+Das Natriumspektrum wiederum unterscheidet sich deutlich von dem des
+Wasserstoffs. Im sichtbaren Bereich enthält es bis auf einige sehr
+intensitätsschwache Ausnahmen nur die gelbe Na-Linie. Bei genauerer
+Betrachtung zeigt sich, dass diese tatsächlich aber ebenfalls ein
+Dublette ist mit den in Tabelle \ref{tab:na-doublette} dargestellten
+Wellenlängen und Übergängen.
+
+\begin{table}%[htb!]
+  \centering
+  \begin{tabular}{| c | c |}
+    \hline
+    Übergang & Wellenlänge \\
+    \hline
+    $3 ^2P_{3/2} \mapsto 3 ^2S_{1/2}$ & 588.995nm\\
+    \hline
+    $3 ^2P_{1/2} \mapsto 3 ^2S_{1/2}$ & 589.592nm\\
+    \hline
+  \end{tabular}
+  \caption{Natrium Doublette}
+  \label{tab:na-doublette}
+\end{table}
 
 \end{document}
 
