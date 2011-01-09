@@ -39,7 +39,7 @@
 \onehalfspacing
 
 \begin{document}
-\title{Versuch 11: Atomspektren}
+\title{Versuch 10: Bestimmung des Planckschen Wirkungsquantums nach Milikan}
 
 \date{\today}
 
@@ -52,25 +52,93 @@
 \section{Einleitung und theoretischer Hintergrund}
 \label{sec:einleitung}
 
+\subsection{Der Photoeffekt}
+\label{sec:der-photoeffekt}
 
-\begin{figure}%
-\includegraphics[width=14cm]{pics/dummypic}%
-\caption{Versuchsaufbau}%
-\label{pic:2}%
-\end{figure}
+Der äußere Photoeffekt tritt bei Bestrahlung einer Photokathode mit
+elektromagnetischen Wellen auf. Die Photonen geben dabei ihre gesamte
+Energie $E = h \cdot \nu$ an ein Elektron ab. Je nach Frequenz $\nu$
+des verwendeten Lichtes genügt diese Energie um die
+materialspezifische Austrittsarbeit $W_K$ zu verrichten. Dabei ist $h$
+das Plancksche Wirkungsquantum. Darüber hinausgehende Energie wird in
+kinetische Energie des ausgelösten Elektrons umgesetzt. Man erhält als
+Gleichung für die Energiebilanz:
 
+\begin{equation}
+  \label{eq:1}
+  W_{kin} = h\nu - W_K
+\end{equation}
 
+Die im Versuch verwendete Photozelle besteht aus einer Kaliumkathode
+und einer Platin-Ringanode. Die durch den Photoeffekt herausgelösten
+Elektronen bewegen sich von der Kathode zur Anode, wodurch ein
+Photostrom fließt.
+
+Durch Variation einer angelegten Gegenspannung $U$ kann man jene
+Spannung $U_0$ ermitteln, bei der kein Photostrom mehr zu messen ist.
+Bei dieser Gegenspannung können die Elektronen die Anode gerade nicht
+mehr erreichen. Man wäre versucht zu glauben man könne $W_{kin} = e
+\cdot U_0$ für die kinetische Energie in Gleichung \eqref{eq:1}
+verwenden. Tatsächlich ist es aber nötig einer durch die
+unterschiedlichen Materialien von Anode und Kathode bedingten
+Kontaktspannung Rechnung zu tragen, man erhält:
+
+\begin{equation}
+  \label{eq:2}
+  e \cdot U_0 = h\nu - W_A
+\end{equation}
+
+Man erkennt unmittelbar den linearen Zusammenhang zwischen $\nu$ und
+$U_0$. Man kann nun zur h-Bestimmung für unterschiedliche Frequenzen
+die Grenzspannung messen und entsprechend $e \cdot U_0$ gegen $\nu$
+auftragen, da $W_A$ von der Frequenz unabhängig ist. Das Plancksche
+Wirkungsquantum ergibt sich dann als Steigung der Geraden durch die
+Messpunkte. Man erhält als Messvorschrift:
+
+\begin{equation}
+  \label{eq:3}
+  h = \frac{e \left( U_0(\nu_2) - U_0(\nu_1) \right)}{\nu_2 - \nu_1}
+\end{equation}
+
+Die im Versuch verwendeten Wellenlängen finden sich in Tabelle
+\ref{tab:1}.
+
+Schaltet man Anode und Kathode  nicht leitend zusammen, so kommt
+durch den Ladungsfluß aufgrund des Photoeffekts ein elektrisches Feld
+zu Stande, sehr ähnlich dem eines Kondensators. Die Spannung steigt
+bis zu einem Wert $U_{max}$ an. Wenn dieser Wert erreicht ist, können
+die energiereichsten Elektronen die Spannung nicht mehr überwinden und
+man kann wieder mit $ U_{max} = U_{0}$ und Gleichung \eqref{eq:2} auf
+o.g. Weise $h$ bestimmen.
+
+Diese beiden Messmethoden sollen im Folgenden durchgeführt werden.
 
 \section{Aufgaben}
-\subsection{Bestimmung des Planck'schen Wirkungquantums}
-Dieser Versuch befasst sich mit dem photoelektrischem Effekt. Dazu
-wird eine Photozelle mit verschiedenem Licht beleuchtet und jeweils
-die Grenzspannung $U_0$ bestimmt. Der Aufbau ist in Abbildung 1
-dargestellt. Es wird eine Quecksilberlampe als Lichtquelle verwendet.
-In einem V-förmigen Kasten wird der Lichtstrahl gebrochen und dadurch
-entsteht das charakteristische Linienspektrum von Quecksilber, das am
-anderen Ende des Kastens durch einen Spiegel in die andere Richtung
-umgelenkt wird. In der Tabelle \ref{tab:1} sind diese aufgelistet.
+
+\subsection{Versuchsaufbau}
+\label{sec:versuchsaufbau}
+
+Um unterschiedliche Lichtfrequenzen zur Verfügung zu haben, wird in
+diesem Versuch ein Prismenspektrometer verwendet. Dieses befindet sich
+in einem geschlossenen Gehäuse um das Auftreffen von Umgebungslicht
+auf die Photozelle zu verhindern. Abbildung \ref{pic:2} stellt den
+Aufbau schematisch dar.
+
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[scale=0.9]{pics/dummypic}
+  \caption{Versuchsaufbau}
+  \label{pic:2}
+\end{figure}
+
+Das von der Quecksilberdampflampe ausgesendete Licht wird mittels
+eines Geradsichtprismas spektral zerlegt. Über einen Umlenkspiegel
+wird dieses schließlich durch eine Blende mittels einer Sammellinse
+auf die Photozelle fokussiert. Durch drehen des Schwenkarms kann
+entsprechend die gewünschte Spektralinie ausgewählt werden.
+
+Die Wellenlängen der verwendeten Spektralinien sind in Tabelle
+\ref{tab:1} aufgeführt.
 
 \begin{table}%[htb!]
   \centering
@@ -85,35 +153,35 @@ umgelenkt wird. In der Tabelle \ref{tab:1} sind diese aufgelistet.
 \label{tab:1}
 \end{table}
 
-Der andere Teil des Kastens ist drehbar, sodass die Photozelle, die in
-diesem Kasten fixiert ist, auf einen der Lichtstrahlen gerichtet
-werden kann. Um die Grenzspannung zu bestimmen, werden zwei Methoden
-verwendet, wobei bei der zweiten Methode die Einstellung der
-Photozelle nach Augenmaß vorgenommen wurde. Bei der ersten Methode
-haben wir mithilfe des Strommessers die Stelle bestimmt, bei der der
-Photostrom ihr Maximum annahm.
-
 \subsection{Messmethode mit Anlegen einer Gegenspannung}
-
 \label{sec:gegenspannung}
-\begin{figure}%
+
+Die Beschaltung der Photozelle zur Messung mit Gegenspannung ist
+schematisch in Abbildung \ref{pic:3} dargestellt.
+
+\begin{figure}%[htb!]
 \centering
 \includegraphics[width=10cm]{pics/photozelle}%
-\caption{Schaltung zur Photozelle}%
+\caption{Beschaltung der Photozelle zur Messung mit der Gegenspannung}%
 \label{pic:3}%
 \end{figure}
 
-In diesem Teil des Versuches wird eine Gegenspannung angelegt, die
-mithilfe eines Drehpotentiometers langsam und stetig erhöht wird. Der
-Verlauf des Photostromes $I_{Ph}$ wird von einem Programm
-aufgezeichnet. Wenn die Gegenspannung groß genug ist, treffen keine
-Elektronen mehr auf die Anode, sodass der Photostrom null wird. In den
-Aufzeichnung wird der Photostrom über die Gegenspannung aufgetragen,
-sodass das Ablesen der Grenzspannung möglich ist (s. Anhang). Da die
-Erhöhung der Gegenspannung manuell geschehen ist, ist die Auftragung
-der Gegenspannung nicht linear, sodass das Ablesen der Gegenspannung
-nicht genau ist. Zu den in der Tabelle \ref{tab:1} genannten Lichtern
-werden die Grenzspannungen bestimmt (s.Tabelle \ref{tab:2}).
+Der Photostrom zwischen Anode und Kathode wird mit einem
+Messverstärker verstärkt. Diese wandelt das Signal bei einer
+Maximalverstärkung von $10^{-11} \frac{A}{V}$ in einen Wert $U
+\in [0,10]$ um, der gemessen werden kann.
+
+Die angelegte Gegenspannung wird mithilfe eines Drehpotentiometers
+langsam und stetig erhöht. Der Verlauf des Photostromes $I_{Ph}$ wird
+von einem Programm aufgezeichnet. Wenn die Gegenspannung groß genug
+ist, treffen keine Elektronen mehr auf die Anode, sodass der
+Photostrom null wird. In den Aufzeichnung wird der Photostrom über die
+Gegenspannung aufgetragen, sodass das Ablesen der Grenzspannung
+möglich ist (s. Anhang). Da die Erhöhung der Gegenspannung manuell
+geschehen ist, ist die Auftragung der Gegenspannung nicht linear,
+sodass das Ablesen der Gegenspannung nicht genau ist. Zu den in der
+Tabelle \ref{tab:1} genannten Wellenlängen werden die Grenzspannungen
+bestimmt (s.Tabelle \ref{tab:2}).
 
 \begin{table}%[htb!]
   \centering
@@ -154,23 +222,32 @@ wahrscheinlich durch die Photozelle entstanden ist.
 \label{pic:4}%
 \end{figure}
 
-\subsection{Messmethode mithilfe eines Elektrometers}
+\subsection{Messmethode mit Hilfe eines Elektrometers}
+\label{sec:elektrometer}
 
-\begin{figure}%
+Für die Messung mit dem Elektrometer wird die in Abbildung \ref{pic:5}
+dargestellte Beschaltung verwendet.
+
+\begin{figure}%[htb!]
   \centering
 	\includegraphics[width=10cm]{pics/photozelle2}%
-	\caption{Schaltung zur Photozelle}%
+	\caption{Schaltung der Photozelle zur Messung mit Elektrometer}%
 	\label{pic:5}%
 \end{figure}
 
-Bei der zweiten Messmethode wird ausgenutzt, dass ohne Anlegen einer
-Gegenspannung eine Spannung zwischen der Anode und der Kathode
-aufgebaut wird, die der Grenzspannung entspricht. Dadurch wird ein
-Kondensator geladen (s. Abbildung \ref{pic:4}). Die Spannung wird mit
-einem Multimeter gemessen. Die gemessenen Werte für die
-Grenzspannungen sind in der Tabelle \ref{tab:3} dargestellt.
+Die zwischen Anode und Kathode entstehende Spannung wird ausgenutzt um
+einen Kondensator zu laden. Dessen Spannung entspricht der
+Grenzspannung, wenn sie keine nennenswerten Änderungen mehr aufweist.
+Die Spannung wird für alle in Tabelle \ref{tab:1} genannten Frequenzen
+mittels eines Multimeters gemessen. Die Ergebnisse finden sich in
+Tabelle \ref{tab:3}.
 
-\begin{table}[htb!]%
+Aufgrund der hier fehlenden Strommessung erwies sich das Ausrichten
+der Spektrallinien als schwierig, es konnte lediglich nach Augenmaß
+geschehen und aufgrund der Vorerfahrung aus dem ersten Versuch
+geschehen.
+
+\begin{table}%[htb!]%
   \centering
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
@@ -194,15 +271,49 @@ kleiner als der Literaturwert $6,626 \cdot 10^{-34} Js$ und wie schon
 oben genannt, ist der systematische Fehler wahrscheinlich mit der
 Photozelle verbunden.
 
-\begin{figure}%
+\begin{figure}[htb!]%
 \includegraphics[width=15cm]{pics/feld}%
 \caption{grafische Auswertung der Messwerte zur ersten Messmethode mit dem Elektrometer}%
 \label{pic:6}%
 \end{figure}
 
+%\newpage
 \section{Fazit}
 \label{sec:fazit}
 
+Die Ergebnisse sind in Tabelle \ref{tab:ergebnisse} dargestellt. Es
+fällt auf, dass beide gemessenen Werte deutlich unter dem
+Literaturwert liegen. Der Wert der Gegenspannungsmethode stimmt nicht
+einmal im Rahmen der Messgenauigkeit mit dem Literaturwert überein,
+der mit dem Elektrometer gemessene Wert hingegen schon. Das ist in der
+Tat verwunderlich, wir hätten eher das Gegenteil erwartet, da schon
+das Behrühren eines Kabels mit der Hand die Messung mit dem
+Elektrometer verfälscht hat und wir diese Methode als fehleranfälliger
+eingeschätzt hätten. Es scheint also als sei diese Fehlerquelle
+erfolgreich vermieden worden. Andere statistische Fehler können wir
+nicht ausmachen, daher nehmen wir als Erklärung für die zu niedrigen
+Werte einen Systematischen Fehler an. Dieser muss wohl irgendwo im
+Aufbau zu finden sein, oder direkt in der Photozelle selbst. Womöglich
+kommen durch Verunreinigungen innerhalb der Photozelle Kriechströme
+zustande, die die Messung beeinflusst haben.
+
+\begin{table}%[htb!]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    Messmethode & h in $10^{-34} Js$ \\
+    \hline
+    \hline
+    Gegenspannungsmethode & $5.8 \pm 0.7$ \\
+    \hline
+    Elektrometer & $5.7 \pm 1.1$ \\
+    \hline
+    Literaturwert & $6.626$ \\
+    \hline
+  \end{tabular}
+  \caption{Ergebnisse}
+  \label{tab:ergebnisse}
+\end{table}
 
 
 \end{document}
