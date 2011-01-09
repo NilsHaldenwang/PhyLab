@@ -61,6 +61,7 @@
 \end{figure}
 Dieser Versuch befasst sich mit dem photoelektrischem Effekt. Dazu wird eine Photozelle mit verschiedenem Licht beleuchtet und jeweils die Grenzspannung $U_0$ bestimmt. Der Aufbau ist in Abbildung 1 dargestellt. Es wird eine Quecksilberlampe als Lichtquelle verwendet. In einem V-förmigen Kasten wird der Lichtstrahl gebrochen und dadurch entsteht das charakteristische Linienspektrum von Quecksilber, das am anderen Ende des Kastens durch einen Spiegel in die andere Richtung umgelenkt wird. In der Tabelle \ref{tab:1} sind diese aufgelistet.
 \begin{table}%[htb!]
+  \centering
 	\begin{tabular}{|l|lllll|}
 	\hline
 	Farbe& gelb& grün& grünblau&blau-violett&tief violett\\
@@ -76,12 +77,14 @@ Der andere Teil des Kastens ist drehbar, sodass die Photozelle, die in diesem Ka
 
 \label{sec:gegenspannung}
 \begin{figure}%
+\centering
 \includegraphics[width=10cm]{pics/photozelle}%
 \caption{Schaltung zur Photozelle}%
 \label{pic:3}%
 \end{figure}
 In diesem Teil des Versuches wird eine Gegenspannung angelegt, die mithilfe eines Drehpotentiometers langsam und stetig erhöht wird. Der Verlauf des Photostromes $I_{Ph}$ wird von einem Programm aufgezeichnet. Wenn die Gegenspannung groß genug ist, treffen keine Elektronen mehr auf die Anode, sodass der Photostrom null wird. In den Aufzeichnung wird der Photostrom über die Gegenspannung aufgetragen, sodass das Ablesen der Grenzspannung möglich ist (s. Anhang). Da die Erhöhung der Gegenspannung manuell geschehen ist, ist die Auftragung der Gegenspannung nicht linear, sodass das Ablesen der Gegenspannung nicht genau ist. Zu den in der Tabelle \ref{tab:1} genannten Lichtern werden die Grenzspannungen bestimmt (s.Tabelle \ref{tab:2}).
 \begin{table}%[htb!]
+  \centering
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
 	Grenzspannung in V&0,7 & 0,8 &1,0 &1,3 &1,5\\
@@ -92,8 +95,9 @@ In diesem Teil des Versuches wird eine Gegenspannung angelegt, die mithilfe eine
 \caption{Grenzspannung mit der jeweiligen Frequenz des Lichtes}
 \label{tab:2}
 \end{table}
-Die Energien, die man durch Multiplikation von Grenzspannung und der Elementarladung $e$ erhält, sind über die Frequenz in Abbildung \ref{pic:4} dargestellt. Für den Ablesefehler haben wir 0,05V angenommen, sodass die Werte in der Abbildung einen Fehler von $\Delta eU_0=0,05J\cdot1,6=0,08J$. Durch lineare Regression erhalten wir die Steigung $m_{f(x)}=(5,8\pm0,7)\cdot 10^{-34} Js$, wobei die Zehnerpotenzen der Elementarladung und der Frequenz mitberücksichtigt worden sind. Der Fehler ist durch den maximal und minimal möglichen Anstieg bestimmt worden. Nach der Gleichung \ref{eq:3} sollte die Steigung den Wert des Planck'schen Wirkungquantums annehmen, jedoch beträgt der Literaturwert  $6,626 \cdot 10^{-34} Js$ und ist damit viel größer als der von uns ermittelte Wert. Bei der zweiten Messmethode erhielten wir ähnliche bzw. identische Ergebnisse für die Grenzspannung. Daher vermuten wir, dass ein systematischer Fehler zu diesem Ergebnis geführt hat. Wo genau der statistische Fehler zu finden ist, können wir nicht sagen. Da aber bei beiden Messmethoden verschiedene Geräte benutzt wurden, denken wir, dass das Problem wahrscheinlich durch die Photozelle entstanden ist. 
+Die Energien, die man durch Multiplikation von Grenzspannung und der Elementarladung $e$ erhält, sind über die Frequenz in Abbildung \ref{pic:4} dargestellt. Für den Ablesefehler haben wir 0,05V angenommen, sodass die Werte in der Abbildung einen Fehler von $\Delta eU_0=0,05J\cdot1,6=0,08J$. Durch lineare Regression erhalten wir die Steigung $m_{f(x)}=(5,8\pm0,7)\cdot 10^{-34} Js$, wobei die Zehnerpotenzen der Elementarladung und der Frequenz mitberücksichtigt worden sind. Der Fehler ist durch den maximal und minimal möglichen Anstieg bestimmt worden. Nach der Gleichung \ref{eq:3} sollte die Steigung den Wert des Planck'schen Wirkungquantums annehmen, jedoch beträgt der Literaturwert  $6,626 \cdot 10^{-34} Js$ und ist damit viel größer als der von uns ermittelte Wert. Bei der zweiten Messmethode erhielten wir ähnliche bzw. identische Ergebnisse für die Grenzspannung. Daher vermuten wir, dass ein systematischer Fehler zu diesem Ergebnis geführt hat. Wo genau der statistische Fehler zu finden ist, können wir nicht sagen. Da aber bei beiden Messmethoden verschiedene Geräte benutzt wurden, denken wir, dass das Problem wahrscheinlich durch die Photozelle entstanden ist.
 \begin{figure}%
+\centering
 \includegraphics[width=15cm]{pics/gegen}%
 \caption{grafische Auswertung der Messwerte zur ersten Messmethode mit der Gegenspannung}%
 \label{pic:4}%
@@ -102,12 +106,14 @@ Die Energien, die man durch Multiplikation von Grenzspannung und der Elementarla
 \subsection{Messmethode mithilfe eines Elektrometers}
 
 \begin{figure}%
+  \centering
 	\includegraphics[width=10cm]{pics/photozelle2}%
 	\caption{Schaltung zur Photozelle}%
 	\label{pic:5}%
 \end{figure}
-Bei der zweiten Messmethode wird ausgenutzt, dass ohne Anlegen einer Gegenspannung eine Spannung zwischen der Anode und der Kathode aufgebaut wird, die der Grenzspannung entspricht. Dadurch wird ein Kondensator geladen (s. Abbildung \ref{pic:4}). Die Spannung wird mit einem Multimeter gemessen. Die gemessenen Werte für die Grenzspannungen sind in der Tabelle \ref{tab:3} dargestellt. 
+Bei der zweiten Messmethode wird ausgenutzt, dass ohne Anlegen einer Gegenspannung eine Spannung zwischen der Anode und der Kathode aufgebaut wird, die der Grenzspannung entspricht. Dadurch wird ein Kondensator geladen (s. Abbildung \ref{pic:4}). Die Spannung wird mit einem Multimeter gemessen. Die gemessenen Werte für die Grenzspannungen sind in der Tabelle \ref{tab:3} dargestellt.
 \begin{table}[htb!]%
+  \centering
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
 	Grenzspannung in V&0,7 & 0,8 &0,95 &1,35 &1,45\\
