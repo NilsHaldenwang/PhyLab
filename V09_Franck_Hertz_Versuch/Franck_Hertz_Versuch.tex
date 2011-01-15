@@ -131,7 +131,7 @@ kann jedes Elektron $ n $ mal inelastisch mit einem Hg-Atom stoßen.
 Jedes zu $ n_1 $ gehörige Minimum weißt jedoch für $ n_1 < n_2 $ einen
 niedrigeren Stromwert auf als $ n_2 $. Dies liegt darin begründet,
 dass im Allgemeinen $ n $ Stöße des gleichen Elektrons
-unwahrscheinlicher sind als $ n+1 $ Stöße und somit für größere
+unwahrscheinlicher sind als $ n-1 $ Stöße und somit für größere
 Beschleunigungsspannungen insgesamt mehr Elektronen die Gegenkathode
 erreichen können. Der ideale, simulierte Verlauf einer solchen Kuve ist in
 Abbildung \ref{fig:idealer-verlauf} dargestellt. Wie schon erwähnt
@@ -198,6 +198,25 @@ menschliche Auge nicht sichtbar.
 \subsection{Energiebetrachtung zum Stoß}
 \label{sec:energ-zum-sto3}
 
+Nach verlassen der Glühkathode haben die Elektronen die kinetische
+Energie $ W_{0} $. Die für die Anregung eines Hg-Atoms notwendige
+Energie sei $ W_{a} $. Das Feld zwischen Glühkathode und Anode wird
+näherungsweise als Feld eines Plattenkondensators betrachtet. Dieser
+habe die Dicke $ d $ und das Potential $ E \cdot x $
+
+Für die Energie des Elektrons nach der Anregung eines Hg-Atoms am Ort
+$x$ ergibt sich:
+\[W_x= E\cdot \frac{x}{d}+W_0-W_{a}\] Für die Energie die das Elektron
+nach dem Stoß durch das elektrische Feld zugeführt bekommt, erhält
+man:
+\[W_{s}= E\cdot \frac{d-x}{d}\] Die Summe aus beiden Energien ergibt
+die Gesamtenergie des Elektrons:
+\[W_{ges} = W_x+ W_{s}= E+W_0-W_{a}=const.\]
+
+Die Gesamtenergie $ W_{ges} $ der Elektronen mit selber Zahl
+inelastischer Stöße ist also identisch. Es spielt keine Rolle wo ein
+inelastischer Stoß statt findet, sondern lediglich, dass die
+kinetische Energie mindestens so groß ist wie die Anregungsenergie.
 
 
 \end{document}
