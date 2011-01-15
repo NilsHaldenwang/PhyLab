@@ -68,7 +68,7 @@ Elektronen und Gasatomen zu nutze um die Quantisierung bei Aufnahme
 und Abgabe von Energie zu zeigen. Eine schematische Darstellung der
 Röhre und ihrer Beschaltung findet sich in Abbildung \ref{fig:}.
 
-\begin{figure}[htb!]
+\begin{figure}%[htb!]
   \centering
   \includegraphics[width=20cm]{pics/dummypic}
   \caption{Schematische Darstellung der Röhre und ihrer Beschaltung}
@@ -133,17 +133,49 @@ niedrigeren Stromwert auf als $ n_2 $. Dies liegt darin begründet,
 dass im Allgemeinen $ n $ Stöße des gleichen Elektrons
 unwahrscheinlicher sind als $ n+1 $ Stöße und somit für größere
 Beschleunigungsspannungen insgesamt mehr Elektronen die Gegenkathode
-erreichen können. Der ideale Verlauf einer solchen Kuve ist in
+erreichen können. Der ideale, simulierte Verlauf einer solchen Kuve ist in
 Abbildung \ref{fig:idealer-verlauf} dargestellt. Wie schon erwähnt
 kommt es auf die absoluten Werte nicht an, lediglich die Abstände der
-Maxima bzw. Minima spielen eine Rolle.
+Maxima bzw. Minima spielen eine Rolle zur Bestimmung der
+Energiedifferenz zwischen den Energieniveaus.
 
-\begin{figure}[htb!]
+\begin{figure}%[htb!]
   \centering
   \includegraphics[width=10cm]{pics/dummypic}
-  \caption{Idealer Kurvenverlauf einer Hg-Röhre}
+  \caption{Idealer Kurvenverlauf der Strom-Spannungs-Kennlinie einer Hg-Röhre}
   \label{fig:idealer-verlauf}
 \end{figure}
+
+Noch zu erwähnen wäre der nicht beim Nullpunkt der Spannung beginnende
+Stromverlauf. Zum einen benötigen die Elektronen natürlich zunächst
+die nötige Beschleunigung um die Gegenspannung überwinden zu können,
+zum anderen müssen sie eine aufgrund der unterschiedlichen Materialien
+von Anode und Kathode entstehende Kontaktspannung überwinden.
+
+Um zu zeigen, dass die Franck-Hertz-Minima/Maxima nicht durch
+Eigenschaften der Röhren zu Stande kommen, wird zunächst bei kalter
+Röhre die U-I-Kennlinie aufgenommen. Bei kalter Röhre ist der
+Dampfdruck in der Röhre noch nicht hoch genug und die Elektronen
+stoßen nicht inelastisch mit Hg-Atomen. Abbildung
+\ref{fig:erw-str-spann} zeigt den erwarteten Strom-Spannungs-Verlauf.
+
+\begin{figure}%[htb!]
+  \centering
+  \includegraphics[width=10cm]{pics/dummypic}
+  \caption{erwarteter Strom-Spannungsverlauf der kalten Röhre}
+  \label{fig:erw-str-spann}
+\end{figure}
+
+Dieser ähnelt sehr einer typischen Diodenkennlinie. Im
+Anlaufstrom-Bereich gelangen die Elektronen bereits durch die beim
+Austritt aus der Anode zugeführten Energie zur Anode. Dies führt bei
+einer evakuierten Diode zu negativen Strömen. Hier ist dies wegen
+Gegen- und Kontaktspannung allerdings nicht der Fall. Der Strom in
+diesem Bereich verläuft Proportional zu $ exp(U_A) $. Im
+Raumladungsbereich ist der Strom proportional zu $ U^{\frac{3}{2}}_A
+$. Im Sättigungsbereich lässt sich allerdings aufgrund des Hg-Gases
+kein Plateau erkennen, sondern ein linearer Anstieg.
+
 
 
 \section{Aufgaben}
@@ -152,11 +184,20 @@ Maxima bzw. Minima spielen eine Rolle.
 \subsection{Anregungsenergie und Wellenänge}
 \label{sec:anreg-und-well}
 
-Mach ich morgen.
+Nach Abbildung 2 aus dem Skript beträgt der Abstand zweier Maxima ca.
+$ \Delta U_{A} = 4.9V $. Die Anregungsenergie ist also $ E_{Hg} = e
+\cdot \Delta U_{A} $. Daraus ergibt sich sofort die Wellenlänge $
+\lambda $ als:
+
+\[\lambda = \frac{h\cdot c }{E_{Hg}} = \frac{6,6262\cdot10^{-34}Js
+  \cdot 299792458\frac{m}{s}}{4,9\cdot 1,602\cdot10^{-19}J}=253nm \]
+
+Die Wellenlänge liegt also im ultravioletten Breich und ist für das
+menschliche Auge nicht sichtbar.
 
 \subsection{Energiebetrachtung zum Stoß}
 \label{sec:energ-zum-sto3}
 
-Mach ich morgen.
+
 
 \end{document}
