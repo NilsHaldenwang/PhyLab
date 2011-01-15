@@ -53,39 +53,39 @@
 \label{sec:einleitung}
 
 Der Franck-Hertz-Versuch wurde erstmals in den Jahren 1911 bis 1914
-von James Franck und Gustav Ludwig Hertz durchgeführt und belegt die
+von James Franck und Gustav Ludwig Hertz durchgefÃ¼hrt und belegt die
 Existenz von diskreten Energieniveaus in Atomen. Im Jahre 1925
-erhielten sie dafür den Nobelpreis.
+erhielten sie dafÃ¼r den Nobelpreis.
 
-Diskrete Energiezustände in Atomen unterscheiden sich durch die
-Energiedifferenzen zwischen ihnen. Durch Zuführung von exakt einer
-solchen Energiedifferenz können Elektronen auf ein höheres Niveau
+Diskrete EnergiezustÃ¤nde in Atomen unterscheiden sich durch die
+Energiedifferenzen zwischen ihnen. Durch ZufÃ¼hrung von exakt einer
+solchen Energiedifferenz kÃ¶nnen Elektronen auf ein hÃ¶heres Niveau
 gelangen, durch Abgabe der Energie in Form eines Photons ist es ihnen
-ebenso möglich wieder auf ein niedrigeres Niveau zu fallen.
+ebenso mÃ¶glich wieder auf ein niedrigeres Niveau zu fallen.
 
-Franck und Hertz machten sich ineleastische Stöße von beschleunigten
+Franck und Hertz machten sich ineleastische StÃ¶ÃŸe von beschleunigten
 Elektronen und Gasatomen zu nutze um die Quantisierung bei Aufnahme
 und Abgabe von Energie zu zeigen. Eine schematische Darstellung der
-Röhre und ihrer Beschaltung findet sich in Abbildung \ref{fig:}.
+RÃ¶hre und ihrer Beschaltung findet sich in Abbildung \ref{fig:}.
 
 \begin{figure}[htb!]
   \centering
   \includegraphics[width=20cm]{pics/dummypic}
-  \caption{Schematische Darstellung der Röhre und ihrer Beschaltung}
+  \caption{Schematische Darstellung der RÃ¶hre und ihrer Beschaltung}
   \label{fig:}
 \end{figure}
 
-Die Röhre ist gefüllt mit Quecksilber. Die Elektronen werden mittels
-Glühelektrischem Effekt aus der Heizkathode $ K $ herausgelöst und
+Die RÃ¶hre ist gefÃ¼llt mit Quecksilber. Die Elektronen werden mittels
+GlÃ¼helektrischem Effekt aus der Heizkathode $ K $ herausgelÃ¶st und
 mittels der Beschleunigungsspannung $ U_{A} $ zur Gitteranode $ A $
 beschleunigt. So sie hinreichend beschleunigt wurden, erreichen sie
 die Gegenkathode $ GK $ gegen die Gegenspannung $U_{S}$. Der dabei
-fließende Strom $I_{S}$ wird in Abhängigkeit von $U_{A}$ gemessen.
+flieÃŸende Strom $I_{S}$ wird in AbhÃ¤ngigkeit von $U_{A}$ gemessen.
 
-Neben den inelastischen Stößen finden im Allgemeinen aber vor allem
-elastische Stöße statt. Die größten Energieübertragungen finden bei
-zentral-elastischen Stößen statt, dabei genügt die Energieübertragung
-$ \Delta W $ für ruhende Hg-Atome der folgenden Gleichung:
+Neben den inelastischen StÃ¶ÃŸen finden im Allgemeinen aber vor allem
+elastische StÃ¶ÃŸe statt. Die grÃ¶ÃŸten EnergieÃ¼bertragungen finden bei
+zentral-elastischen StÃ¶ÃŸen statt, dabei genÃ¼gt die EnergieÃ¼bertragung
+$ \Delta W $ fÃ¼r ruhende Hg-Atome der folgenden Gleichung:
 
 \begin{equation}
   \label{eq:1}
@@ -96,28 +96,28 @@ $ \Delta W $ für ruhende Hg-Atome der folgenden Gleichung:
 Aus Gleichung \eqref{eq:1} ist leicht ersichtlich, dass die Elektronen
 kaum Energieverlust erleiden, lediglich ihre Bewegungsrichtung kehrt
 sich um. Sie durchlaufen das Feld nun in entgegensetzter Richtung und
-gelangen maximal zurück bis zur Kathode, wo schließlich wieder eine
+gelangen maximal zurÃ¼ck bis zur Kathode, wo schlieÃŸlich wieder eine
 erneute Beschleunigung in Richtung Anode beginnt.
 
-Nicht zentrale Stöße können in einer Ablenkungsrichtung senkrecht zum
-Feld resultieren, sodass die Elektronen zur Röhrenwand gelangen und
-dort Raumladungen bilden. Die Raumladungen stoßen weitere nachfolgende
+Nicht zentrale StÃ¶ÃŸe kÃ¶nnen in einer Ablenkungsrichtung senkrecht zum
+Feld resultieren, sodass die Elektronen zur RÃ¶hrenwand gelangen und
+dort Raumladungen bilden. Die Raumladungen stoÃŸen weitere nachfolgende
 Elektronen wieder ab.
 
-Elastische Stöße führen also höchstens zu einer kontinuierlichen
-Stromminderung durch abfließende Elektronen über die Röhrenwand. Dies
+Elastische StÃ¶ÃŸe fÃ¼hren also hÃ¶chstens zu einer kontinuierlichen
+Stromminderung durch abflieÃŸende Elektronen Ã¼ber die RÃ¶hrenwand. Dies
 hat auf die Genauuigkeit der Messung keinen Einfluss, da lediglich der relative
 Wert des Stroms von Bedeutung ist.
 
 \section{Aufgaben}
 \label{sec:aufgaben}
 
-\subsection{Anregungsenergie und Wellenänge}
+\subsection{Anregungsenergie und WellenÃ¤nge}
 \label{sec:anreg-und-well}
 
 Mach ich morgen.
 
-\subsection{Energiebetrachtung zum Stoß}
+\subsection{Energiebetrachtung zum StoÃŸ}
 \label{sec:energ-zum-sto3}
 
 Mach ich morgen.
