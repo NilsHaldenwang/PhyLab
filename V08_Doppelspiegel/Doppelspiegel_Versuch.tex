@@ -1,0 +1,148 @@
+\documentclass{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{nicefrac}
+%\usepackage[dvips]{graphicx}
+%\usepackage{floatflt}
+%\usepackage{enumitem}
+%\usepackage{babel}
+\usepackage{blindtext}
+%\usepackage{showframe}
+\usepackage{calc}
+\usepackage{wrapfig}
+\def\BILD{\rule{0.4\textwidth}{4cm}}
+
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{url}
+
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+\setlength{\intextsep}{0cm plus1cm minus1cm}
+\setlength{\parindent}{0cm}
+\pdfminorversion = 5
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document}
+\title{Versuch 8: Fresnelscher Doppelspiegel}
+
+\date{\today}
+
+\author{Gruppe 5a: Gia-Danh Lam, Nils Haldenwang}
+
+\maketitle
+\tableofcontents
+
+\newpage
+\section{Einleitung und theoretischer Hintergrund}
+\label{sec:einleitung}
+\begin{equation}
+\lambda=\frac{B \cdot \Delta \cdot f}{b^2}
+\label{eq:1}
+\end{equation}
+\section{Aufgaben}
+
+\subsection{Aufbau}
+\begin{figure}%
+\includegraphics[width=12cm]{pics/aufbau}%
+\caption{Aufbau zum Doppelspiegelversuch}%
+\label{fig:aufb}%
+\end{figure}
+Bei diesem Versuch wird mithilfe eines Doppelspiegels Interferenzerscheinung hervorgerufen. Der schematische Aufbau ist in Abbildung \ref{fig:aufb} zu sehen. Als Lichtquelle wird eine Lampe oder eine Laserdiode verwendet. Im Aufbau mit der Laserdiode wird nur noch der Doppelspiegel und die Linse K mit der Brennweite f=200mm gebraucht. Dagegen werden beim Aufbau mit der Lampe zwei Kondensorlinsen und ein Spalt benutzt, um relativ intensives und gebündeltes Licht zu erhalten. Der Doppelspiegel wird so eingestellt, dass es einen streifenden Einfall gibt. Zwischen dem Doppelspiegel und dem Spalt können noch Filter eingesetzt werden. In unserem Versuch werden blaue und rote Filter verwendet. Um das Bild der Glühwendel bzw. des Lasers auf dem Schirm zu sehen, wird die Linse K benötigt. Die optischen Bauelemente werden auf gleicher Höhe auf einer optischen Bank eingestellt, sodass es einen geraden Strahlengang ergibt.
+\subsection{Qualität der Justierung}    
+Für diesen Versuch wird der komplexere Aufbau verwendet, d.h. mit allen in Abbildung \ref{fig:aufb} enthaltenen optischen Bauelementen.
+\begin{figure}%
+\includegraphics[width=10cm]{pics/rot}%
+\caption{Interferenzmuster mit rotem Filter}%
+\label{fig:rot}%
+\end{figure}
+In Abbildung \ref{fig:rot} ist das Interferenzmuster mit dem roten Filter bei eng geschlossenem Spalt zu sehen. Wenn wir die Spaltöffnung vergrößert haben, wurden die Interferenzstreifen zunächst unschärfer. Bei weiterem Öffnen sind die Intereferenzstreifen verschwunden, d.h. wir erhielten ausgeleuchtete Flächen. Dies stimmt damit überein, dass das Phänomen der Beugung nur bei eng geschlossenen Spalten erkennbar ist. Durch Verändern des Knickwinkels verändert man die Position der Bilder des Doppelspiegels und damit wird auch das Überlappungsgebiet verändert, d.h. dass viele Interferenzmaxima und -minima nur sichtbar sind, wenn das Überlappungesgebiet maximal ist.
+\subsection{Bestimmung der Wellenlänge}
+\begin{figure}%
+\includegraphics[width=10cm]{pics/rot2}%
+\caption{Bild mit rotem Filter}%
+\label{fig:rot2}%
+\end{figure}
+\begin{figure}%
+\includegraphics[width=10cm]{pics/blau}%
+\caption{Interferenzmuster mit blauem Filter}%
+\label{fig:blau}%
+\end{figure}
+\begin{figure}%
+\includegraphics[width=10cm]{pics/blau2}%
+\caption{Bild mit blauem Filter}%
+\label{fig:blau2}%
+\end{figure}
+Für die Bestimmung der Wellenlängen mit dem roten und dem blauen Filter werden nach Gleichung \ref{eq:1} die Bildweiten $b_i$ und Bildgrößen$B_i$, d.h. der Abstand zwischen den Bildern des Doppelspiegels, sowie der Abstand zwischen den Interferenzstreifen$\Delta_i$ benötigt. Die Brennweite f=200mm der Linse K nehmen wir als fehlerfrei an. Gemessen wurde mithilfe des Programmes Plotdigitizer. Dazu haben wir das Interferenzmuster und die Bilder fotografiert (s.Abbildungen \ref{fig:rot},\ref{fig:rot2},\ref{fig:blau},\ref{fig:blau2}), wobei bei jedem Foto das Schirmblatt mit den Skaleneinheiten von 5mm zu sehen ist.
+In der Tabelle \ref{tab:1} sind die gemessenen Werte aufgelistet.
+\begin{table}%
+\begin{tabular}{|l|l|l|l|}
+\hline
+Filter &$B_i$	in mm	& $b_i$ in mm	& $\Delta_i$ in mm	 \\
+\hline
+rot  & 2.43 & 812 & 0.92 \\
+blau & 2.14 & 817 & 0.85 \\
+\hline
+\end{tabular}
+\caption{Messwerte zur Wellenlängenbestimmung}
+\label{tab:1}
+\end{table}
+Mit Gleichung \ref{eq:1} erhalten wir die Wellenlängen:
+$\lambda_{rot}=(678\pm354)nm$ und $\lambda_{blau}=(545\pm320)nm$
+Innherhalb der Fehlergrenzen passen beide Werte zum zugehörigem Bereich, denn die Wellenlänge für rotes Licht reicht von ca. 650 bis 800nm und der Bereich für blaues Licht reicht von ca.420 bis 490 nm. Es scheint, dass diese Art der Interferenzerzeugung relativ ungenau für die Berechnung der Wellenlängen ist, da die Fehler hinreichend groß sind, dass fast das ganze Spektrum des sichtbaren Lichtes abgedeckt ist.
+Die Fehler wurden mit der folgenden Formel berechnet:
+\begin{equation}
+\Delta\lambda_i=\frac{\Delta B_i \cdot \Delta_i \cdot f}{{b_i}^2}+\frac{B_i \cdot \Delta\Delta_i \cdot f}{b_i^2} +\frac{2 \cdot \Delta b_i \cdot B_i \cdot \Delta_i \cdot f}{{b_i}^3}
+\label{eq:2} 
+\end{equation}
+,wobei $\Delta B_i=\Delta b_i=10\cdot \Delta\Delta_i=1mm$ sind.
+\subsection{Streifensystem im weißen Licht}
+\begin{figure}%
+\includegraphics[width=12cm]{pics/weiss}%
+\caption{Interferenzmuster ohne Filter}%
+\label{fig:wei}%
+\end{figure}
+Wenn man die Filter entfernt bzw. weglässt, ergibt sich auch mit weißem Licht ein Interferenzmuster. Man kann gut erkennen, dass wie aus dem vorherigem Versuch erwartet die Abstände der Interferenzmaxima vom roten Licht größer sind als vom blauen Licht, d.h. dass im Interferenzmuster außer beim Maximum 0.Ordnung blaue Streifen am innerem Rand der weißen Streifen und rote Streifen am äußeren Rand der weißen Streifen zu sehen sind (s. Abbildung \ref{fig:wei}. Dies hat damit zu tun, dass Licht größerer Wellenlänge am Spalt auch stärker gebeugt wird als kurzwelliges Licht.
+\subsection{Laser und Streifensystem}
+\begin{figure}%
+\includegraphics[width=10cm]{pics/las1}%
+\caption{Bild des Lasers}%
+\label{fig:las1}%
+\end{figure}
+\begin{figure}%
+\includegraphics[width=10cm]{pics/las2}%
+\caption{Interferenzmuster des Lasers}%
+\label{fig:las2}%
+\end{figure}
+In diesem Versuch wird nun die Laserdiode verwendet. Daher werden die Kondensorlinsen, der Spalt und die Filterhalterung entfernt. Danach werden der Doppelspiegel, die Laserdiode und die Linse K so justiert, dass ein Halbkreis und zwei Streifen auf dem Schirm zu sehen sind (s.Abbildung \ref{fig:las1}). Nimmt man nun die Linse K weg, erhält man auch hier ein Interferenzmuster (s.Abbildung \ref{fig:las2}). Nun wird die Wellenlänge mit der gleichen Methode wie vorher bestimmt.
+Die Messwerte sind in der Tabelle \ref{tab:2} aufgeführt.
+\begin{table}%
+\begin{tabular}{|l|l|l|l|}
+\hline
+ &$B_i$	in mm	& $b_i$ in mm	& $\Delta_i$ in mm	 \\
+\hline
+Laser  & 3.90 & 990 & 0.72 \\
+\hline
+\end{tabular}
+\caption{Messwerte zur Wellenlängenbestimmung}
+\label{tab:2}
+\end{table}
+Daraus ergibt sich die Wellenlänge $(573\pm228)\cdot nm$. Der Fehler wurde nach Gleichung \ref{eq:2} berechnet. Dieser Wert gehört innerhalb der Fehlergrenzen zum roten Licht, was aber in Anbetracht der Fehler nicht sehr aussagekräfitg. 
+\section{Fazit}
+Mit dem Doppelspiegel wird das Licht einer Lichtquelle zweimal reflektiert, sodass Interferenzen auftreten können. Dieses Verfahren zur Erzeugung von kohärentem Licht ist sehr interessant und lehrreich, da hierdurch alle bekannten Phänomene bezüglich der Beugung und Interferenzen auftreten, ohne dass besondere Gitter verwendet werden müssen. Da der Aufbau bzw. die Justage relativ schwierig ist und daher auch die Fehler bei der Berechnung groß sind, eignet sich dieser Aufbau jedoch nicht um quantitative Auswertungen zu machen.
+\end{document}
