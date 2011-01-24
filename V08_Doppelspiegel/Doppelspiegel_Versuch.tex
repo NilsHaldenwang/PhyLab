@@ -75,8 +75,9 @@ Interferenzeffekte.
 
 \begin{figure}%[htb!]
   \centering
-  \includegraphics[width=14cm]{pics/dummypic}
-  \caption{Prinzip des Doppelspiegelversuchs}
+  \includegraphics[scale=0.25]{pics/prinzip_doppelspiegel}
+  \caption{Prinzip des Doppelspiegelversuchs ( Aus Anleitung
+    übernommen, weil Farbverlauf per Hand schwierig nachzuzeichnen )}
   \label{fig:prinzip-doppelspiegel}
 \end{figure}
 
@@ -87,7 +88,7 @@ Die von den Lichtquellen $ L_1' $ und $ L_2' $ ausgehenden Kugelwellen
 sind als konzentrische Kreise in Abbildung
 \ref{fig:prinzip-doppelspiegel} dargestellt. Radien benachbarter
 durchgezogener oder gestrichelter Kreise unterscheiden sich um eine
-Wellenlänge, aufeinanderfolgende um $ \frac{\lambda}{2} $. Auf den
+Wellenlänge $ \lambda $, aufeinanderfolgende um $ \frac{\lambda}{2} $. Auf den
 Kurven $ H $ und $ D $ liegen die entstehenden Maxima bzw. Minima. Sie
 sind Hyperbeln mit den virtuellen Lichtquellen als Brennpunkten. Da
 der Schirmabstand $ d $ gegenüber dem Abstand $ a $ der virtuellen
@@ -95,10 +96,36 @@ Lichtquellen klein ist, verhalten sich die Hyperbeln auf dem Schirm
 nahezu linear. Damit erhält man auch einen nahezu linearen
 Zusammenhang des Streifenabstandes mit $ d $.
 
+Es sei $ l $ der Abstand vom Knickpunkt $ O $ zum Schirm, und $ R $
+der Radius des Kreises durch L, $ L_1' $ und $ L_2' $. Damit ist $ d =
+R + l $. Es gilt also der Zusammenhang:
+
+\begin{equation}
+  \label{eq:3}
+  \lambda = \frac{\Delta \cdot a}{d}
+\end{equation}
+
+Dabei ist $ \Delta $ der Abstand der Interferenzstreifen.
+
+Da $ l $ gegenüber $ R $ sehr groß ist und $ R $ nur äußerst schwierig
+zu messen, kann man $ R $ vernachlässigen. Mit Hilfe der Linsenformeln
+$ \frac{1}{f} = \frac{1}{a} + \frac{1}{b} $ und $ \frac{B}{G} =
+\frac{b}{g} $ erhält man dann:
+
 \begin{equation}
   \lambda=\frac{B \cdot \Delta \cdot f}{b^2}
   \label{eq:1}
 \end{equation}
+
+Dabei entspricht die Bildweite $ b $ dem Abstand $ l $, $ B $ ist die
+Größe des Bildes, also der Abstand der Bilder der Lichtquellen auf dem
+Schirm, wenn man das Zwischenbild mit einer Linse abbildet. Die Größe
+$ f $ ist die Brennweite der Linse.
+
+Man hat also mit einer Linse bekannter Brennweite $ f $ den Abstand $
+B $ der Bilder auf dem Schirm zu messen, ebenso die Bildweite $ b $
+und wie den Abstand $ \Delta $ der Interferenzstreifen. Daraus lässt
+sich dann die Wellenlänge des verwendeten Lichtes bestimmen.
 
 
 \section{Aufgaben}
